@@ -1,18 +1,29 @@
- <header class="navbar">
-      <div class="navbar-inner">
-        <div class="container">
+<header class="navbar">
+  <div class="navbar-inner">
+    <div class="container">
           <%= link_to "TrialTogether", root_path, id: "logo" %>
           <nav>
-            <form class="form-inline nav pull-right">
-             <input type="text" class="input-small" placeholder="Email">
-             <input type="password" class="input-small" placeholder="Password">
-             <label class="checkbox">
-              <input type="checkbox"> Remember me
-             </label>
-             <%= link_to "Sign in", '#', class: "btn" %>
-             <%= link_to "Register", '#', class: "btn" %>
-            </form>
+
+            <% if signed_in? %>
+              <ul class="nav pull-right">
+                <li><%= link_to "Profile", user_path(current_user) %></li>
+                <li><%= link_to "Sign out", signout_path, method: "delete" %></li>  
+              </ul>
+
+            <% else %>           
+             <%= form_for :session, url: sessions_path, method: :post, html: { class: "form-inline nav pull-right" } do |f| %>
+
+             <%= f.text_field :email, class: "input-medium", placeholder: "Email" %>
+
+             <%= f.password_field :password, class: "input-medium", placeholder: "Password" %>
+
+
+             <%= f.submit "Sign in", class: "btn" %>
+             <%= link_to "Register", register_path, class: "btn" %>
+          
+             <% end %>
+            <% end %>
           </nav>
-        </div>
-      </div>
-    </header>
+    </div>
+  </div>
+</header>
