@@ -1,6 +1,7 @@
 HerokuTrial::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
+  resources :trials
   
 
   root to: 'static_pages#home'
@@ -13,6 +14,9 @@ HerokuTrial::Application.routes.draw do
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+
+  match '/trial/results', to: 'trials#results'
+  match '/trial/search',   to: 'trials#search'
 
 
   # The priority is based upon order of creation:

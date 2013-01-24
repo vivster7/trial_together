@@ -5,4 +5,10 @@ FactoryGirl.define do
     password "foobar"
     password_confirmation "foobar"
   end
+
+  factory :trial do
+  	name "Lorem ipsum"
+  	latitude  34.234234
+  	longitude 14.234144
+  end
 end

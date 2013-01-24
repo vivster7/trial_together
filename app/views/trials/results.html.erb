@@ -1,0 +1,35 @@
+<% provide(:title, '| Trial Results') %>
+<% content_for :head do %>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBex04VuePYf966aHTAPQ3Wfi-pS27w8ko&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      }
+    </script>
+<% end %>
+
+<div class="page-header"> 
+  <h1>Trial Results</h1> 
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4 hero-unit">
+  	  <ul class="trials">
+    	<% @trials.each do |trial| %>
+  		<li class="trialname"><%= link_to trial.name, 
+  		  :action => 'show', :id => trial.id  %></li>
+ 	 	  <% end %>
+  	  </ul>
+    </div>
+    <div id= "map_canvas" class="span8 hero-unit" >
+    </div>
+  </div>
+</div>

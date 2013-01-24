@@ -8,6 +8,7 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'faker'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

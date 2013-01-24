@@ -12,4 +12,7 @@ end
 def contact
 end
 
+def trials
+end
+
 end

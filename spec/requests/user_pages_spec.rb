@@ -19,6 +19,7 @@ describe "User pages" do
     it { should have_selector('title', text: user.name) }
   end
 
+
   describe "signup" do
 
     before { visit register_path }
@@ -40,10 +41,10 @@ describe "User pages" do
 
     describe "with valid information" do
       before do
-        fill_in "Name",         with: "Example User"
-        fill_in "Email",        with: "user@example.com"
-        fill_in "Password",     with: "foobar"
-        fill_in "Confirmation", with: "foobar"
+        fill_in "Name",                  with: "Example User"
+        fill_in "Email",                 with: "user@example.com"
+        fill_in "Password",              with: "foobar"
+        fill_in "Password confirmation", with: "foobar"
       end
 
       it "should create a user" do
@@ -57,12 +58,13 @@ describe "User pages" do
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
         it { should have_link('Sign out') }
-      end
       
-      describe "followed by signout" do
-        before { click_link "Sign out" }
-        it { should have_link('Sign in') }
-      end
+      
+        describe "followed by signout" do
+          before { click_link "Sign out" }
+          it { should have_link('Sign in') }
+        end
+    end
     end
   end
 end

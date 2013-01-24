@@ -2,25 +2,27 @@
 <div class="page-header">
   <h1>TrialTogether <small> Search. Learn. Connect.</small></h1>
 </div>
+
 <div class="form-container">
-<form class="form-horizontal">
+  <%= form_tag '/trial/search', :method => 'get', class: 'form-horizontal' do %>
   <fieldset>
-  <legend>Search for clinical trials nearby</legend>
-  <div class="control-group">
-    <label class="control-label">Clinical Trial</label>
-    <div class="controls">
-      <input type="text" class="input-xxlarge" placeholder="Search for a clinical trial">
-    </div>
-  </div>
-  <div class="control-group">
-    <label class="control-label">Location</label>
-    <div class="controls">
-      <input type="text" class="input-xxlarge" placeholder="Enter a zipcode, e.g. 02215">
-    </div>
-  </div>
-  <div class="control-group offset7">
-    <button type="submit" class="btn btn-large btn-primary span">Search</button>
-  </div>
-  </fieldset>
-</form>
+    <legend>Search for clinical trials nearby</legend>
+      <div class="control-group">
+      <%= label_tag 'Clinical Trial',nil, class: 'control-label' %>
+        <div class="controls">
+          <%= text_field_tag :search, params[:search], class: 'input-xxlarge', placeholder: 'Seach for a clinical trial' %>
+        </div>  
+      </div>
+      <div class = "control-group">
+      <%= label_tag 'Location',nil, class: 'control-label' %>
+        <div class="controls">
+          <%= text_field_tag :location, params[:location], class: 'input-xxlarge', placeholder: 'Enter a full address, e.g. 77 Massachusetts Avenue, Boston, MA 02139' %>
+        </div>
+      </div>
+      <div class="control-group offset7">
+        <%= submit_tag "Search", class: 'btn btn-large btn-primary' %> 
+      </div>
+    </fieldset>
+  <% end %>
 </div>
+
