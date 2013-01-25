@@ -33,15 +33,18 @@
 </div>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span4 hero-unit">
+    <div class="span5">
   	  <ul class="trials">
     	<% @trials.each do |trial| %>
   		<li class="trialname"><%= link_to trial.name, 
   		  :action => 'show', :id => trial.id  %></li>
  	 	  <% end %>
   	  </ul>
+
+      <%= will_paginate @trials, inner_window: 1, outer_window: 0, previous_label: "&larr;", next_label: "&rarr;" %>
+
     </div>
-    <div id= "map_canvas" class="span8 hero-unit" >
+    <div id= "map_canvas" class="span7 hero-unit" >
     </div>
   </div>
 </div>
