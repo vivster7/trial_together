@@ -1,6 +1,6 @@
 namespace :db do
-	desc "fill databse with sample data"
-	task populate: :environment do
+	desc "fill database with sample data"
+	task crap: :environment do
    		 Trial.create!(name: "Example Trial",
                 	 description: "This is the description of an example Trial",
                 	 longitude: 34.12345,
