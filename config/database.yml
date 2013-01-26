@@ -13,9 +13,8 @@
 # gem 'pg'
 #
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: trials_development
+  adapter: sqlite3
+  database: db/development.sqlite3
   pool: 5
 #  username: heroku-trial
   password:
@@ -24,7 +23,7 @@ development:
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
   host: localhost
-  port: 5432
+  port: 5000
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
