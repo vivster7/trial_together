@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(:version => 20130126213010) do
     t.string   "phase"
     t.string   "study_type"
     t.string   "study_design"
-    t.string   "keywords"
+    t.text     "keywords"
     t.boolean  "is_fda_regulated"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false

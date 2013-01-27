@@ -14,7 +14,7 @@ class CreateTrials < ActiveRecord::Migration
       t.string :phase
       t.string :study_type
       t.string :study_design
-      t.string :keywords
+      t.text :keywords
       t.boolean :is_fda_regulated
 
       t.timestamps
