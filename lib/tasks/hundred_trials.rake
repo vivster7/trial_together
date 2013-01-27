@@ -29,7 +29,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
-      keywords: "Cancer Enhanced Care Decision-Making Advance Lung Cancer Questionaires Stage III Lung Cancer Stage IV Lung Cancer ",
+      keywords: "Advance Cancer Decision-Making IV Lung Enhanced Questionaires Stage III Care",
       is_fda_regulated: "No ")
 
 
@@ -52,7 +52,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Platinum Resistant Taxane Resistant Ovarian Cancer Primary Peritoneal Cancer Fallopian Tube Cancer Bortezomib PS-341 Velcade LDP-341 MLN341 Carboplatin Paraplatin ",
+      keywords: "Platinum MLN341 Paraplatin Cancer Resistant Bortezomib Tube PS-341 Primary Carboplatin Ovarian Velcade Fallopian Peritoneal Taxane LDP-341",
       is_fda_regulated: "Yes ")
 
 
@@ -81,7 +81,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "colorectal cancer colorectal neoplasm colorectal neoplasms metastasis metastases liver hepatic metastasis liver metastasis perfusion imaging MRI magnetic resonance imaging dynamic contrast enhanced MRI dynamic contrast enhanced magnetic resonance imaging ",
+      keywords: "perfusion enhanced cancer dynamic magnetic neoplasms metastasis MRI neoplasm liver colorectal hepatic metastases resonance contrast imaging",
       is_fda_regulated: "No ")
 
 
@@ -104,7 +104,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Immunotherapeutic vaccine Ovarian cancer epithelial ovarian cancer tubal cancer peritoneal cancer immunotherapy ",
+      keywords: "immunotherapy cancer ovarian Ovarian epithelial Immunotherapeutic tubal peritoneal vaccine",
       is_fda_regulated: "Yes ")
 
 
@@ -133,7 +133,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "stage IV breast cancer dendritic cell vaccine tumor fusion vaccine IL-12 ",
+      keywords: "tumor cancer IL-12 IV cell fusion dendritic stage vaccine breast",
       is_fda_regulated: "Yes ")
 
 
@@ -163,7 +163,7 @@ namespace :db do
       phase: "Phase 0 ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "neoplasms ",
+      keywords: "neoplasms",
       is_fda_regulated: "No ")
 
 
@@ -191,7 +191,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer fallopian tube cancer primary peritoneal cavity cancer ",
+      keywords: "cancer cavity tube recurrent ovarian primary fallopian epithelial peritoneal",
       is_fda_regulated: "Yes ")
 
 
@@ -222,7 +222,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "unspecified adult solid tumor, protocol specific stage III colon cancer stage IV colon cancer stage III rectal cancer stage IV rectal cancer recurrent colon cancer recurrent rectal cancer ",
+      keywords: "protocol cancer rectal solid recurrent unspecified IV specific colon adult stage III tumor,",
       is_fda_regulated: "Yes ")
 
 
@@ -245,7 +245,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "Survivorship Quality of Life Questionnaire 09-133 ",
+      keywords: "Life Survivorship 09-133 Questionnaire Quality",
       is_fda_regulated: "No ")
 
 
@@ -269,7 +269,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Head and Neck Cancer Liver Cancer Breast Cancer Gastric Cancer Non-Small Cell Lung Cancer EGFR HDAC Her2 CUDC-101 ",
+      keywords: " Head Neck Cancer EGFR Gastric Cell Lung Breast HDAC Her2 Non-Small CUDC-101 Liver",
       is_fda_regulated: "Yes ")
 
 
@@ -290,7 +290,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "NY-ESO-1 DNA ",
+      keywords: "NY-ESO-1 DNA",
       is_fda_regulated: "")
 
 
@@ -314,7 +314,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Prospective ",
-      keywords: "adenocarcinoma of the pancreas recurrent pancreatic cancer stage I pancreatic cancer stage II pancreatic cancer stage III pancreatic cancer ",
+      keywords: "pancreatic cancer I recurrent II adenocarcinoma the stage III pancreas",
       is_fda_regulated: "No ")
 
 
@@ -338,7 +338,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer recurrent breast cancer stage IV ovarian epithelial cancer recurrent ovarian germ cell tumor stage IV ovarian germ cell tumor ovarian stromal cancer ovarian sarcoma BRCA1 mutation carrier BRCA2 mutation carrier stage IIIA ovarian epithelial cancer stage IIIA ovarian germ cell tumor stage IIIB ovarian epithelial cancer stage IIIB ovarian germ cell tumor stage IIIC ovarian epithelial cancer stage IIIC ovarian germ cell tumor ovarian papillary serous carcinoma ",
+      keywords: "cancer epithelial sarcoma papillary stromal recurrent ovarian germ cell serous mutation IIIA IIIC IIIB BRCA1 BRCA2 IV carcinoma breast stage tumor carrier",
       is_fda_regulated: "No ")
 
 
@@ -365,7 +365,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "dendritic cells fusion vaccines GM-CSF imiquimod ",
+      keywords: "GM-CSF cells vaccines fusion dendritic imiquimod",
       is_fda_regulated: "Yes ")
 
 
@@ -389,7 +389,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "N/A ",
-      keywords: "pain psychosocial effects of cancer and its treatment cognitive/functional effects recurrent breast cancer stage I breast cancer stage II breast cancer stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer recurrent colon cancer stage I colon cancer stage II colon cancer stage III colon cancer stage IV colon cancer recurrent rectal cancer stage I rectal cancer stage II rectal cancer stage III rectal cancer stage IV rectal cancer extensive stage small cell lung cancer limited stage small cell lung cancer recurrent small cell lung cancer recurrent non-small cell lung cancer stage I non-small cell lung cancer stage II non-small cell lung cancer stage IIIA non-small cell lung cancer stage IIIB non-small cell lung cancer stage IV non-small cell lung cancer recurrent prostate cancer stage I prostate cancer stage IIB prostate cancer stage IIA prostate cancer stage III prostate cancer stage IV prostate cancer male breast cancer pulmonary carcinoid tumor ",
+      keywords: " limited cancer colon pulmonary psychosocial cognitive/functional recurrent carcinoid cell IIA treatment IIB IIIA extensive IIIB III pain I IV II effects prostate IIIC stage non-small rectal tumor small lung male breast",
       is_fda_regulated: "")
 
 
@@ -411,7 +411,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "autologous vaccination GM-CSF adenoviral mediated gene transfer Stage IV breast cancer ",
+      keywords: "adenoviral GM-CSF cancer vaccination transfer IV mediated breast gene autologous Stage",
       is_fda_regulated: "Yes ")
 
 
@@ -432,7 +432,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "advanced solid tumor Ovarian cancer Primary peritoneal cancer Fallopian tube cancer ",
+      keywords: "cancer solid tube Ovarian Primary tumor Fallopian peritoneal advanced",
       is_fda_regulated: "Yes ")
 
 
@@ -478,7 +478,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label ",
-      keywords: "tumor harvest tumor collection tumor storage ",
+      keywords: "tumor storage harvest collection",
       is_fda_regulated: "No ")
 
 
@@ -503,7 +503,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
-      keywords: "Cancer Endometrial cancer Ovarian cancer Corpus Uteri Endometrium ",
+      keywords: "Endometrial Cancer cancer Ovarian Endometrium Uteri Corpus",
       is_fda_regulated: "No ")
 
 
@@ -532,7 +532,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "cediranib olaparib ",
+      keywords: "cediranib olaparib",
       is_fda_regulated: "Yes ")
 
 
@@ -556,7 +556,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
-      keywords: "psychosocial effects of cancer and its treatment cognitive/functional effects breast cancer colon cancer ",
+      keywords: " psychosocial cognitive/functional cancer colon effects breast treatment",
       is_fda_regulated: "No ")
 
 
@@ -588,7 +588,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Stage IV HER-2/neu overexpressing breast cancer ",
+      keywords: "overexpressing cancer IV breast HER-2/neu Stage",
       is_fda_regulated: "Yes ")
 
 
@@ -614,7 +614,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Breast Cancer Exercise Social Cognitive Theory Adherence Symptoms Body Composition ",
+      keywords: "Body Cognitive Cancer Symptoms Breast Social Adherence Composition Exercise Theory",
       is_fda_regulated: "No ")
 
 
@@ -642,7 +642,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Primary Purpose:  Treatment ",
-      keywords: "squamous cell carcinoma of the esophagus adenocarcinoma of the esophagus stage IV esophageal cancer recurrent esophageal cancer ",
+      keywords: "cancer recurrent IV cell squamous carcinoma esophageal adenocarcinoma the esophagus stage",
       is_fda_regulated: "Yes ")
 
 
@@ -678,7 +678,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
-      keywords: "Thyroid cancer Hashimotos thyroiditis Thyroidectomy Anti-inflammatory factors ",
+      keywords: "Thyroid thyroiditis cancer factors Thyroidectomy Anti-inflammatory Hashimotos",
       is_fda_regulated: "No ")
 
 
@@ -707,7 +707,7 @@ namespace :db do
       phase: "Phase 2/Phase 3 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "peritoneal cavity cancer fallopian tube cancer stage II ovarian epithelial cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer malignant pleural effusion ovarian clear cell cystadenocarcinoma ovarian clear cell tumor with proliferating activity ",
+      keywords: "effusion activity cancer cavity cystadenocarcinoma tube cell with ovarian peritoneal II pleural tumor fallopian epithelial malignant proliferating IV III clear stage",
       is_fda_regulated: "No ")
 
 
@@ -735,7 +735,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "recurrent non-small cell lung cancer stage IIIB non-small cell lung cancer stage IV non-small cell lung cancer stage IV colon cancer stage IV rectal cancer unspecified adult solid tumor, protocol specific ",
+      keywords: "specific protocol cancer rectal solid recurrent unspecified IV cell lung adult colon non-small IIIB tumor, stage",
       is_fda_regulated: "No ")
 
 
@@ -758,7 +758,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Prospective ",
-      keywords: "ovarian epithelial cancer hereditary breast/ovarian cancer (BRCA1, BRCA2) fallopian tube cancer ovarian germ cell tumor ovarian sarcoma ovarian stromal cancer endometrial cancer uterine sarcoma vaginal cancer cervical cancer vulvar cancer uterine leiomyomata ",
+      keywords: "tumor endometrial vulvar cancer tube leiomyomata stromal breast/ovarian uterine ovarian hereditary cell fallopian epithelial cervical vaginal sarcoma germ (BRCA1, BRCA2)",
       is_fda_regulated: "No ")
 
 
@@ -793,7 +793,7 @@ namespace :db do
       phase: "Phase 4 ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "Breast Cancer Circulating Tumor Cells Gene Profiling International Stage Stratification Study Blood Sample ISSS ",
+      keywords: "Sample Priling Cancer Stratification Cells Circulating Tumor Blood Breast ISSS International Gene Study Stage",
       is_fda_regulated: "No ")
 
 
@@ -819,7 +819,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "Cancer Colorectal Cancer Neoplasm Colorectal Neoplasm Intestinal Neoplasms Gastrointestinal Neoplasms Digestive System Neoplasms Neoplasms by Site Neoplasms Digestive System Diseases Gastrointestinal Diseases Colonic Diseases Intestinal Diseases Rectal Diseases ",
+      keywords: "Diseases Cancer Rectal Colonic Neoplasms System by Neoplasm Digestive Colorectal Site Gastrointestinal Intestinal",
       is_fda_regulated: "Yes ")
 
 
@@ -843,7 +843,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Prospective ",
-      keywords: "localized transitional cell cancer of the renal pelvis and ureter metastatic transitional cell cancer of the renal pelvis and ureter recurrent transitional cell cancer of the renal pelvis and ureter regional transitional cell cancer of the renal pelvis and ureter transitional cell carcinoma of the bladder stage I renal cell cancer stage II renal cell cancer recurrent renal cell cancer recurrent bladder cancer stage I bladder cancer stage II bladder cancer stage III bladder cancer stage IV bladder cancer anterior urethral cancer posterior urethral cancer recurrent urethral cancer urethral cancer associated with invasive bladder cancer ",
+      keywords: " anterior associated cancer invasive ureter pelvis localized recurrent cell III I regional bladder IV II posterior metastatic carcinoma with stage renal transitional urethral the",
       is_fda_regulated: "No ")
 
 
@@ -871,7 +871,7 @@ namespace :db do
       phase: "Phase 3 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label ",
-      keywords: "Ovarian Cancer Cancer of the fallopian tube Primary peritoneal cancer Recurrent disease Platinum-sensitive Surgery Chemotherapy Quality of Life First recurrence of platinum sensitive: Fallopian Tube Cancer or Ovarian Cancer or Peritoneal Cavity Cancer ",
+      keywords: "cancer Cavity Tube Recurrent Ovarian Primary Fallopian Chemotherapy platinum Life tube Peritoneal recurrence fallopian peritoneal sensitive: the First Cancer disease or Surgery Quality Platinum-sensitive",
       is_fda_regulated: "No ")
 
 
@@ -928,7 +928,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Prevention ",
-      keywords: "Metastatic Lung Cancer Cancer Vaccine Immunotherapy Adjuvant Therapy Surgical Intervention Lung Cancer Esophageal Cancer Thymic Carcinoma Malignant Pleural Mesothelioma ",
+      keywords: "Cancer Thymic Mesothelioma Immunotherapy Adjuvant Surgical Metastatic Lung Esophageal Malignant Carcinoma Therapy Pleural Vaccine Intervention",
       is_fda_regulated: "Yes ")
 
 
@@ -951,7 +951,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "male breast cancer stage IV breast cancer stage IV ovarian epithelial cancer stage IV ovarian germ cell tumor stage IV pancreatic cancer stage IV colon cancer ovarian sarcoma ",
+      keywords: "tumor pancreatic cancer ovarian IV cell germ colon breast epithelial sarcoma male stage",
       is_fda_regulated: "No ")
 
 
@@ -974,7 +974,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "stage I pancreatic cancer stage II pancreatic cancer stage III pancreatic cancer stage IV pancreatic cancer ",
+      keywords: "pancreatic cancer I IV II III stage",
       is_fda_regulated: "No ")
 
 
@@ -995,7 +995,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Screening ",
-      keywords: "Cancer Screening Navigators Community Outreach Behavioral Change Access ",
+      keywords: "Navigators Cancer Outreach Community Access Screening Behavioral Change",
       is_fda_regulated: "No ")
 
 
@@ -1039,7 +1039,7 @@ namespace :db do
       phase: "Phase 3 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Caregiver), Primary Purpose:  Prevention ",
-      keywords: "colorectal cancer screening multimedia education print education culturally competent ",
+      keywords: "cancer multimedia competent screening colorectal print education culturally",
       is_fda_regulated: "No ")
 
 
@@ -1065,7 +1065,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
-      keywords: "stage I ovarian epithelial cancer stage II ovarian epithelial cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer peritoneal cavity cancer ",
+      keywords: "cancer I ovarian IV II cavity epithelial peritoneal III stage",
       is_fda_regulated: "No ")
 
 
@@ -1093,7 +1093,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "advanced adult primary liver cancer stage III pancreatic cancer stage IV pancreatic cancer periampullary adenocarcinoma small intestine adenocarcinoma adenocarcinoma of the extrahepatic bile duct adenocarcinoma of the gallbladder unresectable extrahepatic bile duct cancer unresectable gallbladder cancer ",
+      keywords: "periampullary pancreatic intestine cancer duct unresectable primary extrahepatic adult gallbladder adenocarcinoma liver bile small the IV III advanced stage",
       is_fda_regulated: "Yes ")
 
 
@@ -1122,7 +1122,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "Gastric Cancer Stomach Cancer 05-118 ",
+      keywords: "Gastric Stomach 05-118 Cancer",
       is_fda_regulated: "Yes ")
 
 
@@ -1146,7 +1146,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control ",
-      keywords: "stage I breast cancer stage II breast cancer stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer recurrent breast cancer breast cancer in situ ",
+      keywords: "cancer I recurrent IV II breast in IIIA IIIC IIIB situ stage",
       is_fda_regulated: "No ")
 
 
@@ -1170,7 +1170,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer fallopian tube cancer primary peritoneal cavity cancer borderline ovarian surface epithelial-stromal tumor ",
+      keywords: "borderline cancer cavity tube recurrent epithelial-stromal ovarian surface primary tumor fallopian epithelial peritoneal",
       is_fda_regulated: "")
 
 
@@ -1195,7 +1195,7 @@ namespace :db do
       phase: "Phase 0 ",
       study_type: "Interventional ",
       study_design: "Primary Purpose:  Treatment ",
-      keywords: "stage IV colon cancer stage IV rectal cancer adult primary hepatocellular carcinoma stage IV pancreatic cancer male breast cancer stage IV breast cancer stage IV melanoma stage I breast cancer stage II breast cancer stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer recurrent breast cancer recurrent adrenocortical carcinoma stage I adrenocortical carcinoma stage II adrenocortical carcinoma stage III adrenocortical carcinoma stage IV adrenocortical carcinoma recurrent colon cancer stage I colon cancer stage II colon cancer stage III colon cancer recurrent rectal cancer stage I rectal cancer stage II rectal cancer stage III rectal cancer advanced adult primary liver cancer localized resectable adult primary liver cancer recurrent adult primary liver cancer recurrent pancreatic cancer stage I pancreatic cancer stage II pancreatic cancer stage III pancreatic cancer recurrent melanoma stage I melanoma stage II melanoma stage III melanoma stage I renal cell cancer stage II renal cell cancer stage III renal cell cancer stage IV renal cell cancer recurrent renal cell cancer recurrent ovarian epithelial cancer stage I ovarian epithelial cancer stage II ovarian epithelial cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer gastrointestinal cancer adult fibrosarcoma recurrent adult soft tissue sarcoma stage I adult soft tissue sarcoma stage II adult soft tissue sarcoma stage III adult soft tissue sarcoma stage IV adult soft tissue sarcoma ",
+      keywords: "cancer primary tissue colon epithelial sarcoma gastrointestinal adrenocortical localized melanoma liver recurrent ovarian cell resectable IIIA IIIC IIIB III fibrosarcoma I IV II carcinoma adult advanced stage pancreatic hepatocellular renal rectal male st breast",
       is_fda_regulated: "No ")
 
 
@@ -1219,7 +1219,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "Genomic Testing Genetic Testing HER2 Negative Primary Invasive Breast Cancer Stage I Stage II Stage III Registry Biopsy Tumor sampling ",
+      keywords: "Tumor Cancer I Invasive Testing Biopsy Negative Primary II Genetic Breast HER2 Genomic sampling III Registry Stage",
       is_fda_regulated: "No ")
 
 
@@ -1249,7 +1249,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Supportive Care ",
-      keywords: "Survivorship cancer control psychosocial interventions Facing Forward ",
+      keywords: "control psychosocial cancer interventions Facing Forward Survivorship",
       is_fda_regulated: "No ")
 
 
@@ -1274,7 +1274,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Primary Purpose:  Supportive Care ",
-      keywords: "malnutrition non-small cell lung cancer small cell lung cancer stage III prostate cancer stage IV prostate cancer pancreatic cancer weight changes ",
+      keywords: "pancreatic weight cancer prostate IV cell lung changes malnutrition small non-small III stage",
       is_fda_regulated: "Yes ")
 
 
@@ -1304,7 +1304,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Retrospective ",
-      keywords: "screening genetic cancer ",
+      keywords: "genetic screening cancer",
       is_fda_regulated: "No ")
 
 
@@ -1333,7 +1333,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer stage IV ovarian epithelial cancer recurrent primary peritoneal cavity cancer stage IIIA primary peritoneal cavity cancer stage IIIB primary peritoneal cavity cancer stage IIIC primary peritoneal cavity cancer stage IV primary peritoneal cavity cancer recurrent fallopian tube cancer stage IIIA fallopian tube cancer stage IIIB fallopian tube cancer stage IIIC fallopian tube cancer stage IV fallopian tube cancer stage IIIA ovarian epithelial cancer stage IIIB ovarian epithelial cancer stage IIIC ovarian epithelial cancer 06-155 ",
+      keywords: "06-155 IIIB primary cancer cavity tube recurrent ovarian IV fallopian epithelial IIIA IIIC peritoneal stage",
       is_fda_regulated: "Yes ")
 
 
@@ -1364,7 +1364,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "Non-Small Cell Lung Cancer Head And Neck Cancer Lung Cancer Bronchoscopy Laryngoscopy NSCLC Disease Free Survival Current Smoker Former Smoker ",
+      keywords: "And Current Head Bronchoscopy Neck Cancer Laryngoscopy Disease Free Survival Cell Former Lung Smoker Non-Small NSCLC",
       is_fda_regulated: "No ")
 
 
@@ -1448,7 +1448,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Pharmacokinetics/Dynamics Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "AZD6244 MK-2206 Lepatinib Erlotinib Sunitinib Lung Cancer Thymic Cancer Small Cell Lung Cancer Non-Small Cell Lung Cancer ",
+      keywords: "Sunitinib AZD6244 Cancer Thymic Lepatinib MK-2206 Lung Small Non-Small Cell Erlotinib",
       is_fda_regulated: "Yes ")
 
 
@@ -1474,7 +1474,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
-      keywords: "Breast Cancer Quality of life ",
+      keywords: " life Quality Breast Cancer",
       is_fda_regulated: "No ")
 
 
@@ -1502,7 +1502,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer male breast cancer recurrent ovarian epithelial cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer recurrent adult acute lymphoblastic leukemia recurrent adult acute myeloid leukemia adult acute myeloid leukemia with 11q23 (MLL) abnormalities adult acute myeloid leukemia with inv(16)(p13;q22) adult acute myeloid leukemia with t(15;17)(q22;q12) adult acute myeloid leukemia with t(16;16)(p13;q22) adult acute myeloid leukemia with t(8;21)(q22;q22) secondary acute myeloid leukemia mast cell leukemia stage III chronic lymphocytic leukemia stage IV chronic lymphocytic leukemia refractory chronic lymphocytic leukemia T-cell large granular lymphocyte leukemia atypical chronic myeloid leukemia accelerated phase chronic myelogenous leukemia blastic phase chronic myelogenous leukemia chronic phase chronic myelogenous leukemia meningeal chronic myelogenous leukemia relapsing chronic myelogenous leukemia chronic myelomonocytic leukemia refractory hairy cell leukemia progressive hairy cell leukemia, initial treatment stage III adult T-cell leukemia/lymphoma stage IV adult T-cell leukemia/lymphoma recurrent adult T-cell leukemia/lymphoma stage III adult Hodgkin lymphoma stage IV adult Hodgkin lymphoma recurrent adult Hodgkin lymphoma anaplastic large cell lymphoma angioimmunoblastic T-cell lymphoma stage III cutaneous T-cell non-Hodgkin lymphoma stage IV cutaneous T-cell non-Hodgkin lymphoma stage III mycosis fungoides/Sezary syndrome stage IV mycosis fungoides/Sezary syndrome recurrent cutaneous T-cell non-Hodgkin lymphoma recurrent mycosis fungoides/Sezary syndrome adult grade III lymphomatoid granulomatosis adult nasal type extranodal NK/T-cell lymphoma Waldenstrom macroglobulinemia extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue splenic marginal zone lymphoma stage III adult Burkitt lymphoma stage III adult diffuse large cell lymphoma stage III adult diffuse mixed cell lymphoma stage III adult diffuse small cleaved cell lymphoma stage III adult immunoblastic large cell lymphoma stage III adult lymphoblastic lymphoma stage III grade 1 follicular lymphoma stage III grade 2 follicular lymphoma stage III grade 3 follicular lymphoma stage III mantle cell lymphoma stage III marginal zone lymphoma stage III small lymphocytic lymphoma stage IV adult Burkitt lymphoma stage IV adult diffuse large cell lymphoma stage IV adult diffuse mixed cell lymphoma stage IV adult diffuse small cleaved cell lymphoma stage IV adult immunoblastic large cell lymphoma stage IV adult lymphoblastic lymphoma stage IV grade 1 follicular lymphoma stage IV grade 2 follicular lymphoma stage IV grade 3 follicular lymphoma stage IV mantle cell lymphoma stage IV marginal zone lymphoma stage IV small lymphocytic lymphoma recurrent adult Burkitt lymphoma recurrent adult diffuse large cell lymphoma recurrent adult diffuse mixed cell lymphoma recurrent adult diffuse small cleaved cell lymphoma recurrent adult grade III lymphomatoid granulomatosis recurrent adult immunoblastic large cell lymphoma recurrent adult lymphoblastic lymphoma recurrent grade 1 follicular lymphoma recurrent grade 2 follicular lymphoma recurrent grade 3 follicular lymphoma recurrent mantle cell lymphoma recurrent marginal zone lymphoma recurrent small lymphocytic lymphoma intraocular lymphoma primary central nervous system lymphoma stage III multiple myeloma stage II multiple myeloma refractory multiple myeloma cutaneous B-cell non-Hodgkin lymphoma recurrent ovarian germ cell tumor stage III ovarian germ cell tumor stage IV ovarian germ cell tumor unspecified adult solid tumor, protocol specific recurrent breast cancer nodal marginal zone B-cell lymphoma ",
+      keywords: "protocol B-cell macroglobulinemia t(15;17)(q22;q12) zone nervous granular treatment breast angioimmunoblastic lymphoma secondary Burkitt acute lymphomatoid progressive mycosis large small NK/T-cell T-cell intraocular lymphoblastic specific leukemia, ovarian mucosa-associated cell 3 IIIA IIIC IIIB hairy lymphocyte IV Hodgkin stage leukemia/lymphoma central anaplastic granulomatosis (MLL) myeloid mixed Waldenstrom cancer mantle grade marginal lymphocytic primary system chronic 11q23 myelogenous immunoblastic nodal initial splenic unspecified germ 2 myelomonocytic type tumor, lymphoid fungoides/Sezary follicular adult with diffuse solid cutaneous refractory male inv(16)(p13;q22) t(16;16)(p13;q22) tissue epithelial abnormalities t(8;21)(q22;q22) extranodal tumor syndrome recurrent 1 III relapsing multiple nasal leukemia cleaved II non-Hodgkin phase atypical myeloma accelerated mast blastic meningeal",
       is_fda_regulated: "Yes ")
 
 
@@ -1529,7 +1529,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Caregiver, Investigator), Primary Purpose:  Treatment ",
-      keywords: "transitional cell carcinoma of the bladder stage 0 bladder cancer stage I bladder cancer ",
+      keywords: "cancer transitional I bladder cell 0 carcinoma the stage",
       is_fda_regulated: "Yes ")
 
 
@@ -1579,7 +1579,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only ",
-      keywords: "Ovarian Cancer Peritoneal Cancer Fallopian Tube Cancer Elizabeth Registry Questionnaire Registry Survey ",
+      keywords: "Elizabeth Cancer Tube Ovarian Peritoneal Fallopian Survey Registry Questionnaire",
       is_fda_regulated: "No ")
 
 
@@ -1612,7 +1612,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
-      keywords: "Cervical Cancer DNA Array Analysis Gene Expression DNA ",
+      keywords: "Cervical DNA Cancer Analysis Array Gene Expression",
       is_fda_regulated: "No ")
 
 
@@ -1635,7 +1635,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "GSK1120212, everolimus, solid tumors, pancreatic cancer, non-small lung cancer, KRAS-mutant cancer ",
+      keywords: "pancreatic cancer solid everolimus, cancer, tumors, KRAS-mutant lung non-small GSK1120212,",
       is_fda_regulated: "Yes ")
 
 
@@ -1709,7 +1709,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Health Services Research ",
-      keywords: "health literacy cancer screening doctor-patient communication standardized patient continuing medical education ",
+      keywords: "patient stardized cancer communication medical continuing doctor-patient health screening education literacy",
       is_fda_regulated: "No ")
 
 
@@ -1758,7 +1758,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "N/A ",
-      keywords: "cancer survivor stage III adult Burkitt lymphoma stage III adult diffuse large cell lymphoma stage III adult diffuse mixed cell lymphoma stage III adult diffuse small cleaved cell lymphoma stage III adult Hodgkin lymphoma stage III adult immunoblastic large cell lymphoma stage III adult lymphoblastic lymphoma stage III grade 1 follicular lymphoma stage III grade 2 follicular lymphoma stage III grade 3 follicular lymphoma stage III mantle cell lymphoma stage III marginal zone lymphoma stage III small lymphocytic lymphoma stage IV adult Burkitt lymphoma stage IV adult diffuse large cell lymphoma stage IV adult diffuse mixed cell lymphoma stage IV adult diffuse small cleaved cell lymphoma stage IV adult Hodgkin lymphoma stage IV adult immunoblastic large cell lymphoma stage IV adult lymphoblastic lymphoma stage IV grade 1 follicular lymphoma stage IV grade 2 follicular lymphoma stage IV grade 3 follicular lymphoma stage IV mantle cell lymphoma stage IV marginal zone lymphoma stage IV small lymphocytic lymphoma recurrent adult Burkitt lymphoma recurrent adult diffuse large cell lymphoma recurrent adult diffuse mixed cell lymphoma recurrent adult diffuse small cleaved cell lymphoma recurrent adult Hodgkin lymphoma recurrent adult immunoblastic large cell lymphoma recurrent adult lymphoblastic lymphoma recurrent childhood large cell lymphoma recurrent childhood lymphoblastic lymphoma recurrent childhood small noncleaved cell lymphoma recurrent cutaneous T-cell non-Hodgkin lymphoma recurrent grade 1 follicular lymphoma recurrent grade 2 follicular lymphoma recurrent grade 3 follicular lymphoma recurrent mantle cell lymphoma recurrent marginal zone lymphoma recurrent small lymphocytic lymphoma recurrent/refractory childhood Hodgkin lymphoma recurrent mycosis fungoides/Sezary syndrome extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue nodal marginal zone B-cell lymphoma splenic marginal zone lymphoma noncontiguous stage II adult Burkitt lymphoma noncontiguous stage II adult diffuse large cell lymphoma noncontiguous stage II adult diffuse mixed cell lymphoma noncontiguous stage II adult diffuse small cleaved cell lymphoma noncontiguous stage II adult immunoblastic large cell lymphoma noncontiguous stage II adult lymphoblastic lymphoma noncontiguous stage II grade 1 follicular lymphoma noncontiguous stage II grade 2 follicular lymphoma noncontiguous stage II grade 3 follicular lymphoma noncontiguous stage II mantle cell lymphoma noncontiguous stage II marginal zone lymphoma noncontiguous stage II small lymphocytic lymphoma accelerated phase chronic myelogenous leukemia adult acute lymphoblastic leukemia in remission adult acute myeloid leukemia in remission adult acute myeloid leukemia with 11q23 (MLL) abnormalities adult acute myeloid leukemia with inv(16)(p13;q22) adult acute myeloid leukemia with t(15;17)(q22;q12) adult acute myeloid leukemia with t(16;16)(p13;q22) adult acute myeloid leukemia with t(8;21)(q22;q22) atypical chronic myeloid leukemia, BCR-ABL negative blastic phase chronic myelogenous leukemia childhood acute lymphoblastic leukemia in remission childhood acute myeloid leukemia in remission childhood chronic myelogenous leukemia chronic myelomonocytic leukemia chronic phase chronic myelogenous leukemia juvenile myelomonocytic leukemia recurrent adult acute lymphoblastic leukemia recurrent adult acute myeloid leukemia recurrent childhood acute lymphoblastic leukemia recurrent childhood acute myeloid leukemia refractory chronic lymphocytic leukemia refractory hairy cell leukemia relapsing chronic myelogenous leukemia secondary acute myeloid leukemia stage III chronic lymphocytic leukemia stage IV chronic lymphocytic leukemia childhood myelodysplastic syndromes chronic eosinophilic leukemia primary myelofibrosis chronic neutrophilic leukemia de novo myelodysplastic syndromes disseminated neuroblastoma myelodysplastic/myeloproliferative neoplasm, unclassifiable poor prognosis metastatic gestational trophoblastic tumor previously treated childhood rhabdomyosarcoma previously treated myelodysplastic syndromes recurrent Wilms tumor and other childhood kidney tumors recurrent childhood rhabdomyosarcoma recurrent neuroblastoma recurrent ovarian epithelial cancer recurrent ovarian germ cell tumor recurrent malignant testicular germ cell tumor secondary myelodysplastic syndromes stage I multiple myeloma stage II multiple myeloma stage III multiple myeloma stage II ovarian epithelial cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer stage III malignant testicular germ cell tumor stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer refractory multiple myeloma ",
+      keywords: "B-cell malignant myelibrosis gestational t(15;17)(q22;q12) zone previously rhabdomyosarcoma syndromes remission de noncleaved breast lymphoma secondary Burkitt acute BCR-ABL mycosis tumors neutrophilic large eosinophilic small trophoblastic T-cell lymphoblastic leukemia, ovarian mucosa-associated cell 3 IIIA IIIC IIIB hairy Wilms metastatic cleaved Hodgkin stage survivor tumor (MLL) myeloid mixed childhood cancer mantle grade marginal lymphocytic primary splenic chronic 11q23 noncontiguous myelogenous immunoblastic novo nodal negative germ 2 myelomonocytic lymphoid fungoides/Sezary follicular neoplasm, adult with diffuse cutaneous refractory treated juvenile atypical inv(16)(p13;q22) t(16;16)(p13;q22) tissue epithelial in abnormalities t(8;21)(q22;q22) recurrent/refractory extranodal syndrome recurrent 1 prognosis other kidney III poor relapsing multiple neuroblastoma I leukemia IV II unclassifiable testicular non-Hodgkin phase myelodysplastic/myeloproliferative disseminated myeloma myelodysplastic accelerated blastic",
       is_fda_regulated: "Yes ")
 
 
@@ -1781,7 +1781,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
-      keywords: "hereditary prostate cancer prostate cancer ",
+      keywords: "prostate cancer hereditary",
       is_fda_regulated: "No ")
 
 
@@ -1805,7 +1805,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "N/A ",
-      keywords: "stage 0 non-small cell lung cancer stage I non-small cell lung cancer extensive stage small cell lung cancer limited stage small cell lung cancer stage II non-small cell lung cancer stage IV non-small cell lung cancer stage IIIA non-small cell lung cancer stage IIIB non-small cell lung cancer ",
+      keywords: "II limited cancer I IIIA IV cell 0 lung small non-small IIIB extensive stage",
       is_fda_regulated: "No ")
 
 
@@ -1832,7 +1832,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "ovarian clear cell cystadenocarcinoma ovarian endometrioid adenocarcinoma ovarian mixed epithelial carcinoma recurrent ovarian epithelial cancer ovarian serous cystadenocarcinoma recurrent primary peritoneal cavity cancer recurrent fallopian tube cancer ovarian undifferentiated adenocarcinoma ",
+      keywords: "undifferentiated endometrioid cancer cavity cystadenocarcinoma clear recurrent ovarian primary cell serous adenocarcinoma epithelial mixed carcinoma peritoneal tube fallopian",
       is_fda_regulated: "Yes ")
 
 
@@ -1855,7 +1855,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Diagnostic ",
-      keywords: "breath sample analysis exhalation analysis volatile organic compounds screening lung cancer breast cancer ovarian cancer canine scent detection ",
+      keywords: "sample organic cancer compounds detection ovarian analysis breath exhalation volatile screening canine lung scent breast",
       is_fda_regulated: "No ")
 
 
@@ -1880,7 +1880,7 @@ namespace :db do
       phase: "Phase 3 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "stage IV gastric cancer recurrent gastric cancer stage IV esophageal cancer recurrent esophageal cancer adenocarcinoma of the stomach adenocarcinoma of the esophagus ",
+      keywords: "gastric stomach cancer recurrent IV adenocarcinoma esophageal the esophagus stage",
       is_fda_regulated: "Yes ")
 
 
@@ -1901,7 +1901,7 @@ namespace :db do
       phase: "Phase 0 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Prevention ",
-      keywords: "Women with increased risk for developing ovarian cancer Women diagnosed with reproductive cancer Women with relatives who have had ovarian or breast cancer ",
+      keywords: "cancer increased for developing who had ovarian relatives reproductive diagnosed have Women with or breast risk",
       is_fda_regulated: "Yes ")
 
 
@@ -1924,7 +1924,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
-      keywords: "fatigue psychosocial effects of cancer and its treatment recurrent breast cancer stage I breast cancer stage II breast cancer stage IIIA breast cancer stage IIIB breast cancer stage IIIC breast cancer stage IV breast cancer recurrent ovarian epithelial cancer recurrent ovarian germ cell tumor stage I ovarian epithelial cancer stage I ovarian germ cell tumor stage II ovarian epithelial cancer stage II ovarian germ cell tumor stage III ovarian epithelial cancer stage III ovarian germ cell tumor stage IV ovarian epithelial cancer stage IV ovarian germ cell tumor ",
+      keywords: " cancer epithelial psychosocial recurrent ovarian germ cell treatment IIIA IIIC IIIB III I IV II fatigue effects stage tumor breast",
       is_fda_regulated: "No ")
 
 
@@ -1947,7 +1947,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer primary peritoneal cavity cancer fallopian tube cancer ",
+      keywords: "cancer cavity tube recurrent primary peritoneal ovarian fallopian epithelial",
       is_fda_regulated: "")
 
 
@@ -1970,7 +1970,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Primary Purpose:  Treatment ",
-      keywords: "stage IV ovarian epithelial cancer recurrent ovarian epithelial cancer ovarian undifferentiated adenocarcinoma ovarian mixed epithelial carcinoma ovarian serous cystadenocarcinoma ovarian mucinous cystadenocarcinoma ovarian endometrioid adenocarcinoma ovarian clear cell cystadenocarcinoma fallopian tube cancer primary peritoneal cavity cancer ",
+      keywords: "undifferentiated primary endometrioid cancer mucinous cavity cystadenocarcinoma clear recurrent ovarian IV cell serous adenocarcinoma epithelial mixed carcinoma peritoneal tube fallopian stage",
       is_fda_regulated: "")
 
 
@@ -1992,7 +1992,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "autologous vaccination GM-CSF adenoviral mediated gene transfer Stage IV breast cancer ",
+      keywords: "adenoviral GM-CSF cancer vaccination transfer IV mediated breast gene autologous Stage",
       is_fda_regulated: "Yes ")
 
 
@@ -2057,7 +2057,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Metastatic Cancer Cancer Vaccine Immunotherapy Adjuvant Therapy Chest Metastases Cancer Melanoma Lung Cancer Sarcoma ",
+      keywords: "Melanoma Cancer Immunotherapy Adjuvant Chest Metastatic Therapy Sarcoma Metastases Lung Vaccine",
       is_fda_regulated: "Yes ")
 
 
@@ -2082,7 +2082,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Retrospective ",
-      keywords: "recurrent non-small cell lung cancer recurrent small cell lung cancer stage IIIA non-small cell lung cancer stage IIIB non-small cell lung cancer stage IV non-small cell lung cancer extensive stage small cell lung cancer recurrent pancreatic cancer stage III pancreatic cancer stage IV pancreatic cancer recurrent ovarian epithelial cancer recurrent ovarian germ cell tumor stage III ovarian epithelial cancer stage III ovarian germ cell tumor stage IV ovarian epithelial cancer stage IV ovarian germ cell tumor recurrent colon cancer stage III colon cancer stage IV colon cancer recurrent rectal cancer stage III rectal cancer stage IV rectal cancer ",
+      keywords: "tumor pancreatic cancer rectal recurrent ovarian germ IV cell IIIA lung epithelial small colon non-small IIIB III extensive stage",
       is_fda_regulated: "No ")
 
 
@@ -2157,7 +2157,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Antibodies Pharmacokinetics Kinase Inhibitors Colon Cancer K-Ras Colorectal Cancer Solid Tumor ",
+      keywords: "Antibodies Cancer Solid Kinase Inhibitors Tumor Colon Colorectal Pharmacokinetics K-Ras",
       is_fda_regulated: "Yes ")
 
 
@@ -2187,7 +2187,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Masking:  Double-Blind, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer fallopian tube cancer primary peritoneal cavity cancer ",
+      keywords: "cancer cavity tube recurrent ovarian primary fallopian epithelial peritoneal",
       is_fda_regulated: "Yes ")
 
 
@@ -2248,7 +2248,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Ovarian Cancer Fallopian Tube Cancer Primary Peritoneal Cancer Relapsed or Refractory Pegaspargase Pegylated L-Asparaginase ",
+      keywords: "Pegaspargase or Cancer Tube Primary Ovarian Peritoneal Refractory Fallopian Pegylated Relapsed L-Asparaginase",
       is_fda_regulated: "Yes ")
 
 
@@ -2272,7 +2272,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Case-Only, Time Perspective:  Cross-Sectional ",
-      keywords: "skin cancer small intestine cancer pancreatic cancer malignant testicular germ cell tumor testicular teratoma ",
+      keywords: "tumor pancreatic intestine cancer germ cell teratoma testicular malignant skin small",
       is_fda_regulated: "No ")
 
 
@@ -2295,7 +2295,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "Breast Cancer ",
+      keywords: "Breast Cancer",
       is_fda_regulated: "No ")
 
 
@@ -2321,7 +2321,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Masking:  Double-Blind, Primary Purpose:  Treatment ",
-      keywords: "recurrent ovarian epithelial cancer fallopian tube cancer peritoneal cavity cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer ",
+      keywords: "cancer cavity tube recurrent ovarian peritoneal fallopian epithelial IV III stage",
       is_fda_regulated: "Yes ")
 
 
@@ -2374,7 +2374,7 @@ namespace :db do
       phase: "Phase 4 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Rectal Cancer Colorectal Cancer Laparoscopic Surgery Robotic Surgery Robotic Assisted Laparoscopic Surgery ",
+      keywords: "Cancer Rectal Assisted Laparoscopic Colorectal Robotic Surgery",
       is_fda_regulated: "No ")
 
 
@@ -2401,7 +2401,7 @@ namespace :db do
       phase: "Phase 1/Phase 2 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Solid tumor Metastatic breast cancer Unresectable or metastatic carcinoma Neuropathy Eribulin Cyclophosphamide ",
+      keywords: "cancer Neuropathy Solid Unresectable Cyclophosphamide Eribulin tumor Metastatic carcinoma breast metastatic or",
       is_fda_regulated: "Yes ")
 
 
@@ -2426,7 +2426,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Prospective ",
-      keywords: "colon cancer hereditary non-polyposis colon cancer rectal cancer familial adenomatous polyposis ",
+      keywords: "non-polyposis cancer rectal polyposis hereditary colon familial adenomatous",
       is_fda_regulated: "No ")
 
 
@@ -2450,7 +2450,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
-      keywords: "Lung cancer Quality of life Communication with physician ",
+      keywords: "physician life cancer with Communication Lung Quality",
       is_fda_regulated: "No ")
 
 
@@ -2516,7 +2516,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Mesothelioma Esophageal Cancer Lung Cancer Thoracic Malignancies Tumor Cell Vaccine ",
+      keywords: "Cell Cancer Mesothelioma Thoracic Tumor Lung Esophageal Malignancies Vaccine",
       is_fda_regulated: "Yes ")
 
 
@@ -2548,7 +2548,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Family-Based, Time Perspective:  Prospective ",
-      keywords: "Bladder cancer Colorectal cancer Endometrial cancer Kidney cancer Skin cancer Uterus cancer Molecular Predisposition Hereditary Nonpolyposis Colon Cancer HNPCC Molecular genetic testing Gene mutations Mutation analyses Genetic polymorphisms Family history of cancer Early age of cancer onset Little/no personal or family history of cancer Spouses Questionnaires Blood sample Saliva Sample ",
+      keywords: "Endometrial cancer testing mutations Hereditary sample Questionnaires Genetic Spouses Mutation Colorectal Molecular onset family personal Bladder Early genetic Little/no Blood Predisposition Saliva Uterus HNPCC analyses Gene Family Cancer age Sample Nonpolyposis Colon Skin polymorphisms or Kidney history",
       is_fda_regulated: "No ")
 
 
@@ -2576,7 +2576,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "fallopian tube cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer peritoneal cavity cancer ",
+      keywords: "cancer cavity tube ovarian IV fallopian epithelial peritoneal III stage",
       is_fda_regulated: "Yes ")
 
 
@@ -2599,7 +2599,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
-      keywords: "Anxiety Black men Prostate Cancer 07-125 ",
+      keywords: "Anxiety Cancer men Black 07-125 Prostate",
       is_fda_regulated: "No ")
 
 
@@ -2624,7 +2624,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Primary Purpose:  Treatment ",
-      keywords: "fallopian tube cancer borderline ovarian surface epithelial-stromal tumor primary peritoneal cavity cancer recurrent cervical cancer recurrent ovarian epithelial cancer ",
+      keywords: "cervical cancer borderline cavity tube recurrent epithelial-stromal ovarian surface primary tumor fallopian epithelial peritoneal",
       is_fda_regulated: "")
 
 
@@ -2684,7 +2684,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Subject), Primary Purpose:  Supportive Care ",
-      keywords: "Prostate Cancer Quality of Life Cancer Information Mentor CHESS the Comprehensive Health Enhancement Support System Social support Skill-building tools ",
+      keywords: "Information Life Cancer Prostate Support Social System Enhancement tools Health Mentor Skill-building Comprehensive the Quality support CHESS",
       is_fda_regulated: "No ")
 
 
@@ -2708,7 +2708,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "N/A ",
-      keywords: "ovarian neoplasm fallopian tube cancer breast cancer primary peritoneal cavity cancer ",
+      keywords: "cancer cavity tube ovarian primary neoplasm fallopian breast peritoneal",
       is_fda_regulated: "No ")
 
 
@@ -2740,7 +2740,7 @@ namespace :db do
       phase: "Phase 3 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Investigator), Primary Purpose:  Treatment ",
-      keywords: "Breast Cancer Tumors or cancer of the human breast Breast Tumors Cancer of Breast Cancer of the Breast Human Mammary Carcinoma Neoplasms, Breast ",
+      keywords: "Neoplasms, Cancer cancer Tumors Mammary Human Carcinoma Breast human the or breast",
       is_fda_regulated: "No ")
 
 
@@ -2768,7 +2768,7 @@ namespace :db do
       phase: "Phase 2 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "fallopian tube cancer stage III ovarian epithelial cancer stage IV ovarian epithelial cancer recurrent ovarian epithelial cancer peritoneal cavity cancer ",
+      keywords: "cancer cavity tube recurrent ovarian IV fallopian epithelial peritoneal III stage",
       is_fda_regulated: "")
 
 
@@ -2791,7 +2791,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Prospective ",
-      keywords: "recurrent renal cell cancer stage I renal cell cancer stage II renal cell cancer stage III renal cell cancer stage IV renal cell cancer ",
+      keywords: "II renal cancer I recurrent IV cell III stage",
       is_fda_regulated: "No ")
 
 
@@ -2815,7 +2815,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Endpoint Classification:  Pharmacokinetics/Dynamics Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "carcinoma,non small cell lung lung diseases lung neoplasms Respiratory Carcinoma, Bronchogenic Bronchial Neoplasms Respiratory Tract Neoplasms Thoracic Neoplasms Neoplasms by Site Lung Diseases Respiratory Tract Diseases Erlotinib Protein Kinase Inhibitors Breast Neoplasms Neoplasms Breast Diseases Exemestane Aromatase Inhibitors ",
+      keywords: "neoplasms Kinase Inhibitors lung Diseases Thoracic cell Breast Tract Bronchial Respiratory diseases Aromatase Bronchogenic Carcinoma, by Exemestane Neoplasms Site Lung carcinoma,non small Protein Erlotinib",
       is_fda_regulated: "Yes ")
 
 
@@ -2874,7 +2874,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "Metastatic Cancer Cancer Vaccine Immunotherapy Chest Metastases Sarcoma Melanoma ",
+      keywords: "Melanoma Cancer Immunotherapy Chest Metastatic Metastases Sarcoma Vaccine",
       is_fda_regulated: "Yes ")
 
 
@@ -2898,7 +2898,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized ",
-      keywords: "long-term effects of cancer treatment psychosocial effects of cancer and its treatment depression stage IA breast cancer stage IB breast cancer stage II breast cancer stage I prostate cancer stage II prostate cancer ",
+      keywords: " psychosocial IB cancer I breast II IA effects long-term stage prostate depression treatment",
       is_fda_regulated: "")
 
 
@@ -2922,7 +2922,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Observational ",
       study_design: "Time Perspective:  Retrospective ",
-      keywords: "non-small cell lung cancer malignant pleural effusion small cell lung cancer ",
+      keywords: "effusion cancer pleural cell lung malignant small non-small",
       is_fda_regulated: "No ")
 
 
@@ -2944,7 +2944,7 @@ namespace :db do
       phase: "N/A ",
       study_type: "Interventional ",
       study_design: "Allocation:  Randomized, Intervention Model:  Factorial Assignment, Masking:  Double Blind (Subject, Caregiver, Investigator) ",
-      keywords: "Colorectal cancer Surgical resection Oxidative Stress Markers Controls ",
+      keywords: "resection Stress cancer Markers Surgical Controls Colorectal Oxidative",
       is_fda_regulated: "No ")
 
 
@@ -2970,7 +2970,7 @@ namespace :db do
       phase: "Phase 1 ",
       study_type: "Interventional ",
       study_design: "Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
-      keywords: "MEK Inhibitor Trametinib Rectal Cancers KRAS BRAF NRAS Mutant Fluorouracil ",
+      keywords: "Mutant Fluorouracil Rectal NRAS Trametinib MEK Cancers BRAF Inhibitor KRAS",
       is_fda_regulated: "Yes ")
 
 
