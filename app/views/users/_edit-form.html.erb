@@ -1,0 +1,75 @@
+<div class="form-horizontal">
+    <%= form_for(@user) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <fieldset>
+      <legend>Update your profile</legend>
+
+	  <div class="control-group">
+      	<%= f.label :name, class: 'control-label'  %>
+        <div class="controls">
+     		 <%= f.text_field :name %>
+  		</div>
+	  </div>
+
+	  <div class="control-group">
+      	<%= f.label :email, class: 'control-label' %>
+        <div class="controls">
+      		<%= f.text_field :email %>
+  		</div>
+	  </div>
+
+	 <div class="control-group">
+      	<%= f.label :password, class: 'control-label' %>
+        <div class="controls">
+        	<%= f.password_field :password %>
+  		</div>
+	  </div>
+
+	 <div class="control-group">
+      	<%= f.label :password_confirmation, "Confirm Password", class: 'control-label' %>
+        <div class="controls">
+        	<%= f.password_field :password_confirmation %>
+  		</div>
+	  </div>
+
+	 <div class="control-group">
+      	<%= f.label :age, class: 'control-label' %>
+        <div class="controls">
+        	<%= f.text_field :age %>
+  		</div>
+	  </div>
+
+	 <div class="control-group">
+      	<%= f.label :location, class: 'control-label' %>
+        <div class="controls">
+        	<%= f.text_field :location %>
+  		</div>
+	  </div>
+
+	 <div class="control-group">
+      	<%= f.label :diagnosis, class: 'control-label' %>
+        <div class="controls">
+        	<%= f.text_field :diagnosis %>
+  		</div>
+	  </div>
+
+      <div class="control-group">
+        <%= f.label :current_trial, class: 'control-label' %> 
+        <div class="controls">
+          <%= f.text_field :current_trial %>
+  		</div>
+	  </div
+
+	  <div class="control-group">
+      	<%= f.label :completed_trials, class: 'control-label'  %>
+        <div class="controls">
+      		<%= f.text_field :completed_trials %>
+  		</div>
+	  </div>
+
+
+      <%= f.submit "Save changes", class: "btn btn-large btn-primary pull-right" %>
+    </fieldset>
+
+    <% end %>
+    <div>

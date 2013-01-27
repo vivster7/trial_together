@@ -1,2 +1,10 @@
 <% provide(:title,"| #{@user.name}") %>
-<h1><%= @user.name %></h1>
+
+<div class="container-fluid">
+  <div class="row-fluid">
+  	<%= render 'users/sidebar' %>
+    <div class="span8 hero-unit">
+      <h1> Activity </h1>
+    </div>
+  </div>
+</div>

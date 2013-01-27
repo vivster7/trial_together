@@ -1,0 +1,50 @@
+<% if params[:action] == "edit" || !current_user?(@user) %>
+    <aside class="span4">
+    	<div id="profilepicture">
+    		<%= gravatar_for @user %>
+    	</div>
+	  <h1>
+		<%= @user.name %>
+	  </h1>
+	  <div class="profileAttribute">
+	  	Age: <%= @user.age %>
+	  </div>
+	  <div class="profileAttribute">
+	  	Location: <%= @user.location %>
+	  </div>
+	  <div class="profileAttribute">
+	  	Diagnosis: <%= @user.diagnosis %>
+	  </div>
+	  <div class="profileAttribute">
+	  	Current Trial: <%= @user.current_trial %>
+	  </div>
+	  <div class="profileAttribute">
+	  	Completed Trials: <%= @user.completed_trials %>
+	  </div>
+    </aside>
+<% else %>
+    <aside class="span4">
+    	<div id="profilepicture">
+    		<%= gravatar_for @user %>
+    	</div>
+	    <h1> 
+			<%= link_to @user.name, edit_user_path(@user) %>
+	    </h1>
+
+	  <div class="profileAttribute">
+	  	<%= link_to "Age: ", edit_user_path(@user) %><%= @user.age %>
+	  </div>
+	  <div class="profileAttribute">
+	  	<%= link_to "Location: ", edit_user_path(@user) %><%= @user.location %>
+	  </div>
+	  <div class="profileAttribute">
+	  	<%= link_to "Diagnosis: ", edit_user_path(@user) %><%= @user.diagnosis %>
+	  </div>
+	  <div class="profileAttribute">
+	  	<%= link_to "Current Trial: ", edit_user_path(@user) %><%= @user.current_trial %>
+	  </div>
+	  <div class="profileAttribute">
+	  	<%= link_to "Completed Trials: ", edit_user_path(@user) %><%= @user.completed_trials %>
+	  </div>
+    </aside>
+<% end %>

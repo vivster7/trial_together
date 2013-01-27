@@ -4,7 +4,10 @@ describe User do
 
   before do
     @user = User.new(name: "Example User", email: "user@example.com", 
-                   password: "foobar", password_confirmation: "foobar")
+                   password: "foobar", password_confirmation: "foobar",
+                   age: 20, location: "Boston, MA", diagnosis: "Pancreatic Cancer", 
+                   current_trial: "Phase I Pancreatic Cancer Trial",
+                   completed_trials: "Phase II Drug M2432 Targeted Nano Charge")
   end
 
   subject { @user }
@@ -16,6 +19,13 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:age) }
+  it { should respond_to(:location) }
+  it { should respond_to(:diagnosis) }
+  it { should respond_to(:current_trial) }
+  it { should respond_to(:completed_trials) }
+
+
 
   it { should be_valid }
 
