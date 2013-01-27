@@ -1,6 +1,5 @@
 class Eligibility < ActiveRecord::Base
-  attr_accessible :criteria, :gender, :healthy, :max_age, :min_age
+  attr_accessible :gender, :healthy, :max_age, :min_age, :population
   
   belongs_to :trial
-  validates :criteria, presence: true
 end

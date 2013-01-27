@@ -11,16 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130126213010) do
+ActiveRecord::Schema.define(:version => 20130127040557) do
 
   create_table "eligibilities", :force => true do |t|
-    t.string   "criteria"
     t.string   "gender"
-    t.integer  "min_age"
-    t.integer  "max_age"
-    t.boolean  "healthy"
+    t.string   "min_age"
+    t.string   "max_age"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "population"
+    t.integer  "trial_id"
   end
 
   create_table "locations", :force => true do |t|
@@ -30,6 +30,11 @@ ActiveRecord::Schema.define(:version => 20130126213010) do
     t.string   "zip"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "contact"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "status"
+    t.integer  "trial_id"
   end
 
   create_table "primary_outcomes", :force => true do |t|
@@ -37,12 +42,14 @@ ActiveRecord::Schema.define(:version => 20130126213010) do
     t.text     "description"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.integer  "trial_id"
   end
 
   create_table "sponsors", :force => true do |t|
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "trial_id"
   end
 
   create_table "trials", :force => true do |t|

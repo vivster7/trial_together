@@ -31,6 +31,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
       keywords: "Advance Cancer Decision-Making IV Lung Enhanced Questionaires Stage III Care",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "University of Virginia")
+    trial.sponsors.create!(name: "National Institute of Nursing Research (NINR)")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Virginia- School of Nursing", city: "Charlottesville", state: "Virginia", zip: "22908", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -54,6 +61,11 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Platinum MLN341 Paraplatin Cancer Resistant Bortezomib Tube PS-341 Primary Carboplatin Ovarian Velcade Fallopian Peritoneal Taxane LDP-341",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "Millennium Pharmaceuticals, Inc.")
+    trial.locations.create!(facility: "University of Texas M. D. Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -83,6 +95,16 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "perfusion enhanced cancer dynamic magnetic neoplasms metastasis MRI neoplasm liver colorectal hepatic metastases resonance contrast imaging",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "American College of Radiology Imaging Network")
+    trial.sponsors.create!(name: "Pennsylvania Department of Health")
+    trial.locations.create!(facility: "Penn State University Hershey Medical Center", city: "Hershey", state: "Pennsylvania", zip: "17033", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hospital of the University of Pennsylvania", city: "Philadelphia", state: "Pennsylvania", zip: "19104", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Fox Chase Cancer Center", city: "Philadelphia", state: "Pennsylvania", zip: "19017", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Thomas Jefferson University Hospital", city: "Philadelphia", state: "Pennsylvania", zip: "19107", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Pittsburgh Medical Center", city: "Pittsburgh", state: "Pennsylvania", zip: "15213", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -106,6 +128,11 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "immunotherapy cancer ovarian Ovarian epithelial Immunotherapeutic tubal peritoneal vaccine",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Michael Morse, MD")
+    trial.sponsors.create!(name: "Immunotope")
+    trial.locations.create!(facility: "Duke Comprehensive Cancer Center", city: "Durham", state: "North Carolina", zip: "27710", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -135,6 +162,15 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "tumor cancer IL-12 IV cell fusion dendritic stage vaccine breast",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Beth Israel Deaconess Medical Center")
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Brigham and Women's Hospital")
+    trial.sponsors.create!(name: "Harvard University")
+    trial.sponsors.create!(name: "Department of Defense")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Beth Israel Deaconess Medical Center", city: "Boston", state: "Massachusetts", zip: "02215", status: "Recruiting", phone: "617-667-9920", email: "davigan@bidmc.harvard.edu")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -165,6 +201,14 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "neoplasms",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Woman's Cancer Foundation")
+    trial.locations.create!(facility: "Hospital de Cancer de Barretos", city: "Sao Paolo", state: "", zip: "", status: "Not yet recruiting", phone: "(17) 3321-6600", email: "ecmauad@hcancerbarretos.com.br")
+    trial.locations.create!(facility: "Sihanouk Hospital Center of Hope, Hope Worldwide Cambodia", city: "Phnom Penh", state: "", zip: "", status: "Not yet recruiting", phone: "(855-23) 882-484", email: "corneliahaener@sihosp.org")
+    trial.locations.create!(facility: "Manipal Healthcare Group", city: "Goa", state: "", zip: "", status: "Not yet recruiting", phone: "", email: "rgwpinto@gmail.com")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "30 Years", max_age: "64 Years")
+    trial.primary_outcomes.create!(measure: "The Effectiveness of an Innovative, Low-Cost Screening and Diagnostic Methodology", description: "This study will examine the effectiveness of an innovative, low-cost screening and diagnostic methodology used for combined early detection of breast and gynecological cancers in low resource regions where early cancer detection strategies are not in place and cancers currently are diagnosed at advanced stages with resultant high mortality.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -193,6 +237,47 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube recurrent ovarian primary fallopian epithelial peritoneal",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Gynecologic Oncology Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Providence Saint Joseph Medical Center - Burbank", city: "Burbank", state: "California", zip: "91505", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Jonsson Comprehensive Cancer Center at UCLA", city: "Los Angeles", state: "California", zip: "90095-1781", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "George Bray Cancer Center at the Hospital of Central Connecticut - New Britain Campus", city: "New Britain", state: "Connecticut", zip: "06050", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Tunnell Cancer Center at Beebe Medical Center", city: "Lewes", state: "Delaware", zip: "19958", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Christiana Care Health Services", city: "Newark", state: "Delaware", zip: "19713", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Curtis and Elizabeth Anderson Cancer Institute at Memorial Health University Medical Center", city: "Savannah", state: "Georgia", zip: "31403-3089", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Rush University Medical Center", city: "Chicago", state: "Illinois", zip: "60612", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hinsdale Hematology Oncology Associates", city: "Hinsdale", state: "Illinois", zip: "60521", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Vincent Indianapolis Hospital", city: "Indianapolis", state: "Indiana", zip: "46260", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Union Hospital Cancer Program at Union Hospital", city: "Elkton MD", state: "Maryland", zip: "21921", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UMASS Memorial Cancer Center - University Campus", city: "Worcester", state: "Massachusetts", zip: "01655", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Siteman Cancer Center at Barnes-Jewish Hospital - Saint Louis", city: "Saint Louis", state: "Missouri", zip: "63110", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hulston Cancer Center at Cox Medical Center South", city: "Springfield", state: "Missouri", zip: "65807", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. John's Regional Health Center", city: "Springfield", state: "Missouri", zip: "65804", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cancer Institute of New Jersey at Cooper - Voorhees", city: "Voorhees", state: "New Jersey", zip: "08043", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of New Mexico Cancer Center", city: "Albuquerque", state: "New Mexico", zip: "87131-5636", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Alamance Cancer Center at Alamance Regional Medical Center", city: "Burlington", state: "North Carolina", zip: "27216", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Blumenthal Cancer Center at Carolinas Medical Center", city: "Charlotte", state: "North Carolina", zip: "28232-2861", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Wake Forest University Comprehensive Cancer Center", city: "Winston-Salem", state: "North Carolina", zip: "27157-1096", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cleveland Clinic Cancer Center at Fairview Hospital", city: "Cleveland", state: "Ohio", zip: "44111", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cleveland Clinic Taussig Cancer Center", city: "Cleveland", state: "Ohio", zip: "44195", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "MetroHealth Cancer Care Center at MetroHealth Medical Center", city: "Cleveland", state: "Ohio", zip: "44109", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Arthur G. James Cancer Hospital and Solove Research Institute at Ohio State University Medical Center", city: "Columbus", state: "Ohio", zip: "43210-1240", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Riverside Methodist Hospital Cancer Care", city: "Columbus", state: "Ohio", zip: "43214-3998", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mount Carmel Health - West Hospital", city: "Columbus", state: "Ohio", zip: "43222", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "David L. Rike Cancer Center at Miami Valley Hospital", city: "Dayton", state: "Ohio", zip: "45409", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hillcrest Cancer Center at Hillcrest Hospital", city: "Mayfield Heights", state: "Ohio", zip: "44124", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lake/University Ireland Cancer Center", city: "Mentor", state: "Ohio", zip: "44060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Oklahoma University Cancer Institute", city: "Oklahoma City", state: "Oklahoma", zip: "73104", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Rosenfeld Cancer Center at Abington Memorial Hospital", city: "Abington", state: "Pennsylvania", zip: "19001", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Abramson Cancer Center of the University of Pennsylvania", city: "Philadelphia", state: "Pennsylvania", zip: "19104-4283", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UPMC Cancer Center at Magee-Womens Hospital", city: "Pittsburgh", state: "Pennsylvania", zip: "15213", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Women and Infants Hospital of Rhode Island", city: "Providence", state: "Rhode Island", zip: "02905", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Huntsman Cancer Institute at University of Utah", city: "Salt Lake City", state: "Utah", zip: "84112", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carilion Gynecologic Oncology Associates", city: "Roanoke", state: "Virginia", zip: "24014", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Paul P. Carbone Comprehensive Cancer Center", city: "Madison", state: "Wisconsin", zip: "53792-6164", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -224,6 +309,11 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "protocol cancer rectal solid recurrent unspecified IV specific colon adult stage III tumor,",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -247,6 +337,13 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "Life Survivorship 09-133 Questionnaire Quality",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "Queens Cancer Center of Queens Hospital")
+    trial.locations.create!(facility: "Queens Cancer Center of Queens Hospital", city: "Jamaica", state: "New York", zip: "11432", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -271,6 +368,17 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: " Head Neck Cancer EGFR Gastric Cell Lung Breast HDAC Her2 Non-Small CUDC-101 Liver",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Curis, Inc.")
+    trial.locations.create!(facility: "San Diego Pacific Oncology and Hematology Associates", city: "Encinitas", state: "California", zip: "92024", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "The Angeles Clinic and Research Institute", city: "Los Angeles", state: "California", zip: "90025", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mountain Blue Global Cancer Care", city: "Wheat Ridge", state: "Colorado", zip: "80033", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of New Mexico Cancer Center", city: "Albuquerque", state: "New Mexico", zip: "87106", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Roswell Park Cancer Institute", city: "Buffalo", state: "New York", zip: "14263", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mary Crowley Cancer Research Centers", city: "Dallas", state: "Texas", zip: "75230", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "To compare the safety and tolerability of CUDC-101 in subjects with advanced solid tumors (breast, gastric, head and neck, liver, and non-small cell lung cancer) when administered at the MTD on either a 5 days/week schedule or 3 days/week schedule.", description: "Safety and tolerability will be assessed in the two treatment arms and the incidence of adverse events, dose reductions, and patient compliance will be compared.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -292,6 +400,14 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "NY-ESO-1 DNA",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Ludwig Institute for Cancer Research")
+    trial.sponsors.create!(name: "New York Presbyterian Hospital")
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.locations.create!(facility: "New York Presbyterian Hospital", city: "New York", state: "New York", zip: "10021", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -316,6 +432,17 @@ namespace :db do
       study_design: "Time Perspective:  Prospective ",
       keywords: "pancreatic cancer I recurrent II adenocarcinoma the stage III pancreas",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Nebraska")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "UNMC Eppley Cancer Center at the University of Nebraska Medical Center", city: "Omaha", state: "Nebraska", zip: "68198-6805", status: "Recruiting", phone: "800-999-5465", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "19 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Development of integrated Biomedical Computing Tools", description: "Ongoing Registry")
+    trial.primary_outcomes.create!(measure: "Development of the Pancreatic Cancer Collaborative Registry (PCCR) infrastructure as a repository for socio-demographic, environmental, clinical, and family history data", description: "Ongoing registry.")
+    trial.primary_outcomes.create!(measure: "Participation in the international pancreatic registry known as the PCCR by sharing information", description: "Ongoing registry.")
+    trial.primary_outcomes.create!(measure: "Collection and banking of excess biological materials (i.e., pancreatic tissue, tumor tissue ,and/or metastatic pancreatic cancer tissue, and/or paraffin-embedded tissue), blood, and serum", description: "Ongoing registry.")
+    trial.primary_outcomes.create!(measure: "Establishment of an infrastructure with core data elements and standardized operating procedures for specimen collection, processing, and storage", description: "Ongoing registry.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -340,6 +467,16 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer epithelial sarcoma papillary stromal recurrent ovarian germ cell serous mutation IIIA IIIC IIIB BRCA1 BRCA2 IV carcinoma breast stage tumor carrier",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Cancer Research UK")
+    trial.locations.create!(facility: "Queen Elizabeth Hospital at University Hospital of Birmingham NHS Trust", city: "Birmingham", state: "England", zip: "B15 2TT", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Leeds Cancer Centre at St. James's University Hospital", city: "Leeds", state: "England", zip: "LS9 7TF", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Cancer Research UK and University College London Cancer Trials Centre", city: "London", state: "England", zip: "W1T 4TJ", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Christie Hospital", city: "Manchester", state: "England", zip: "M20 4BX", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Sir Bobby Robson Cancer Trials Research Centre, Northern Centre for Cancer Care, Level 2, Freeman Hospital", city: "Newcastle-Upon-Tyne", state: "England", zip: "NE4 6BE", status: "Recruiting", phone: "44-191-213-8444", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Derriford Hospital", city: "Plymouth", state: "England", zip: "PL6 8DH", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.locations.create!(facility: "Beatson West of Scotland Cancer Centre", city: "Glasgow", state: "Scotland", zip: "G12 0YN", status: "Recruiting", phone: "", email: "ruth.plummer@newcastle.ac.uk")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -367,6 +504,17 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "GM-CSF cells vaccines fusion dendritic imiquimod",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Beth Israel Deaconess Medical Center")
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Brigham and Women's Hospital")
+    trial.sponsors.create!(name: "Massachusetts General Hospital")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Beth Israel Deaconess Medical Center", city: "Boston", state: "Massachusetts", zip: "02215", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Massachusetts General Hospital", city: "Boston", state: "Massachusetts", zip: "02114", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Brigham & Women's Hospital", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -391,6 +539,42 @@ namespace :db do
       study_design: "N/A ",
       keywords: " limited cancer colon pulmonary psychosocial cognitive/functional recurrent carcinoid cell IIA treatment IIB IIIA extensive IIIB III pain I IV II effects prostate IIIC stage non-small rectal tumor small lung male breast",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Eastern Cooperative Oncology Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "John H. Stroger, Jr. Hospital of Cook County", city: "Chicago", state: "Illinois", zip: "60612-3785", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Robert H. Lurie Comprehensive Cancer Center at Northwestern University", city: "Chicago", state: "Illinois", zip: "60611-3013", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Evanston Hospital", city: "Evanston", state: "Illinois", zip: "60201-1781", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Elkhart General Hospital", city: "Elkhart", state: "Indiana", zip: "46515", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Howard Community Hospital", city: "Kokomo", state: "Indiana", zip: "46904", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Center for Cancer Therapy at LaPorte Hospital and Health Services", city: "La Porte", state: "Indiana", zip: "46350", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "South Bend Clinic", city: "South Bend", state: "Indiana", zip: "46617", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Northern Indiana CR Consortium", city: "South Bend", state: "Indiana", zip: "46601", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Joseph Regional Medical Center", city: "South Bend", state: "Indiana", zip: "46617", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Memorial Hospital of South Bend", city: "South Bend", state: "Indiana", zip: "46601", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "McFarland Clinic, PC", city: "Ames", state: "Iowa", zip: "50010", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy Cancer Center at Mercy Medical Center - North Iowa", city: "Mason City", state: "Iowa", zip: "50401", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy Medical Center - Sioux City", city: "Sioux City", state: "Iowa", zip: "51104", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Siouxland Hematology-Oncology Associates, LLP", city: "Sioux City", state: "Iowa", zip: "51101", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Luke's Regional Medical Center", city: "Sioux City", state: "Iowa", zip: "51104", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Joseph Mercy Cancer Center", city: "Ann Arbor", state: "Michigan", zip: "48106-0995", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Michigan Cancer Research Consortium", city: "Ann Arbor", state: "Michigan", zip: "48106", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Oakwood Cancer Center at Oakwood Hospital and Medical Center", city: "Dearborn", state: "Michigan", zip: "48123-2500", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Genesys Hurley Cancer Institute", city: "Flint", state: "Michigan", zip: "48503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hurley Medical Center", city: "Flint", state: "Michigan", zip: "48503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Van Elslander Cancer Center at St. John Hospital and Medical Center", city: "Grosse Pointe Woods", state: "Michigan", zip: "48236", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Foote Memorial Hospital", city: "Jackson", state: "Michigan", zip: "49201", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sparrow Regional Cancer Center", city: "Lansing", state: "Michigan", zip: "48912-1811", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Mary Mercy Hospital", city: "Livonia", state: "Michigan", zip: "48154", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Joseph Mercy Oakland", city: "Pontiac", state: "Michigan", zip: "48341-2985", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy Regional Cancer Center at Mercy Hospital", city: "Port Huron", state: "Michigan", zip: "48060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Seton Cancer Institute at Saint Mary's - Saginaw", city: "Saginaw", state: "Michigan", zip: "48601", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lakeland Regional Cancer Care Center - St. Joseph", city: "St. Joseph", state: "Michigan", zip: "49085", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. John Macomb Hospital", city: "Warren", state: "Michigan", zip: "48093", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Avera Cancer Institute", city: "Sioux Falls", state: "South Dakota", zip: "57105", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Medical X-Ray Center, PC", city: "Sioux Falls", state: "South Dakota", zip: "57105", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sanford Cancer Center at Sanford USD Medical Center", city: "Sioux Falls", state: "South Dakota", zip: "57117-5039", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -413,6 +597,12 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "adenoviral GM-CSF cancer vaccination transfer IV mediated breast gene autologous Stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Brigham and Women's Hospital")
+    trial.locations.create!(facility: "Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Brigham and Women's Hospital", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -434,6 +624,17 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer solid tube Ovarian Primary tumor Fallopian peritoneal advanced",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Kyowa Hakko Kirin Pharma, Inc.")
+    trial.locations.create!(facility: "Arizona Cancer Center", city: "Tucson", state: "Arizona", zip: "85724", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "USC Norris Comprehensive Cancer Center", city: "Los Angeles", state: "California", zip: "90033", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cedar Sinai-Samuel Oschin Comprehensive Cancer Institute", city: "Los Angeles", state: "California", zip: "90048", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Massachusetts General Hospital", city: "Boston", state: "Massachusetts", zip: "02114", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Dana Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02215", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Oncology Consultants", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cancer Therapy and Research Center", city: "San Antonio", state: "Texas", zip: "78229", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Number of Participants with Adverse Events as a Measure of Safety and Tolerability", description: "The safety of KHK2866 will be determined by reported adverse events (AEs), changes in physical examinations, vital sign measurements, electrocardiograms (ECGs), clinical laboratory evaluations, and treatment discontinuation due to toxicity.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -459,6 +660,16 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.sponsors.create!(name: "Washington University Siteman Cancer Center")
+    trial.locations.create!(facility: "Washington University School of Medicine", city: "Saint Louis", state: "Missouri", zip: "63110", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Virginia", city: "Charlottesville", state: "Virginia", zip: "22908", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "MTD of irinotecan hydrochloride in combination with 7-hydroxystaurosporine in patients with resistant solid tumor malignancies (Part I)", description: "Defined as the highest dose given to at least 6 patients in which =< 1 out of 6 experience dose limiting toxicity (DLT).")
+    trial.primary_outcomes.create!(measure: "Toxicities associated with irinotecan hydrochloride in combination with 7-hydroxystaurosporine in patients with resistant solid tumor malignancies (Part I)", description: "Graded using the Cancer Therapy Evaluation Program (CTEP) Active Version of the National Cancer Institute (NCI) Common Terminology Criteria for Adverse Events (CTCAE).")
+    trial.primary_outcomes.create!(measure: "Anti-tumor activity of 7-hydroxystaurosporine in combination with irinotecan hydrochloride in ER-negative, PgR-negative, HER-2 not-amplified (triple negative) recurrent breast cancer (Part II)", description: "Including overall response rate (partial response [PR] +complete response [CR]), clinical benefit rate (PR+CR+stable disease [SD]), and time to disease progression. 95% confidence interval will be calculated. Evaluated by the Response Evaluation Criteria in Solid Tumors (RECIST) criteria.")
+    trial.primary_outcomes.create!(measure: "Side effect profile of 7-hydroxystaurosporine in combination with irinotecan hydrochloride in triple negative recurrent breast cancer (Part II)", description: "95 % confidence interval will be calculated.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -480,6 +691,16 @@ namespace :db do
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label ",
       keywords: "tumor storage harvest collection",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Beth Israel Deaconess Medical Center")
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Massachusetts General Hospital")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Beth Israel Deaconess Medical Center", city: "Boston", state: "Massachusetts", zip: "02215", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Massachusetts General Hospital", city: "Boston", state: "Massachusetts", zip: "02114", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Brigham & Women's Hospital", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -505,6 +726,16 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
       keywords: "Endometrial Cancer cancer Ovarian Endometrium Uteri Corpus",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.sponsors.create!(name: "Cancer Institute of New Jersey")
+    trial.sponsors.create!(name: "Municipal Institute of Medical Research")
+    trial.sponsors.create!(name: "Department of Health and Human Services")
+    trial.sponsors.create!(name: "Penn State University")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "21 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -534,6 +765,19 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cediranib olaparib",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Massachusetts General Hospital")
+    trial.sponsors.create!(name: "Beth Israel Deaconess Medical Center")
+    trial.sponsors.create!(name: "University of Chicago")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "University of Chicago Medical Center", city: "Chicago", state: "Illinois", zip: "60637", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Fort Wayne Oncology/Hematology", city: "Fort Wayne", state: "Indiana", zip: "46845", status: "Active, not recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "National Cancer Institute", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "301-443-6431", email: "houstonnd@mail.nih.gov")
+    trial.locations.create!(facility: "Beth Israel Deaconess Medical Center", city: "Boston", state: "Massachusetts", zip: "02115", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Massachusetts General Hospital", city: "Boston", state: "Massachusetts", zip: "02114", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "Recruiting", phone: "", email: "christin_whalen@dfci.harvard.edu")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -558,6 +802,16 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
       keywords: " psychosocial cognitive/functional cancer colon effects breast treatment",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UH-LUICC", city: "Mentor", state: "Ohio", zip: "44060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Chagrin Highlands", city: "Orange Village", state: "Ohio", zip: "44122", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Green Road", city: "South Euclid", state: "Ohio", zip: "44121", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Westlake", city: "Westlake", state: "Ohio", zip: "44145", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "65 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -590,6 +844,16 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "overexpressing cancer IV breast HER-2/neu Stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Sidney Kimmel Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "American Cancer Society, Inc.")
+    trial.sponsors.create!(name: "Avon Foundation")
+    trial.sponsors.create!(name: "Cancer Treatment Research Foundation")
+    trial.sponsors.create!(name: "The Commonwealth Fund")
+    trial.sponsors.create!(name: "Department of Defense")
+    trial.sponsors.create!(name: "Genentech")
+    trial.locations.create!(facility: "The Sidney Kimmel Comprehensive Cancer Center at Johns Hopkins", city: "Baltimore", state: "Maryland", zip: "21231", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -616,6 +880,10 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Body Cognitive Cancer Symptoms Breast Social Adherence Composition Exercise Theory",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Southern Illinois University")
+    trial.locations.create!(facility: "Southern Illinois University School of Medicine", city: "Springfield", state: "Illinois", zip: "62702", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "70 Years")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -644,6 +912,238 @@ namespace :db do
       study_design: "Allocation:  Randomized, Primary Purpose:  Treatment ",
       keywords: "cancer recurrent IV cell squamous carcinoma esophageal adenocarcinoma the esophagus stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Cancer and Leukemia Group B")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.sponsors.create!(name: "Eastern Cooperative Oncology Group")
+    trial.locations.create!(facility: "Norwalk Hospital", city: "Norwalk", state: "Connecticut", zip: "06856", status: "Recruiting", phone: "203-845-2132", email: "")
+    trial.locations.create!(facility: "Tunnell Cancer Center at Beebe Medical Center", city: "Lewes", state: "Delaware", zip: "19958", status: "Recruiting", phone: "302-645-3171", email: "")
+    trial.locations.create!(facility: "CCOP - Christiana Care Health Services", city: "Newark", state: "Delaware", zip: "19713", status: "Recruiting", phone: "302-623-4450", email: "")
+    trial.locations.create!(facility: "Lombardi Comprehensive Cancer Center at Georgetown University Medical Center", city: "Washington", state: "District of Columbia", zip: "20007", status: "Recruiting", phone: "202-444-0381", email: "")
+    trial.locations.create!(facility: "Rush-Copley Cancer Care Center", city: "Aurora", state: "Illinois", zip: "60504", status: "Recruiting", phone: "217-383-3019", email: "")
+    trial.locations.create!(facility: "St. Joseph Medical Center", city: "Bloomington", state: "Illinois", zip: "61701", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Graham Hospital", city: "Canton", state: "Illinois", zip: "61520", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Memorial Hospital", city: "Carthage", state: "Illinois", zip: "62321", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "University of Chicago Cancer Research Center", city: "Chicago", state: "Illinois", zip: "60637-1470", status: "Recruiting", phone: "773-834-7424", email: "")
+    trial.locations.create!(facility: "Decatur Memorial Hospital Cancer Care Institute", city: "Decatur", state: "Illinois", zip: "62526", status: "Recruiting", phone: "217-876-4750", email: "")
+    trial.locations.create!(facility: "Eureka Community Hospital", city: "Eureka", state: "Illinois", zip: "61530", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Evanston Hospital", city: "Evanston", state: "Illinois", zip: "60201-1781", status: "Recruiting", phone: "847-570-1381", email: "")
+    trial.locations.create!(facility: "Galesburg Cottage Hospital", city: "Galesburg", state: "Illinois", zip: "61401", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Galesburg Clinic, PC", city: "Galesburg", state: "Illinois", zip: "61401", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Ingalls Cancer Care Center at Ingalls Memorial Hospital", city: "Harvey", state: "Illinois", zip: "60426", status: "Recruiting", phone: "708-915-4673", email: "")
+    trial.locations.create!(facility: "Mason District Hospital", city: "Havana", state: "Illinois", zip: "62644", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Hopedale Medical Complex", city: "Hopedale", state: "Illinois", zip: "61747", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Joliet Oncology-Hematology Associates, Limited - West", city: "Joliet", state: "Illinois", zip: "60435", status: "Recruiting", phone: "217-383-3019", email: "")
+    trial.locations.create!(facility: "McDonough District Hospital", city: "Macomb", state: "Illinois", zip: "61455", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "BroMenn Regional Medical Center", city: "Normal", state: "Illinois", zip: "61761", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Community Cancer Center", city: "Normal", state: "Illinois", zip: "61761", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Oncology Hematology Associates of Central Illinois, PC - Ottawa", city: "Ottawa", state: "Illinois", zip: "61350", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Community Hospital of Ottawa", city: "Ottawa", state: "Illinois", zip: "61350", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Cancer Treatment Center at Pekin Hospital", city: "Pekin", state: "Illinois", zip: "61554", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Methodist Medical Center of Illinois", city: "Peoria", state: "Illinois", zip: "61636", status: "Recruiting", phone: "309-243-3000", email: "")
+    trial.locations.create!(facility: "OSF St. Francis Medical Center", city: "Peoria", state: "Illinois", zip: "61637", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Oncology Hematology Associates of Central Illinois, PC - Peoria", city: "Peoria", state: "Illinois", zip: "61615", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Proctor Hospital", city: "Peoria", state: "Illinois", zip: "61614", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "CCOP - Illinois Oncology Research Association", city: "Peoria", state: "Illinois", zip: "61615", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Illinois Valley Community Hospital", city: "Peru", state: "Illinois", zip: "61354", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Perry Memorial Hospital", city: "Princeton", state: "Illinois", zip: "61356", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Swedish-American Regional Cancer Center", city: "Rockford", state: "Illinois", zip: "61104-2315", status: "Recruiting", phone: "815-489-4413", email: "")
+    trial.locations.create!(facility: "St. Margaret's Hospital", city: "Spring Valley", state: "Illinois", zip: "61362", status: "Recruiting", phone: "309-243-3605", email: "")
+    trial.locations.create!(facility: "Regional Cancer Center at Memorial Medical Center", city: "Springfield", state: "Illinois", zip: "62781-0001", status: "Recruiting", phone: "217-788-4233", email: "")
+    trial.locations.create!(facility: "Carle Cancer Center at Carle Foundation Hospital", city: "Urbana", state: "Illinois", zip: "61801", status: "Recruiting", phone: "800-446-5532", email: "")
+    trial.locations.create!(facility: "CCOP - Carle Cancer Center", city: "Urbana", state: "Illinois", zip: "61801", status: "Recruiting", phone: "800-446-5532", email: "")
+    trial.locations.create!(facility: "Elkhart General Hospital", city: "Elkhart", state: "Indiana", zip: "46515", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "Fort Wayne Medical Oncology and Hematology", city: "Fort Wayne", state: "Indiana", zip: "46845", status: "Recruiting", phone: "260-484-8830", email: "")
+    trial.locations.create!(facility: "William N. Wishard Memorial Hospital", city: "Indianapolis", state: "Indiana", zip: "46202", status: "Recruiting", phone: "317-278-7418", email: "")
+    trial.locations.create!(facility: "Indiana University Melvin and Bren Simon Cancer Center", city: "Indianapolis", state: "Indiana", zip: "46202-5289", status: "Recruiting", phone: "317-274-2552", email: "")
+    trial.locations.create!(facility: "Howard Community Hospital", city: "Kokomo", state: "Indiana", zip: "46904", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "Center for Cancer Therapy at LaPorte Hospital and Health Services", city: "La Porte", state: "Indiana", zip: "46350", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "Saint Anthony Memorial Health Centers", city: "Michigan City", state: "Indiana", zip: "46360", status: "Recruiting", phone: "217-383-3019", email: "")
+    trial.locations.create!(facility: "Memorial Hospital of South Bend", city: "South Bend", state: "Indiana", zip: "46601", status: "Recruiting", phone: "800-284-7370", email: "")
+    trial.locations.create!(facility: "Saint Joseph Regional Medical Center", city: "South Bend", state: "Indiana", zip: "46617", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "South Bend Clinic", city: "South Bend", state: "Indiana", zip: "46617", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "CCOP - Northern Indiana CR Consortium", city: "South Bend", state: "Indiana", zip: "46601", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "McFarland Clinic, PC", city: "Ames", state: "Iowa", zip: "50010", status: "Recruiting", phone: "515-239-2621", email: "")
+    trial.locations.create!(facility: "Hematology Oncology Associates of the Quad Cities", city: "Bettendorf", state: "Iowa", zip: "52722", status: "Recruiting", phone: "563-355-7733", email: "")
+    trial.locations.create!(facility: "Cedar Rapids Oncology Associates", city: "Cedar Rapids", state: "Iowa", zip: "52403", status: "Recruiting", phone: "319-363-2690", email: "")
+    trial.locations.create!(facility: "Mercy Regional Cancer Center at Mercy Medical Center", city: "Cedar Rapids", state: "Iowa", zip: "52403", status: "Recruiting", phone: "319-363-8303", email: "")
+    trial.locations.create!(facility: "John Stoddard Cancer Center at Iowa Lutheran Hospital", city: "Des Moines", state: "Iowa", zip: "50316", status: "Recruiting", phone: "515-241-8704", email: "")
+    trial.locations.create!(facility: "John Stoddard Cancer Center at Iowa Methodist Medical Center", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-241-6727", email: "")
+    trial.locations.create!(facility: "Medical Oncology and Hematology Associates at Mercy Cancer Center", city: "Des Moines", state: "Iowa", zip: "50314", status: "Recruiting", phone: "515-643-8740", email: "")
+    trial.locations.create!(facility: "CCOP - Iowa Oncology Research Association", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-244-7586", email: "")
+    trial.locations.create!(facility: "Medical Oncology and Hematology Associates at John Stoddard Cancer Center", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-282-2921", email: "")
+    trial.locations.create!(facility: "Mercy Cancer Center at Mercy Medical Center - Des Moines", city: "Des Moines", state: "Iowa", zip: "50314", status: "Recruiting", phone: "515-643-8206", email: "")
+    trial.locations.create!(facility: "Mercy Capitol Hospital", city: "Des Moines", state: "Iowa", zip: "50307", status: "Recruiting", phone: "515-643-1000", email: "")
+    trial.locations.create!(facility: "Holden Comprehensive Cancer Center at University of Iowa", city: "Iowa City", state: "Iowa", zip: "52242-1002", status: "Recruiting", phone: "800-237-1225", email: "")
+    trial.locations.create!(facility: "Mercy Cancer Center at Mercy Medical Center - North Iowa", city: "Mason City", state: "Iowa", zip: "50401", status: "Recruiting", phone: "641-422-6304", email: "")
+    trial.locations.create!(facility: "McCreery Cancer Center at Ottumwa Regional", city: "Ottumwa", state: "Iowa", zip: "52501", status: "Recruiting", phone: "641-684-2946", email: "")
+    trial.locations.create!(facility: "Mercy Medical Center - Sioux City", city: "Sioux City", state: "Iowa", zip: "51104", status: "Recruiting", phone: "712-252-0088", email: "")
+    trial.locations.create!(facility: "Siouxland Hematology-Oncology Associates, LLP", city: "Sioux City", state: "Iowa", zip: "51101", status: "Recruiting", phone: "712-252-0088", email: "")
+    trial.locations.create!(facility: "St. Luke's Regional Medical Center", city: "Sioux City", state: "Iowa", zip: "51104", status: "Recruiting", phone: "712-252-0088", email: "")
+    trial.locations.create!(facility: "Medical Oncology and Hematology Associates - West Des Moines", city: "West Des Moines", state: "Iowa", zip: "50266", status: "Recruiting", phone: "515-875-9713", email: "")
+    trial.locations.create!(facility: "Hospital District Sixth of Harper County", city: "Anthony", state: "Kansas", zip: "67003", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Chanute", city: "Chanute", state: "Kansas", zip: "66720", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Dodge City", city: "Dodge City", state: "Kansas", zip: "67801", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - El Dorado", city: "El Dorado", state: "Kansas", zip: "67042", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas - Fort Scott", city: "Fort Scott", state: "Kansas", zip: "66701", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas-Independence", city: "Independence", state: "Kansas", zip: "67301", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Kingman", city: "Kingman", state: "Kansas", zip: "67068", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Lawrence Memorial Hospital", city: "Lawrence", state: "Kansas", zip: "66044", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Southwest Medical Center", city: "Liberal", state: "Kansas", zip: "67901", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Newton", city: "Newton", state: "Kansas", zip: "67114", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Menorah Medical Center", city: "Overland Park", state: "Kansas", zip: "66209", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Parsons", city: "Parsons", state: "Kansas", zip: "67357", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Pratt", city: "Pratt", state: "Kansas", zip: "67124", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Salina", city: "Salina", state: "Kansas", zip: "67042", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Shawnee Mission Medical Center", city: "Shawnee Mission", state: "Kansas", zip: "66204", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Wellington", city: "Wellington", state: "Kansas", zip: "67152", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "CCOP - Wichita", city: "Wichita", state: "Kansas", zip: "67214", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Medical Arts Tower", city: "Wichita", state: "Kansas", zip: "67208", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Wichita", city: "Wichita", state: "Kansas", zip: "67214", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Associates in Womens Health, PA - North Review", city: "Wichita", state: "Kansas", zip: "67208", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Via Christi Cancer Center at Via Christi Regional Medical Center", city: "Wichita", state: "Kansas", zip: "67214", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "Cancer Center of Kansas, PA - Winfield", city: "Winfield", state: "Kansas", zip: "67156", status: "Recruiting", phone: "316-262-4467", email: "")
+    trial.locations.create!(facility: "CancerCare of Maine at Eastern Maine Medical Center", city: "Bangor", state: "Maine", zip: "04401", status: "Recruiting", phone: "207-973-4274", email: "")
+    trial.locations.create!(facility: "Harry and Jeanette Weinberg Cancer Institute at Franklin Square Hospital Center", city: "Baltimore", state: "Maryland", zip: "21237", status: "Recruiting", phone: "443-777-7364", email: "")
+    trial.locations.create!(facility: "Shore Regional Cancer Center at Memorial Hospital - Easton", city: "Easton", state: "Maryland", zip: "21601", status: "Recruiting", phone: "410-819-3332", email: "")
+    trial.locations.create!(facility: "Union Hospital of Cecil County", city: "Elkton MD", state: "Maryland", zip: "21921", status: "Recruiting", phone: "302-366-1200", email: "")
+    trial.locations.create!(facility: "Massachusetts General Hospital", city: "Boston", state: "Massachusetts", zip: "02114", status: "Recruiting", phone: "877-726-5130", email: "")
+    trial.locations.create!(facility: "Dana-Farber/Brigham and Women's Cancer Center", city: "Boston", state: "Massachusetts", zip: "02115", status: "Recruiting", phone: "617-724-5200", email: "")
+    trial.locations.create!(facility: "Dana-Farber/Harvard Cancer Center at Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "Recruiting", phone: "617-632-3474", email: "")
+    trial.locations.create!(facility: "Lahey Clinic Medical Center - Burlington", city: "Burlington", state: "Massachusetts", zip: "01805", status: "Recruiting", phone: "781-744-8027", email: "")
+    trial.locations.create!(facility: "South Shore Hospital", city: "South Weymouth", state: "Massachusetts", zip: "02190", status: "Recruiting", phone: "781-340-8000", email: "")
+    trial.locations.create!(facility: "Baystate Regional Cancer Program at D'Amour Center for Cancer Care", city: "Springfield", state: "Massachusetts", zip: "01199", status: "Recruiting", phone: "413-794-3316", email: "")
+    trial.locations.create!(facility: "Saint Joseph Mercy Cancer Center", city: "Ann Arbor", state: "Michigan", zip: "48106-0995", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "CCOP - Michigan Cancer Research Consortium", city: "Ann Arbor", state: "Michigan", zip: "48106", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "Oakwood Cancer Center at Oakwood Hospital and Medical Center", city: "Dearborn", state: "Michigan", zip: "48123-2500", status: "Recruiting", phone: "313-593-8090", email: "")
+    trial.locations.create!(facility: "Green Bay Oncology, Limited - Escanaba", city: "Escanaba", state: "Michigan", zip: "49431", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Genesys Hurley Cancer Institute", city: "Flint", state: "Michigan", zip: "48503", status: "Recruiting", phone: "810-762-8057", email: "")
+    trial.locations.create!(facility: "Hurley Medical Center", city: "Flint", state: "Michigan", zip: "48503", status: "Recruiting", phone: "810-762-8057", email: "")
+    trial.locations.create!(facility: "Van Elslander Cancer Center at St. John Hospital and Medical Center", city: "Grosse Pointe Woods", state: "Michigan", zip: "48236", status: "Recruiting", phone: "313-343-3166", email: "")
+    trial.locations.create!(facility: "Dickinson County Healthcare System", city: "Iron Mountain", state: "Michigan", zip: "49801", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Foote Memorial Hospital", city: "Jackson", state: "Michigan", zip: "49201", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "West Michigan Cancer Center", city: "Kalamazoo", state: "Michigan", zip: "49007-3731", status: "Recruiting", phone: "269-373-7458", email: "")
+    trial.locations.create!(facility: "Bronson Methodist Hospital", city: "Kalamazoo", state: "Michigan", zip: "49007", status: "Recruiting", phone: "269-373-7458", email: "")
+    trial.locations.create!(facility: "Borgess Medical Center", city: "Kalamazoo", state: "Michigan", zip: "49001", status: "Recruiting", phone: "269-373-7458", email: "")
+    trial.locations.create!(facility: "Sparrow Regional Cancer Center", city: "Lansing", state: "Michigan", zip: "48912-1811", status: "Recruiting", phone: "517-364-2890", email: "")
+    trial.locations.create!(facility: "St. Mary Mercy Hospital", city: "Livonia", state: "Michigan", zip: "48154", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "St. Joseph Mercy Oakland", city: "Pontiac", state: "Michigan", zip: "48341-2985", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "Mercy Regional Cancer Center at Mercy Hospital", city: "Port Huron", state: "Michigan", zip: "48060", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "Seton Cancer Institute at Saint Mary's - Saginaw", city: "Saginaw", state: "Michigan", zip: "48601", status: "Recruiting", phone: "989-776-8411", email: "")
+    trial.locations.create!(facility: "Oncology Care Associates, PLLC", city: "Saint Joseph", state: "Michigan", zip: "49085", status: "Recruiting", phone: "269-985-0029", email: "")
+    trial.locations.create!(facility: "Lakeland Regional Cancer Care Center - St. Joseph", city: "St. Joseph", state: "Michigan", zip: "49085", status: "Recruiting", phone: "574-234-5123", email: "")
+    trial.locations.create!(facility: "St. John Macomb Hospital", city: "Warren", state: "Michigan", zip: "48093", status: "Recruiting", phone: "734-712-1000", email: "")
+    trial.locations.create!(facility: "Fairview Ridges Hospital", city: "Burnsville", state: "Minnesota", zip: "55337", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Mercy and Unity Cancer Center at Mercy Hospital", city: "Coon Rapids", state: "Minnesota", zip: "55433", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Duluth Clinic Cancer Center - Duluth", city: "Duluth", state: "Minnesota", zip: "55805-1983", status: "Recruiting", phone: "218-786-3308", email: "")
+    trial.locations.create!(facility: "CCOP - Duluth", city: "Duluth", state: "Minnesota", zip: "55805", status: "Recruiting", phone: "218-786-3625", email: "")
+    trial.locations.create!(facility: "Miller - Dwan Medical Center", city: "Duluth", state: "Minnesota", zip: "55805", status: "Recruiting", phone: "218-786-3625", email: "")
+    trial.locations.create!(facility: "Fairview Southdale Hospital", city: "Edina", state: "Minnesota", zip: "55435", status: "Recruiting", phone: "612-625-3650", email: "")
+    trial.locations.create!(facility: "Mercy and Unity Cancer Center at Unity Hospital", city: "Fridley", state: "Minnesota", zip: "55432", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Hutchinson Area Health Care", city: "Hutchinson", state: "Minnesota", zip: "55350", status: "Recruiting", phone: "320-234-5000", email: "")
+    trial.locations.create!(facility: "Meeker County Memorial Hospital", city: "Lichfield", state: "Minnesota", zip: "55355", status: "Recruiting", phone: "320-693-4520", email: "")
+    trial.locations.create!(facility: "HealthEast Cancer Care at St. John's Hospital", city: "Maplewood", state: "Minnesota", zip: "55109", status: "Recruiting", phone: "651-232-7970", email: "")
+    trial.locations.create!(facility: "Minnesota Oncology Hematology, PA - Maplewood", city: "Maplewood", state: "Minnesota", zip: "55109", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Hennepin County Medical Center - Minneapolis", city: "Minneapolis", state: "Minnesota", zip: "55415", status: "Recruiting", phone: "612-873-5911", email: "")
+    trial.locations.create!(facility: "Virginia Piper Cancer Institute at Abbott - Northwestern Hospital", city: "Minneapolis", state: "Minnesota", zip: "55407", status: "Recruiting", phone: "612-863-5654", email: "")
+    trial.locations.create!(facility: "Veterans Affairs Medical Center - Minneapolis", city: "Minneapolis", state: "Minnesota", zip: "55417", status: "Recruiting", phone: "612-467-2800", email: "")
+    trial.locations.create!(facility: "Hubert H. Humphrey Cancer Center at North Memorial Outpatient Center", city: "Robbinsdale", state: "Minnesota", zip: "55422-2900", status: "Recruiting", phone: "763-520-1893", email: "")
+    trial.locations.create!(facility: "CCOP - Metro-Minnesota", city: "Saint Louis Park", state: "Minnesota", zip: "55416", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Park Nicollet Cancer Center", city: "Saint Louis Park", state: "Minnesota", zip: "55416", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "United Hospital", city: "Saint Paul", state: "Minnesota", zip: "55102", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "St. Francis Cancer Center at St. Francis Medical Center", city: "Shakopee", state: "Minnesota", zip: "55379", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Regions Hospital Cancer Care Center", city: "St. Paul", state: "Minnesota", zip: "55101", status: "Recruiting", phone: "651-254-1517", email: "")
+    trial.locations.create!(facility: "Ridgeview Medical Center", city: "Waconia", state: "Minnesota", zip: "55387", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Minnesota Oncology Hematology, PA - Woodbury", city: "Woodbury", state: "Minnesota", zip: "55125", status: "Recruiting", phone: "612-863-8585", email: "")
+    trial.locations.create!(facility: "Independence Regional Health Center", city: "Independence", state: "Missouri", zip: "64050", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "CCOP - Kansas City", city: "Kansas City", state: "Missouri", zip: "64131", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Research Medical Center", city: "Kansas City", state: "Missouri", zip: "64132", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Truman Medical Center - Hospital Hill", city: "Kansas City", state: "Missouri", zip: "64108", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "North Kansas City Hospital", city: "Kansas City", state: "Missouri", zip: "64116", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "St. Joseph Medical Center", city: "Kansas City", state: "Missouri", zip: "64114", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Saint Luke's Cancer Institute at Saint Luke's Hospital", city: "Kansas City", state: "Missouri", zip: "64111", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Parvin Radiation Oncology", city: "Kansas City", state: "Missouri", zip: "64116", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Liberty Hospital", city: "Liberty", state: "Missouri", zip: "64068", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Heartland Regional Medical Center", city: "Saint Joseph", state: "Missouri", zip: "64506", status: "Recruiting", phone: "816-823-0555", email: "")
+    trial.locations.create!(facility: "Missouri Baptist Cancer Center", city: "Saint Louis", state: "Missouri", zip: "63131", status: "Recruiting", phone: "314-996-5514", email: "")
+    trial.locations.create!(facility: "Arch Medical Services, Incorporated at Center for Cancer Care and Research", city: "Saint Louis", state: "Missouri", zip: "63141", status: "Recruiting", phone: "314-996-5514", email: "")
+    trial.locations.create!(facility: "Alegant Health Cancer Center at Bergan Mercy Medical Center", city: "Omaha", state: "Nebraska", zip: "68124", status: "Recruiting", phone: "402-398-6060", email: "")
+    trial.locations.create!(facility: "CCOP - Missouri Valley Cancer Consortium", city: "Omaha", state: "Nebraska", zip: "68106", status: "Recruiting", phone: "402-393-3110", email: "")
+    trial.locations.create!(facility: "Creighton University Medical Center", city: "Omaha", state: "Nebraska", zip: "68131-2197", status: "Recruiting", phone: "402-280-4100", email: "")
+    trial.locations.create!(facility: "Immanuel Medical Center", city: "Omaha", state: "Nebraska", zip: "68122", status: "Recruiting", phone: "402-393-3110", email: "")
+    trial.locations.create!(facility: "Methodist Estabrook Cancer Center", city: "Omaha", state: "Nebraska", zip: "68114", status: "Recruiting", phone: "402-399-8762", email: "")
+    trial.locations.create!(facility: "CCOP - Nevada Cancer Research Foundation", city: "Las Vegas", state: "Nevada", zip: "89106", status: "Recruiting", phone: "702-384-0013", email: "")
+    trial.locations.create!(facility: "University Medical Center of Southern Nevada", city: "Las Vegas", state: "Nevada", zip: "89102", status: "Recruiting", phone: "702-384-0013", email: "")
+    trial.locations.create!(facility: "Norris Cotton Cancer Center at Dartmouth-Hitchcock Medical Center", city: "Lebanon", state: "New Hampshire", zip: "03756-0002", status: "Recruiting", phone: "603-650-7609", email: "cancerhelp@dartmouth.edu")
+    trial.locations.create!(facility: "Fox Chase Virtua Health Cancer Program at Virtua Memorial Hospital Marlton", city: "Marlton", state: "New Jersey", zip: "08053", status: "Recruiting", phone: "888-847-8823", email: "")
+    trial.locations.create!(facility: "Newark Beth Israel Medical Center", city: "Newark", state: "New Jersey", zip: "07112", status: "Recruiting", phone: "973-926-3136", email: "")
+    trial.locations.create!(facility: "Frederick R. and Betty M. Smith Cancer Treatment Center", city: "Sparta", state: "New Jersey", zip: "07871", status: "Recruiting", phone: "973-726-4180", email: "")
+    trial.locations.create!(facility: "Cancer Institute of New Jersey at Cooper - Voorhees", city: "Voorhees", state: "New Jersey", zip: "08043", status: "Recruiting", phone: "856-325-6757", email: "")
+    trial.locations.create!(facility: "Fox Chase Virtua Health Cancer Program at Virtua West Jersey", city: "Voorhees", state: "New Jersey", zip: "08043", status: "Recruiting", phone: "609-702-1900", email: "")
+    trial.locations.create!(facility: "Our Lady of Mercy Medical Center Comprehensive Cancer Center", city: "Bronx", state: "New York", zip: "10466", status: "Recruiting", phone: "718-304-7200", email: "")
+    trial.locations.create!(facility: "Veterans Affairs Medical Center - Buffalo", city: "Buffalo", state: "New York", zip: "14215", status: "Recruiting", phone: "716-862-3191", email: "")
+    trial.locations.create!(facility: "CCOP - Hematology-Oncology Associates of Central New York", city: "East Syracuse", state: "New York", zip: "13057", status: "Recruiting", phone: "315-472-7504", email: "")
+    trial.locations.create!(facility: "Charles R. Wood Cancer Center at Glens Falls Hospital", city: "Glens Falls", state: "New York", zip: "12801", status: "Recruiting", phone: "518-926-6700", email: "")
+    trial.locations.create!(facility: "Ralph Lauren Center for Cancer Care and Prevention", city: "New York", state: "New York", zip: "10035", status: "Recruiting", phone: "212-987-1777", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "212-639-8895", email: "")
+    trial.locations.create!(facility: "Lineberger Comprehensive Cancer Center at University of North Carolina - Chapel Hill", city: "Chapel Hill", state: "North Carolina", zip: "27599-7295", status: "Recruiting", phone: "877-668-0683; 919-966-4432", email: "")
+    trial.locations.create!(facility: "Blumenthal Cancer Center at Carolinas Medical Center", city: "Charlotte", state: "North Carolina", zip: "28232-2861", status: "Recruiting", phone: "704-355-2884", email: "")
+    trial.locations.create!(facility: "Wayne Memorial Hospital, Incorporated", city: "Goldsboro", state: "North Carolina", zip: "27534", status: "Recruiting", phone: "919-580-0000", email: "")
+    trial.locations.create!(facility: "Pardee Memorial Hospital", city: "Hendersonville", state: "North Carolina", zip: "28791", status: "Recruiting", phone: "828-692-8045", email: "")
+    trial.locations.create!(facility: "Kinston Medical Specialists", city: "Kinston", state: "North Carolina", zip: "28501", status: "Recruiting", phone: "252-559-2200ext.201", email: "")
+    trial.locations.create!(facility: "Summa Center for Cancer Care at Akron City Hospital", city: "Akron", state: "Ohio", zip: "44309-2090", status: "Recruiting", phone: "330-375-6101", email: "")
+    trial.locations.create!(facility: "Aultman Cancer Center at Aultman Hospital", city: "Canton", state: "Ohio", zip: "44710-1799", status: "Recruiting", phone: "330-363-6891", email: "")
+    trial.locations.create!(facility: "MetroHealth Cancer Care Center at MetroHealth Medical Center", city: "Cleveland", state: "Ohio", zip: "44109", status: "Recruiting", phone: "216-778-4795", email: "")
+    trial.locations.create!(facility: "Arthur G. James Cancer Hospital and Richard J. Solove Research Institute at Ohio State University Comprehensive Cancer Center", city: "Columbus", state: "Ohio", zip: "43210-1240", status: "Recruiting", phone: "866-627-7616", email: "osu@emergingmed.com")
+    trial.locations.create!(facility: "St. Rita's Medical Center", city: "Lima", state: "Ohio", zip: "45801", status: "Recruiting", phone: "419-226-9617", email: "")
+    trial.locations.create!(facility: "Morgan Cancer Center at Lehigh Valley Hospital - Cedar Crest", city: "Allentown", state: "Pennsylvania", zip: "18105", status: "Recruiting", phone: "610-402-0512", email: "")
+    trial.locations.create!(facility: "St. Luke's Cancer Network at St. Luke's Hospital", city: "Bethlehem", state: "Pennsylvania", zip: "18015", status: "Recruiting", phone: "610-954-2145", email: "")
+    trial.locations.create!(facility: "Geisinger Cancer Institute at Geisinger Health", city: "Danville", state: "Pennsylvania", zip: "17822-0001", status: "Recruiting", phone: "570-271-5251", email: "")
+    trial.locations.create!(facility: "Dale and Frances Hughes Cancer Center at Pocono Medical Center", city: "East Stroudsburg", state: "Pennsylvania", zip: "18301", status: "Recruiting", phone: "570-476-3488", email: "")
+    trial.locations.create!(facility: "Geisinger Hazleton Cancer Center", city: "Hazleton", state: "Pennsylvania", zip: "18201", status: "Recruiting", phone: "570-214-9290", email: "")
+    trial.locations.create!(facility: "Penn State Hershey Cancer Institute at Milton S. Hershey Medical Center", city: "Hershey", state: "Pennsylvania", zip: "17033-0850", status: "Recruiting", phone: "717-531-3779", email: "CTO@hmc.psu.edu")
+    trial.locations.create!(facility: "Lewistown Hospital", city: "Lewistown", state: "Pennsylvania", zip: "17044", status: "Recruiting", phone: "717-242-7143", email: "")
+    trial.locations.create!(facility: "Fox Chase Cancer Center - Philadelphia", city: "Philadelphia", state: "Pennsylvania", zip: "19111-2497", status: "Recruiting", phone: "215-728-4790", email: "")
+    trial.locations.create!(facility: "Frankford Hospital Cancer Center - Torresdale Campus", city: "Philadelphia", state: "Pennsylvania", zip: "19114", status: "Recruiting", phone: "215-612-5250", email: "")
+    trial.locations.create!(facility: "Joan Karnell Cancer Center at Pennsylvania Hospital", city: "Philadelphia", state: "Pennsylvania", zip: "19107", status: "Recruiting", phone: "215-829-6088", email: "")
+    trial.locations.create!(facility: "Kimmel Cancer Center at Thomas Jefferson University - Philadelphia", city: "Philadelphia", state: "Pennsylvania", zip: "19107-5541", status: "Recruiting", phone: "215-955-6084", email: "")
+    trial.locations.create!(facility: "Abramson Cancer Center of the University of Pennsylvania", city: "Philadelphia", state: "Pennsylvania", zip: "19104-4283", status: "Recruiting", phone: "800-474-9892", email: "")
+    trial.locations.create!(facility: "Hematology and Oncology Associates of Northeastern Pennsylvania", city: "Scranton", state: "Pennsylvania", zip: "18508", status: "Recruiting", phone: "570-342-3675", email: "")
+    trial.locations.create!(facility: "Geisinger Medical Group - Scenery Park", city: "State College", state: "Pennsylvania", zip: "16801", status: "Recruiting", phone: "570-214-9290", email: "")
+    trial.locations.create!(facility: "Mount Nittany Medical Center", city: "State College", state: "Pennsylvania", zip: "16803", status: "Recruiting", phone: "814-231-7000", email: "")
+    trial.locations.create!(facility: "Mercy Hospital at Wilkes-Barre", city: "Wilkes-Barre", state: "Pennsylvania", zip: "18765", status: "Recruiting", phone: "570-214-9290", email: "")
+    trial.locations.create!(facility: "Frank M. and Dorothea Henry Cancer Center at Geisinger Wyoming Valley Medical Center", city: "Wilkes-Barre", state: "Pennsylvania", zip: "18711", status: "Recruiting", phone: "570-271-5251", email: "")
+    trial.locations.create!(facility: "Susquehanna Cancer Center at Divine Providence Hospital", city: "Williamsport", state: "Pennsylvania", zip: "17701", status: "Recruiting", phone: "570-326-8000", email: "")
+    trial.locations.create!(facility: "McLeod Regional Medical Center", city: "Florence", state: "South Carolina", zip: "29501", status: "Recruiting", phone: "843-679-7256", email: "")
+    trial.locations.create!(facility: "Avera Cancer Institute", city: "Sioux Falls", state: "South Dakota", zip: "57105", status: "Recruiting", phone: "605-328-8000", email: "")
+    trial.locations.create!(facility: "Medical X-Ray Center, PC", city: "Sioux Falls", state: "South Dakota", zip: "57105", status: "Recruiting", phone: "605-328-8000", email: "")
+    trial.locations.create!(facility: "Sanford Cancer Center at Sanford USD Medical Center", city: "Sioux Falls", state: "South Dakota", zip: "57117-5039", status: "Recruiting", phone: "605-328-1367", email: "")
+    trial.locations.create!(facility: "Christine LaGuardia Phillips Cancer Center at Wellmont Holston Valley Medical Center", city: "Kingsport", state: "Tennessee", zip: "37662", status: "Recruiting", phone: "423-224-5593", email: "")
+    trial.locations.create!(facility: "CCOP - Scott and White Hospital", city: "Temple", state: "Texas", zip: "76508", status: "Recruiting", phone: "254-724-1053", email: "")
+    trial.locations.create!(facility: "Mountainview Medical", city: "Berlin", state: "Vermont", zip: "05602", status: "Recruiting", phone: "802-223-6196", email: "")
+    trial.locations.create!(facility: "Fletcher Allen Health Care - University Health Center Campus", city: "Burlington", state: "Vermont", zip: "05401", status: "Recruiting", phone: "802-656-8990", email: "")
+    trial.locations.create!(facility: "Danville Regional Medical Center", city: "Danville", state: "Virginia", zip: "24541", status: "Recruiting", phone: "434-799-3753", email: "")
+    trial.locations.create!(facility: "Southwest Virginia Regional Cancer Center at Wellmonth Health", city: "Norton", state: "Virginia", zip: "24273", status: "Recruiting", phone: "423-224-3150", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic Cancer Care at Regional Cancer Center", city: "Eau Claire", state: "Wisconsin", zip: "54701", status: "Recruiting", phone: "715-387-5426", email: "")
+    trial.locations.create!(facility: "Center for Cancer Treatment & Prevention at Sacred Heart Hospital", city: "Eau Claire", state: "Wisconsin", zip: "54701", status: "Recruiting", phone: "715-839-3956", email: "")
+    trial.locations.create!(facility: "St. Vincent Hospital Regional Cancer Center", city: "Green Bay", state: "Wisconsin", zip: "54307-3508", status: "Recruiting", phone: "920-433-8889", email: "")
+    trial.locations.create!(facility: "St. Mary's Hospital Medical Center - Green Bay", city: "Green Bay", state: "Wisconsin", zip: "54303", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Green Bay Oncology, Limited at St. Mary's Hospital", city: "Green Bay", state: "Wisconsin", zip: "54303", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Green Bay Oncology, Limited at St. Vincent Hospital Regional Cancer Center", city: "Green Bay", state: "Wisconsin", zip: "54301-3526", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Bay Area Cancer Care Center at Bay Area Medical Center", city: "Marinette", state: "Wisconsin", zip: "54143", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Saint Joseph's Hospital", city: "Marshfield", state: "Wisconsin", zip: "54449", status: "Recruiting", phone: "715-387-1713", email: "")
+    trial.locations.create!(facility: "Medical Consultants, Limited", city: "Milwaukee", state: "Wisconsin", zip: "53215", status: "Recruiting", phone: "414-385-3086", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic - Lakeland Center", city: "Minocqua", state: "Wisconsin", zip: "54548", status: "Recruiting", phone: "715-358-1000", email: "")
+    trial.locations.create!(facility: "Green Bay Oncology, Limited - Oconto Falls", city: "Oconto Falls", state: "Wisconsin", zip: "54154", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "Ministry Medical Group at Saint Mary's Hospital", city: "Rhinelander", state: "Wisconsin", zip: "54501", status: "Recruiting", phone: "715-361-4700", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic - Indianhead Center", city: "Rice Lake", state: "Wisconsin", zip: "54868", status: "Recruiting", phone: "715-236-8100", email: "")
+    trial.locations.create!(facility: "Saint Michael's Hospital Cancer Center", city: "Stevens Point", state: "Wisconsin", zip: "54481", status: "Recruiting", phone: "715-346-5000", email: "")
+    trial.locations.create!(facility: "Green Bay Oncology, Limited - Sturgeon Bay", city: "Sturgeon Bay", state: "Wisconsin", zip: "54235", status: "Recruiting", phone: "920-432-6049", email: "")
+    trial.locations.create!(facility: "University of Wisconcin Cancer Center at Aspirus Wausau Hospital", city: "Wausau", state: "Wisconsin", zip: "54401", status: "Recruiting", phone: "608-262-5223", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic - Wausau Center", city: "Wausau", state: "Wisconsin", zip: "54401", status: "Recruiting", phone: "715-847-3000", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic - Weston Center", city: "Weston", state: "Wisconsin", zip: "54476", status: "Recruiting", phone: "715-393-1000", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic - Wisconsin Rapids Center", city: "Wisconsin Rapids", state: "Wisconsin", zip: "54494", status: "Recruiting", phone: "715-424-8600", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -680,6 +1180,12 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
       keywords: "Thyroid thyroiditis cancer factors Thyroidectomy Anti-inflammatory Hashimotos",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "The University of Texas, Galveston")
+    trial.locations.create!(facility: "University of Texas Medical Branch, Galveston , Endocrine Department", city: "Galveston", state: "Texas", zip: "77555", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "80 Years")
+    trial.primary_outcomes.create!(measure: "Number of Participants with thyroid cancer and Hashimoto's thyroiditis .", description: "To identify the association between Hashimoto's Thyroiditis and thyroid cancer by comparing the prevalence of thyroid cancer in patients with Hashimoto's Thyroiditis and patients without Hashimoto's Thyroiditis who undergoing Thyroidectomy for a variety of indications in UTMB in 12 months period of the study.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -709,6 +1215,57 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "effusion activity cancer cavity cystadenocarcinoma tube cell with ovarian peritoneal II pleural tumor fallopian epithelial malignant proliferating IV III clear stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "NCIC Clinical Trials Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.sponsors.create!(name: "Grupo Espanol de Investigacion en Cancer de Ovario")
+    trial.sponsors.create!(name: "Cancer Research UK")
+    trial.sponsors.create!(name: "Southwestern Oncology Group (SWOG)")
+    trial.locations.create!(facility: "CoxHealth", city: "Springfield", state: "Missouri", zip: "65807", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy-Springfield", city: "Springfield", state: "Missouri", zip: "65804", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Univ of Utah (Huntsman Cancer Institute)", city: "Salt Lake City", state: "Utah", zip: "84132", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Northwest CCOP - Multicare Health System", city: "Tacoma", state: "Washington", zip: "98415", status: "Not yet recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Tom Baker Cancer Centre", city: "Calgary", state: "Alberta", zip: "T2N 4N2", status: "Recruiting", phone: "403 521-3721", email: "")
+    trial.locations.create!(facility: "Cross Cancer Institute", city: "Edmonton", state: "Alberta", zip: "T6G 1Z2", status: "Recruiting", phone: "780 432-8560", email: "")
+    trial.locations.create!(facility: "BCCA - Cancer Centre for the Southern Interior", city: "Kelowna", state: "British Columbia", zip: "V1Y 5L3", status: "Recruiting", phone: "250 712-3900", email: "")
+    trial.locations.create!(facility: "BCCA - Fraser Valley Cancer Centre", city: "Surrey", state: "British Columbia", zip: "V3V 1Z2", status: "Recruiting", phone: "604 930-4028", email: "")
+    trial.locations.create!(facility: "BCCA - Vancouver Cancer Centre", city: "Vancouver", state: "British Columbia", zip: "V5Z 4E6", status: "Recruiting", phone: "604 877-6000", email: "")
+    trial.locations.create!(facility: "Atlantic Health Sciences Corporation", city: "Saint John", state: "New Brunswick", zip: "E2L 4L2", status: "Recruiting", phone: "506 648-6884", email: "")
+    trial.locations.create!(facility: "Dr. H. Bliss Murphy Cancer Centre", city: "St. John's", state: "Newfoundland and Labrador", zip: "AIB 3V6", status: "Recruiting", phone: "709 777-6564", email: "")
+    trial.locations.create!(facility: "QEII Health Sciences Center", city: "Halifax", state: "Nova Scotia", zip: "B3H 1V7", status: "Recruiting", phone: "902 473-2366", email: "")
+    trial.locations.create!(facility: "Cancer Centre of Southeastern Ontario at Kingston", city: "Kingston", state: "Ontario", zip: "K7L 5P9", status: "Recruiting", phone: "613 544-2630", email: "")
+    trial.locations.create!(facility: "Ottawa Health Research Institute - General Division", city: "Ottawa", state: "Ontario", zip: "K1H 8L6", status: "Recruiting", phone: "613 737-8899", email: "")
+    trial.locations.create!(facility: "Thunder Bay Regional Health Science Centre", city: "Thunder Bay", state: "Ontario", zip: "P7B 6V4", status: "Withdrawn", phone: "", email: "")
+    trial.locations.create!(facility: "Univ. Health Network-Princess Margaret Hospital", city: "Toronto", state: "Ontario", zip: "M5G 2M9", status: "Recruiting", phone: "416 946-2818", email: "")
+    trial.locations.create!(facility: "CHUM - Hopital Notre-Dame", city: "Montreal", state: "Quebec", zip: "H2L 4M1", status: "Recruiting", phone: "514 890-8200", email: "")
+    trial.locations.create!(facility: "McGill University - Dept. Oncology", city: "Montreal", state: "Quebec", zip: "H2W 1S6", status: "Recruiting", phone: "514 340-8222", email: "")
+    trial.locations.create!(facility: "CHUQ-Pavillon Hotel-Dieu de Quebec", city: "Quebec City", state: "Quebec", zip: "G1R 2J6", status: "Recruiting", phone: "418 691-5392", email: "")
+    trial.locations.create!(facility: "Centre hospitalier universitaire de Sherbrooke", city: "Sherbrooke", state: "Quebec", zip: "J1H 5N4", status: "Recruiting", phone: "819 346-1110", email: "")
+    trial.locations.create!(facility: "Instituto Catalan de Oncologia - L'Hospitalet", city: "Hospitalet de Llobregat", state: "Barcelona", zip: "08908", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Hospital Fundacion Alcorcon", city: "Alcorcon", state: "Madrid", zip: "28922", status: "Recruiting", phone: "91 621-9490", email: "")
+    trial.locations.create!(facility: "Hospital de la Santa Creu i Sant Pau", city: "Barcelona", state: "", zip: "08041", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Corporacio Sanitaria Clinic", city: "Barcelona", state: "", zip: "08036", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Centro Oncologico MD Anderson - Madrid", city: "Madrid", state: "", zip: "28033", status: "Recruiting", phone: "91 787-8605", email: "")
+    trial.locations.create!(facility: "Hospital Clinico San Carlos", city: "Madrid", state: "", zip: "28040", status: "Recruiting", phone: "91 330-3546", email: "")
+    trial.locations.create!(facility: "Hospital Gregorio Maranon", city: "Madrid", state: "", zip: "28009", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Fundacion Instituto Valenciano de Oncologia", city: "Valencia", state: "", zip: "46009", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Hospital Clinico Universitario de Valencia", city: "Valencia", state: "", zip: "46010", status: "Recruiting", phone: "96 398-3328", email: "")
+    trial.locations.create!(facility: "The Clatterbridge Center for Oncology - Liverpool", city: "Wirral", state: "Bebington", zip: "CH63 4JY", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Mount Vernon Hospital - Middlesex", city: "Middlesex", state: "Northwood", zip: "HA6 2RN", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Wexham Park Hospital", city: "Berkshire", state: "Slough", zip: "SL2 4HL", status: "Not yet recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "St. George's Hospital - London", city: "London", state: "Tooting", zip: "SW17 0QT", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Christie Hospital - Manchester", city: "Manchester", state: "Withington", zip: "M20 4BX", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Western General Hospital - Edinburgh", city: "Edinburgh", state: "", zip: "EH4 2XU", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "St. James University Hospital - Leeds", city: "Leeds", state: "", zip: "LS9 7TF", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Liverpool Women's Hospital - Liverpool", city: "Liverpool", state: "", zip: "L8 755", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Royal Marsden Hospital - London", city: "London", state: "", zip: "SW3 6JJ", status: "Recruiting", phone: "207 808-2198", email: "")
+    trial.locations.create!(facility: "University College London Hospital - London", city: "London", state: "", zip: "W1T 4TJ", status: "Recruiting", phone: "20 7679-9898", email: "")
+    trial.locations.create!(facility: "St. Bartholomew's Hospital - London", city: "London", state: "", zip: "EC1M 6BQ", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Hammersmith Hospital - London", city: "London", state: "", zip: "W12 0HS", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "St Marys Hospital - Manchester", city: "Manchester", state: "", zip: "M13 0JH", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Churchill Hospital - Oxford", city: "Oxford", state: "", zip: "OX3 7LJ", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "The Derriford Hospital - Plymouth", city: "Plymouth", state: "", zip: "PL6 8DH", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -737,6 +1294,12 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "specific protocol cancer rectal solid recurrent unspecified IV cell lung adult colon non-small IIIB tumor, stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "NCIC Clinical Trials Group")
+    trial.locations.create!(facility: "Ottawa Hospital Regional Cancer Centre - General Campus", city: "Ottawa", state: "Ontario", zip: "K1H 8L6", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Princess Margaret Hospital", city: "Toronto", state: "Ontario", zip: "M5G 2M9", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Dose limiting toxicity", description: "To recommend phase II dose of AZD2171 when given orally daily in combination with standard chemotherapy in patients with advanced NSCLC or colon cancer or other tumour types suitable for treatment with capecitabine.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -760,6 +1323,12 @@ namespace :db do
       study_design: "Time Perspective:  Prospective ",
       keywords: "tumor endometrial vulvar cancer tube leiomyomata stromal breast/ovarian uterine ovarian hereditary cell fallopian epithelial cervical vaginal sarcoma germ (BRCA1, BRCA2)",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Northwestern University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Robert H. Lurie Comprehensive Cancer Center at Northwestern University", city: "Chicago", state: "Illinois", zip: "60611-3013", status: "Recruiting", phone: "312-695-1301", email: "cancer@northwestern.edu")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "18 Years", max_age: "80 Years")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -795,6 +1364,12 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "Sample Priling Cancer Stratification Cells Circulating Tumor Blood Breast ISSS International Gene Study Stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "Veridex, LLC")
+    trial.locations.create!(facility: "U.T.M.D. Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -821,6 +1396,197 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "Diseases Cancer Rectal Colonic Neoplasms System by Neoplasm Digestive Colorectal Site Gastrointestinal Intestinal",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Exact Sciences Corporation")
+    trial.locations.create!(facility: "Achieve Clinical Research", city: "Birmingham", state: "Alabama", zip: "35216", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Scottsdale", city: "Scottsdale", state: "Arizona", zip: "85259", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Desert Sun Clinical Research, LLC", city: "Tucson", state: "Arizona", zip: "85710", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Alhambra", state: "California", zip: "91801", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Arcadia", state: "California", zip: "91006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Valley Gastro Consultants", city: "Arcadia", state: "California", zip: "91006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Desert Oasis Healthcare", city: "Bermuda Dunes", state: "California", zip: "92203", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Burbank", state: "California", zip: "91506", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "REMEK Research", city: "Chino", state: "California", zip: "91710", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southern California Oncology", city: "Downey", state: "California", zip: "90241", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners Medical Group", city: "El Monte", state: "California", zip: "91733", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southern California Oncology", city: "Fullerton", state: "California", zip: "92835", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Glendale", state: "California", zip: "91208", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Glendale", state: "California", zip: "91204", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Valley Gastro Consultants", city: "Glendora", state: "California", zip: "91741", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Huntington Park", state: "California", zip: "90255", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Health Care Partners Medical Group", city: "Long Beach", state: "California", zip: "90806", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "VA Hospital", city: "Long Beach", state: "California", zip: "90822", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Health Care Partners San Antonio", city: "Long Beach", state: "California", zip: "90807", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Los Angeles", state: "California", zip: "90043", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners Medical Group", city: "Los Angeles", state: "California", zip: "90015", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Los Angeles", state: "California", zip: "90063", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southern California Oncology", city: "Lynwood", state: "California", zip: "90262", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners- Mission Plaza", city: "Mission Hills", state: "California", zip: "91345", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Facey Medical Foundation", city: "Mission Hills", state: "California", zip: "91345", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners-Mission Hills", city: "Mission Hills", state: "California", zip: "91345", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "REMEK Research", city: "Montclair", state: "California", zip: "91763", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners Medical Group", city: "Montebello", state: "California", zip: "90640", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Monterey Bay GI Consultants Medical Group & Research Institute", city: "Monterey", state: "California", zip: "93940", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners Medical Group", city: "Monterey Park", state: "California", zip: "91754", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Furtura Research", city: "Monterey Park", state: "California", zip: "91754", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Diverse Research Solutions", city: "Oxnard", state: "California", zip: "93030", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Desert Oasis Healthcare", city: "Palm Springs", state: "California", zip: "92262", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Desert Regional Medical Center", city: "Palm Springs", state: "California", zip: "92262", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthCare Partners", city: "Pasadena", state: "California", zip: "91105", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "REMEK Research", city: "Pomona", state: "California", zip: "91767", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Health Care Partners", city: "Redondo Beach", state: "California", zip: "90277", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Institute for Medical Research", city: "Sacramento", state: "California", zip: "95816", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sharp-Rees-Stealy Medical Group", city: "San Diego", state: "California", zip: "92101", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sharp-Rees-Stealy Medical Group", city: "San Diego", state: "California", zip: "92123", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sansum Clinic", city: "Santa Barbara", state: "California", zip: "93110", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sansum Clinic", city: "Santa Barbara", state: "California", zip: "93105", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Santa Monica Research Institute", city: "Santa Monica", state: "California", zip: "90404", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Health Care Partners Medical Group", city: "Torrance", state: "California", zip: "90503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "South Bay Gastroenterology Medical Group", city: "Torrance", state: "California", zip: "90505", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Tujunga Medical Group", city: "Tujunga", state: "California", zip: "91042", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners-Valencia", city: "Valencia", state: "California", zip: "91355", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Healthcare Partners- Van Nuys", city: "Van Nuys", state: "California", zip: "91405", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southern California Oncology", city: "Yorba Linda", state: "California", zip: "92886", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Fairfield County", city: "Bridgeport", state: "Connecticut", zip: "06606", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Fairfield County", city: "Fairfield", state: "Connecticut", zip: "06824", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Metropolitan Gastroenterology Group, PC", city: "Washington", state: "District of Columbia", zip: "20006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Florida", city: "Jacksonville", state: "Florida", zip: "32224", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "MIMA Century Research Associates", city: "Melbourne", state: "Florida", zip: "32901", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Melbourne GI Center", city: "Melbourne", state: "Florida", zip: "32901", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "GI Care Center", city: "Miami", state: "Florida", zip: "33173", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Suncoast Research Group", city: "Miami", state: "Florida", zip: "33135", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastro Health P.L.", city: "Miami", state: "Florida", zip: "33176", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Miami Research Associates", city: "South Miami", state: "Florida", zip: "33143", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cancer Coalition of South Georgia", city: "Albany", state: "Georgia", zip: "31707", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Phoebe Digestive Health Center", city: "Albany", state: "Georgia", zip: "31707", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Atlanta", state: "Georgia", zip: "30318", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Atlanta", state: "Georgia", zip: "30308", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Hiram", state: "Georgia", zip: "30141", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Marietta", state: "Georgia", zip: "30067", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Marietta", state: "Georgia", zip: "30060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Atlanta Gastroenterology Associates", city: "Woodstock", state: "Georgia", zip: "30188", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "NCH Medical Group", city: "Arlington Heights", state: "Illinois", zip: "60004", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Northwest Community Hospital", city: "Arlington Heights", state: "Illinois", zip: "60005", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "NCH Medical Group", city: "Buffalo Grove", state: "Illinois", zip: "60089", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Jesse Brown VAMC", city: "Chicago", state: "Illinois", zip: "60612", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Union Health Services", city: "Chicago", state: "Illinois", zip: "60652", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Union Health Services", city: "Chicago", state: "Illinois", zip: "60612", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "VA Hospital", city: "Hines", state: "Illinois", zip: "60141", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southwest Gastroenterology", city: "New Lenox", state: "Illinois", zip: "60451", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Union Health Services", city: "Norridge", state: "Illinois", zip: "60706", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Southwest Gastroenterology", city: "Oak Lawn", state: "Illinois", zip: "60453", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Avicenna Clinical Research", city: "Palos Heights", state: "Illinois", zip: "60463", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Rockford Gastroenterology Associates, LTD", city: "Rockford", state: "Illinois", zip: "61107", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Roudebush VA Medical Center", city: "Indianapolis", state: "Indiana", zip: "46202", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Iowa Digestive Disease Center", city: "Clive", state: "Iowa", zip: "50325", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology & Nutritional Medical Services", city: "Bastrop", state: "Louisiana", zip: "71220", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates", city: "Baton Rouge", state: "Louisiana", zip: "70809", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "New Orleans Research Institute", city: "Metairie", state: "Louisiana", zip: "70006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "MGAGI Diagnostic and Therapeutic Center", city: "Metairie", state: "Louisiana", zip: "70006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Delta Research Partners, LLC", city: "Monroe", state: "Louisiana", zip: "71201", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Louisiana Research Center", city: "Shreveport", state: "Louisiana", zip: "71103", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Disease Associates, PA", city: "Baltimore", state: "Maryland", zip: "21229", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastrointestinal Diagnostic Center", city: "Baltimore", state: "Maryland", zip: "21229", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Metropolitan Gastroenterology Group", city: "Chevy Chase", state: "Maryland", zip: "20815", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Banks Hepatology Institute P.C.", city: "College Park", state: "Maryland", zip: "20740", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Columbia Medical Practice", city: "Columbia", state: "Maryland", zip: "21045", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Howard County GIDC", city: "Columbia", state: "Maryland", zip: "21044", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Disease Associates", city: "Columbia", state: "Maryland", zip: "21044", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Russell Schub", city: "Columbia", state: "Maryland", zip: "21044", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gasro Center of Maryland", city: "Columbia", state: "Maryland", zip: "21045", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastro Center of Maryland", city: "Columbia", state: "Maryland", zip: "21045", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Centennial Medical Group", city: "Elkridge", state: "Maryland", zip: "21075", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates", city: "Elkridge", state: "Maryland", zip: "21075", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CBM Pathology", city: "Gaithersburg", state: "Maryland", zip: "20879", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Maryland Digestive Disease Center", city: "Laurel", state: "Maryland", zip: "20707", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates", city: "Pasadena", state: "Maryland", zip: "21122", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Boston Medical Center", city: "Boston", state: "Massachusetts", zip: "02118", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Shapiro Ambulatory Care Center: Adult Primary Care", city: "Boston", state: "Massachusetts", zip: "02118", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Boston Medical Center: Family Medicine", city: "Boston", state: "Massachusetts", zip: "02118", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Boston Medical Center: Center for Digestive Disorders", city: "Boston", state: "Massachusetts", zip: "02118", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Shapiro Ambulatory Care Center: Women's Health Group", city: "Boston", state: "Massachusetts", zip: "02118", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Commonwealth Clinical Studies PLLC", city: "Brockton", state: "Massachusetts", zip: "02302", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Commonwealth Clinical Studies PLLC", city: "East Bridgewater", state: "Massachusetts", zip: "02333", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastrointestinal Specialists", city: "Taunton", state: "Massachusetts", zip: "02780", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Center for Digestive Health", city: "Troy", state: "Michigan", zip: "48098", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Rochester", city: "Rochester", state: "Minnesota", zip: "55905", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Advanced Research Institute", city: "Reno", state: "Nevada", zip: "89511", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Summit Medical Group", city: "Berkeley Heights", state: "New Jersey", zip: "07922", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "AGA Clinical Research Associates, LLC", city: "Egg Harbor Township", state: "New Jersey", zip: "08234", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Binghamton Gastroenterology", city: "Binghamton", state: "New York", zip: "13903", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastrointestinal Research Group", city: "Great Neck", state: "New York", zip: "11023", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mount Sinai School of Medicine", city: "New York", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Internal Medicine Associates", city: "New York", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Faculty Practice Associates", city: "New York", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "GI Clinic", city: "New York", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Practice Associates", city: "New York", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mount Sinai School of Medicine", city: "New York City", state: "New York", zip: "10029", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Health Specialists, PA", city: "Advance", state: "North Carolina", zip: "27006", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Asheville Gastroenterology Associates", city: "Asheville", state: "North Carolina", zip: "28801", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "MediSpect", city: "Boone", state: "North Carolina", zip: "28607", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carolina Digestive Health Associates", city: "Charlotte", state: "North Carolina", zip: "28262", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carolina Digestive Health Associates", city: "Concord", state: "North Carolina", zip: "28025", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carolina Digestive Health Associates", city: "Davidson", state: "North Carolina", zip: "28036", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cumberland Research Associates", city: "Fayetteville", state: "North Carolina", zip: "28304", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carolina Digestive Health Associates", city: "Harrisburg", state: "North Carolina", zip: "28075", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Health Specialists, PA", city: "Kernersville", state: "North Carolina", zip: "27284", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Wake Research Associates", city: "Raleigh", state: "North Carolina", zip: "27612", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hanover Medical Specialists", city: "Wilmington", state: "North Carolina", zip: "28401", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Wilmington Gastroenterology Associates", city: "Wilmington", state: "North Carolina", zip: "28403", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "New Hanover Regional Medical Center", city: "Wilmington", state: "North Carolina", zip: "28401", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Health Specialists, PA", city: "Winston-Salem", state: "North Carolina", zip: "27103", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Consultants for Clinical Research", city: "Cincinnati", state: "Ohio", zip: "45219", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Ohio GI & Liver Institute", city: "Cincinnati", state: "Ohio", zip: "45219", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Ohio GI & Liver Institute", city: "Cincinnati", state: "Ohio", zip: "45014", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Northwest Gastroenterology Clinic, LLC", city: "Portland", state: "Oregon", zip: "97210", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Bala Cynwyd", state: "Pennsylvania", zip: "19004", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Regional Gastroenterology Associates of Lancaster", city: "Ephrata", state: "Pennsylvania", zip: "17522", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Havertown", state: "Pennsylvania", zip: "19083", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Regional Gastroenterology Associates of Lancaster", city: "Lancaster", state: "Pennsylvania", zip: "17604", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Malvern", state: "Pennsylvania", zip: "19355", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Media", state: "Pennsylvania", zip: "19063", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Perkasie", state: "Pennsylvania", zip: "18944", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "PGC Endoscopy Center Inc.", city: "Philadelphia", state: "Pennsylvania", zip: "19111", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Main Line Gastroenterology", city: "Wynnewood", state: "Pennsylvania", zip: "19096", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Coastal Carolina Research Center", city: "Mt. Pleasant", state: "South Carolina", zip: "29464", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates", city: "Bristol", state: "Tennessee", zip: "37620", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastro One", city: "Germantown", state: "Tennessee", zip: "38138", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Clinical Research", city: "Kingsport", state: "Tennessee", zip: "37660", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Professional Quality Research, Inc.", city: "Austin", state: "Texas", zip: "78705", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Professional Quality Research, Inc.", city: "Austin", state: "Texas", zip: "78745", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Professional Quality Research, Inc.", city: "Austin", state: "Texas", zip: "78757", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Professional Quality Research", city: "Austin", state: "Texas", zip: "78705", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Houston Medical Research Associates", city: "Houston", state: "Texas", zip: "77090", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates, PA", city: "Houston", state: "Texas", zip: "77034", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Advanced Clinical Research of Houston", city: "Houston", state: "Texas", zip: "77062", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Professional Quality Research, Inc.", city: "Round Rock", state: "Texas", zip: "78681", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive Health Specialists of Tyler", city: "Tyler", state: "Texas", zip: "75701", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Advanced Research Institute", city: "Logan", state: "Utah", zip: "84341", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Advanced Research Institute", city: "Ogden", state: "Utah", zip: "84405", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Salt Lake Research, PLLC", city: "Salt Lake City", state: "Utah", zip: "84107", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Advanced Research Institute", city: "Sandy", state: "Utah", zip: "84094", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Charlottesville Medical Research", city: "Charlottesville", state: "Virginia", zip: "22911", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Tidewater", city: "Chesapeake", state: "Virginia", zip: "23320", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Blue Ridge Medical Research", city: "Lynchburg", state: "Virginia", zip: "24502", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Clinical Research Associates of Tidewater", city: "Norfolk", state: "Virginia", zip: "23507", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Digestive and Liver Disease Specialists", city: "Norfolk", state: "Virginia", zip: "23502", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Tidewater", city: "Norfolk", state: "Virginia", zip: "23505", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lakeview Medical Center", city: "Suffolk", state: "Virginia", zip: "23434", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Gastroenterology Associates of Tidewater", city: "Virginia Beach", state: "Virginia", zip: "23462", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Northwest Gastroenterology Associates", city: "Bellevue", state: "Washington", zip: "98004", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic-Eau Claire Center", city: "Eau Claire", state: "Wisconsin", zip: "54701", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Milwaukee", city: "Franklin", state: "Wisconsin", zip: "53132", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Madison", city: "Madison", state: "Wisconsin", zip: "53792", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UW Health West Clinic", city: "Madison", state: "Wisconsin", zip: "53717", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic", city: "Marshfield", state: "Wisconsin", zip: "54449", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Milwaukee", city: "Milwaukee", state: "Wisconsin", zip: "53215", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic-Minocqua Center", city: "Minocqua", state: "Wisconsin", zip: "54548", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Marshfield Clinic-Weston Center", city: "Weston", state: "Wisconsin", zip: "54476", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Alberta Health Services", city: "Calgary", state: "Alberta", zip: "T2WIS7", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Calgary", city: "Calgary", state: "Alberta", zip: "T2N 4Z6", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "50 Years", max_age: "84 Years")
+    trial.primary_outcomes.create!(measure: "Sensitivity and Specificity of the Exact CRC screening test with comparison to colonoscopy, both with respect to cancer.", description: "An optical colonoscopic procedure is the reference method.  Lesions will be confirmed as malignant by histopathologic examination.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -845,6 +1611,12 @@ namespace :db do
       study_design: "Time Perspective:  Prospective ",
       keywords: " anterior associated cancer invasive ureter pelvis localized recurrent cell III I regional bladder IV II posterior metastatic carcinoma with stage renal transitional urethral the",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Comprehensive Cancer Center of Wake Forest University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Wake Forest University Comprehensive Cancer Center", city: "Winston-Salem", state: "North Carolina", zip: "27157-1096", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -873,6 +1645,32 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label ",
       keywords: "cancer Cavity Tube Recurrent Ovarian Primary Fallopian Chemotherapy platinum Life tube Peritoneal recurrence fallopian peritoneal sensitive: the First Cancer disease or Surgery Quality Platinum-sensitive",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "AGO Study Group")
+    trial.sponsors.create!(name: "ARCAGY/ GINECO GROUP")
+    trial.sponsors.create!(name: "MITO")
+    trial.sponsors.create!(name: "Arbeitsgemeinschaft Gynaekologische Onkologie Austria")
+    trial.sponsors.create!(name: "GlaxoSmithKline")
+    trial.sponsors.create!(name: "medac GmbH")
+    trial.locations.create!(facility: "Ostalbklinikum", city: "Aalen", state: "", zip: "73430", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Charite - Universitatsmedizin Berlin, Campus Virchow-Klinikum, Klinik fur Frauenheilkunde", city: "Berlin", state: "", zip: "13353", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Univerisity Hospital; Dept. of Gynecology & Obstetrics", city: "Erlangen", state: "", zip: "91054", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "University hospital, Dept. of gynecology & obstetrics", city: "Essen", state: "", zip: "45122", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Kliniken Essen Mitte, Evang. Huyssens-Stiftung", city: "Essen", state: "", zip: "", status: "Not yet recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Klinikum Esslingen", city: "Esslingen", state: "", zip: "73730", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Klinikum der JWG Universitat Frankfurt", city: "Frankfurt am Main", state: "", zip: "60591", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Universitatsklinikum Freiburg, Frauenklinik", city: "Freiburg", state: "", zip: "79106", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Gynecologic Clinic of the Ernst-Moritz-Arndt-University", city: "Greifswald", state: "", zip: "17487", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Medizinische Hochschule", city: "Hannover", state: "", zip: "30625", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Universitatsklinikum Schleswig-Holstein Campus Kiel, Klinik f. Gynakologie u. Geburtshilfe", city: "Kiel", state: "", zip: "24105", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Klinikum der Philipps-Universitat Marburg, Klinik fur Gynakologie, Gynakologische Endokrinologie", city: "Marburg", state: "", zip: "35037", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "St. Josefsklinik", city: "Offenburg", state: "", zip: "77654", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "St. Vincenz-Krankenhaus", city: "Paderborn", state: "", zip: "33098", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Klinikum Sudstadt", city: "Rostock", state: "", zip: "18059", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Universitatsklinikum, Universitatsfrauenklinik", city: "Ulm", state: "", zip: "89075", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "HSK, Dr. Horst Schmidt Klinik GmbH", city: "Wiesbaden", state: "", zip: "", status: "Recruiting", phone: "", email: "office-wiesbaden@ago-ovar.de")
+    trial.locations.create!(facility: "Klinikum der Stadt Wolfsburg", city: "Wolfsburg", state: "", zip: "38440", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -930,6 +1728,10 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Prevention ",
       keywords: "Cancer Thymic Mesothelioma Immunotherapy Adjuvant Surgical Metastatic Lung Esophageal Malignant Carcinoma Therapy Pleural Vaccine Intervention",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "(888) NCI-1937", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -953,6 +1755,12 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "tumor pancreatic cancer ovarian IV cell germ colon breast epithelial sarcoma male stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Mayo Clinic")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Mayo Clinic", city: "Rochester", state: "Minnesota", zip: "55905", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -976,6 +1784,14 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "pancreatic cancer I IV II III stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Vanderbilt-Ingram Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center - Cool Springs", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-322-2555", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center at Franklin", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-322-2555", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center", city: "Nashville", state: "Tennessee", zip: "37232-6838", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -997,6 +1813,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Screening ",
       keywords: "Navigators Cancer Outreach Community Access Screening Behavioral Change",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Utah")
+    trial.sponsors.create!(name: "Sletten Cancer Institute")
+    trial.sponsors.create!(name: "Centers for Medicare and Medicaid Services")
+    trial.locations.create!(facility: "Sletten Cancer Institute", city: "Great Falls", state: "Montana", zip: "59405", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Huntsman Cancer Institute", city: "Salt Lake City", state: "Utah", zip: "84112", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1041,6 +1864,14 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Caregiver), Primary Purpose:  Prevention ",
       keywords: "cancer multimedia competent screening colorectal print education culturally",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Saint Francis Care")
+    trial.sponsors.create!(name: "American Cancer Society, Inc.")
+    trial.sponsors.create!(name: "Feinberg School of Medicine, Northwestern University")
+    trial.locations.create!(facility: "Midlakes Medical Building", city: "Highland Park", state: "Illinois", zip: "60085", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "North Chicago Health Center", city: "North Chicago", state: "Illinois", zip: "60064", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Belvidere Medical Building", city: "Waukegan", state: "Illinois", zip: "60085", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "50 Years", max_age: "80 Years")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1067,6 +1898,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
       keywords: "cancer I ovarian IV II cavity epithelial peritoneal III stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Masonic Cancer Center, University of Minnesota")
+    trial.sponsors.create!(name: "Randy Shaver Cancer Research Fund")
+    trial.locations.create!(facility: "Masonic Cancer Center at University of Minnesota", city: "Minneapolis", state: "Minnesota", zip: "55455", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "N/A", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Quality of Life Comparison - Average FACT-O Scoring in Chemotherapy Alone vs. Chemotherapy Plus Complementary Alternative Medicine (CAM)", description: "Measured by Functional Assessment of Cancer TherapyOvarian (FACT-O) questionnaire was used to assess patients' quality of life before each chemotherapy cycle. It is a standardized self-administered questionnaire measuring many aspects of quality of life (0 to 4; Not at all, A little bit, Some-what, Quite a bit, Very much) as related to patients with ovarian cancers.  The quality of life measures include the total FACT-O score (minimum value 0, maximum value 200). Questionnaires are recoded in the final analysis phase so that a higher score reflected more adverse effects on quality of life.")
+    trial.primary_outcomes.create!(measure: "Comparison of Mental Health Inventory (MHI) Questionnaire Results - Average for Chemotherapy Alone vs. Chemotherapy Plus CAM", description: "The MHI asks questions about how the consumer is feeling and coping with usual life activities. It provides measurable information about the consumer's wellbeing (anxiety, depression, loss of emotional control, general positive affect and emotional ties). A single score based on all items designed as high level summary index of the person's mental health status. High scores on the Mental Health Index indicate greater psychological well being and relatively less psychological distress (range is 38-240).")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1095,6 +1933,12 @@ namespace :db do
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "periampullary pancreatic intestine cancer duct unresectable primary extrahepatic adult gallbladder adenocarcinoma liver bile small the IV III advanced stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Vanderbilt-Ingram Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center - Cool Springs", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center", city: "Nashville", state: "Tennessee", zip: "37232-6838", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1124,6 +1968,27 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "Gastric Stomach 05-118 Cancer",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "Weill Medical College of Cornell University")
+    trial.sponsors.create!(name: "Queens Health Network")
+    trial.sponsors.create!(name: "USC/Norris Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "Shaare Zedek Medical Center")
+    trial.sponsors.create!(name: "Obafemi Awolowo University Teaching Hospital")
+    trial.sponsors.create!(name: "State University of New York - Downstate Medical Center")
+    trial.locations.create!(facility: "University of Southern California - Norris Cancer Hospital", city: "Los Angeles", state: "California", zip: "90033", status: "Recruiting", phone: "323-865-3955", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center at Basking Ridge", city: "Basking Ridge", state: "New Jersey", zip: "07920", status: "Recruiting", phone: "212-639-8470", email: "")
+    trial.locations.create!(facility: "SUNY Downstate Medical Center", city: "Brooklyn", state: "New York", zip: "", status: "Active, not recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center at Commack", city: "Commack", state: "New York", zip: "11725", status: "Recruiting", phone: "212-639-8470", email: "")
+    trial.locations.create!(facility: "Queens Cancer Center of Queens Hospital", city: "Jamaica", state: "New York", zip: "11432", status: "Recruiting", phone: "718-883-4031", email: "")
+    trial.locations.create!(facility: "Weill Cornell Medical Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "646-962-6200", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "212-639-8470", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center at Mercy Medical Center", city: "Rockville Centre", state: "New York", zip: "11570", status: "Recruiting", phone: "212-639-8470", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center at Phelps Memorial Hospital Center", city: "Sleepy Hollow", state: "New York", zip: "10591", status: "Recruiting", phone: "212-639-8470", email: "")
+    trial.locations.create!(facility: "Sha'are Zedek Medical", city: "Jerusalem", state: "", zip: "91031", status: "Recruiting", phone: "alberto@md.huji.ac.il", email: "")
+    trial.locations.create!(facility: "Obafemi Awolowo University Teaching Hospital", city: "Ile-Ife", state: "", zip: "", status: "Recruiting", phone: "", email: "segunalatishe@oau.edu.ng")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1148,6 +2013,19 @@ namespace :db do
       study_design: "Observational Model:  Case Control ",
       keywords: "cancer I recurrent IV II breast in IIIA IIIC IIIB situ stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "Recruiting", phone: "216-844-3944", email: "li.li@uhhospitals.org")
+    trial.locations.create!(facility: "UH-Monarch", city: "Mayfield Heights", state: "Ohio", zip: "44124", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-LUICC", city: "Mentor", state: "Ohio", zip: "44060", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Southwest", city: "Middleburgh Heights", state: "Ohio", zip: "44130", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Chagrin Highlands Orange Village Ohio 44122", city: "Orange Village", state: "Ohio", zip: "44122", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Firelands", city: "Sandusky", state: "Ohio", zip: "44870", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Green Road", city: "South Euclid", state: "Ohio", zip: "44121", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "UH-Westlake", city: "Westlake", state: "Ohio", zip: "44145", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "50 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1172,6 +2050,11 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "borderline cancer cavity tube recurrent epithelial-stromal ovarian surface primary tumor fallopian epithelial peritoneal",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "NCI - Center for Cancer Research", city: "Bethesda", state: "Maryland", zip: "20892-1906", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Warren Grant Magnuson Clinical Center - NCI Clinical Studies Support", city: "Bethesda", state: "Maryland", zip: "20892-1182", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1197,6 +2080,12 @@ namespace :db do
       study_design: "Primary Purpose:  Treatment ",
       keywords: "cancer primary tissue colon epithelial sarcoma gastrointestinal adrenocortical localized melanoma liver recurrent ovarian cell resectable IIIA IIIC IIIB III fibrosarcoma I IV II carcinoma adult advanced stage pancreatic hepatocellular renal rectal male st breast",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Institutes of Health Clinical Center (CC)")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "NCI - Center for Cancer Research-Medical Oncology", city: "Bethesda", state: "Maryland", zip: "20892-1182", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "NCI - Surgery Branch", city: "Bethesda", state: "Maryland", zip: "20892-1201", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1221,6 +2110,14 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "Tumor Cancer I Invasive Testing Biopsy Negative Primary II Genetic Breast HER2 Genomic sampling III Registry Stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "Susan G. Komen Breast Cancer Foundation")
+    trial.sponsors.create!(name: "Kellogg Company")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Feasibility Analysis of Genomic Predictor from Localized Invasive  Breast Cancer Tumor Registry", description: "Success is defined as the ability to classify patients into 1 of 4 cohorts (Groups A-D) based on results from genomic analyses of their breast cancer sample.  Feasibility will be defined as achieving a minimum success rate from acceptable samples of primary tumor in a sufficiently large cohort of eligible patients (n=300) spanning at least 12 months of patient accrual.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1251,6 +2148,14 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Supportive Care ",
       keywords: "control psychosocial cancer interventions Facing Forward Survivorship",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Fox Chase Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Fox Chase Cancer Center", city: "Philadelphia", state: "Pennsylvania", zip: "19111", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Reported uptake of behavioral actions recommended in Facing Forward", description: "Items asked whether the respondent engaged in each recommended behavior (Yes or No); affirmative responses to the items comprising each subscale were summed to create four subscale scores:use of follow-up medical care (6 items; e.g., have you developed a wellness plan?), management of side effects of management (7 items; e.g., have you used any tips for regaining your appetite? ), uptake of stress management (8 items; e.g., have you used relaxation techniques? ), management of social and financial matters management (7 items; e.g., have you used suggested tips for dealing with family issues?.")
+    trial.primary_outcomes.create!(measure: "Reported uptake of behavioral actions recommended in Facing Forward", description: "Items asked whether the respondent engaged in each recommended behavior (Yes or No); affirmative responses to the items comprising each subscale were summed to create four subscale scores:use of follow-up medical care (6 items; e.g., have you developed a wellness plan?), management of side effects of management (7 items; e.g., have you used any tips for regaining your appetite? ), uptake of stress management (8 items; e.g., have you used relaxation techniques? ), management of social and financial matters management (7 items; e.g., have you used suggested tips for dealing with family issues?.")
+    trial.primary_outcomes.create!(measure: "Reported uptake of behavioral actions recommended in Facing Forward", description: "Items asked whether the respondent engaged in each recommended behavior (Yes or No); affirmative responses to the items comprising each subscale were summed to create four subscale scores:use of follow-up medical care (6 items; e.g., have you developed a wellness plan?), management of side effects of management (7 items; e.g., have you used any tips for regaining your appetite? ), uptake of stress management (8 items; e.g., have you used relaxation techniques? ), management of social and financial matters management (7 items; e.g., have you used suggested tips for dealing with family issues?.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1276,6 +2181,11 @@ namespace :db do
       study_design: "Allocation:  Randomized, Primary Purpose:  Supportive Care ",
       keywords: "pancreatic weight cancer prostate IV cell lung changes malnutrition small non-small III stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Medicine and Dentistry New Jersey")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Cancer Institute of New Jersey at UMDNJ - Robert Wood Johnson Medical School", city: "New Brunswick", state: "New Jersey", zip: "08903", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1306,6 +2216,13 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Retrospective ",
       keywords: "genetic screening cancer",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Aarhus")
+    trial.sponsors.create!(name: "Danish Cancer Society")
+    trial.locations.create!(facility: "Aarhus University Hospital", city: "Skejby", state: "Aarhus", zip: "8000", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Copenhagen University Hospital", city: "Copenhagen ", state: "Copenhagen", zip: "2100", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1335,6 +2252,11 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "06-155 IIIB primary cancer cavity tube recurrent ovarian IV fallopian epithelial IIIA IIIC peritoneal stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1366,6 +2288,12 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "And Current Head Bronchoscopy Neck Cancer Laryngoscopy Disease Free Survival Cell Former Lung Smoker Non-Small NSCLC",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "Department of Defense")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1450,6 +2378,11 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Pharmacokinetics/Dynamics Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Sunitinib AZD6244 Cancer Thymic Lepatinib MK-2206 Lung Small Non-Small Cell Erlotinib",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "(888) NCI-1937", email: "")
+    trial.locations.create!(facility: "Oregon Health Sciences University Cancer Center", city: "Portland", state: "Oregon", zip: "97239", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1476,6 +2409,15 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
       keywords: " life Quality Breast Cancer",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "Weill Medical College of Cornell University")
+    trial.sponsors.create!(name: "The City College of New York")
+    trial.sponsors.create!(name: "Brigham and Women's Hospital")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "646-888-0022", email: "")
+    trial.locations.create!(facility: "Weill Medical College of Cornell University", city: "New York", state: "New York", zip: "", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "18 Years", max_age: "70 Years")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1504,6 +2446,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "protocol B-cell macroglobulinemia t(15;17)(q22;q12) zone nervous granular treatment breast angioimmunoblastic lymphoma secondary Burkitt acute lymphomatoid progressive mycosis large small NK/T-cell T-cell intraocular lymphoblastic specific leukemia, ovarian mucosa-associated cell 3 IIIA IIIC IIIB hairy lymphocyte IV Hodgkin stage leukemia/lymphoma central anaplastic granulomatosis (MLL) myeloid mixed Waldenstrom cancer mantle grade marginal lymphocytic primary system chronic 11q23 myelogenous immunoblastic nodal initial splenic unspecified germ 2 myelomonocytic type tumor, lymphoid fungoides/Sezary follicular adult with diffuse solid cutaneous refractory male inv(16)(p13;q22) t(16;16)(p13;q22) tissue epithelial abnormalities t(8;21)(q22;q22) extranodal tumor syndrome recurrent 1 III relapsing multiple nasal leukemia cleaved II non-Hodgkin phase atypical myeloma accelerated mast blastic meningeal",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "UNC Lineberger Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Lineberger Comprehensive Cancer Center at University of North Carolina - Chapel Hill", city: "Chapel Hill", state: "North Carolina", zip: "27599-7295", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Maximum tolerated dose (MTD) of PS-341 in combination with Doxil (Phase I)", description: "When the current dose level exceeds the MTD, the preceding dose-level will be considered to be the MTD if there have been six patients treated at that dose level. Otherwise, 3 additional patients will be treated at the presumed MTD. No further dose escalation will occur. MTD, like dose limiting toxicity (DLT), will be defined based on toxicities seen within the first cycle. Among the additional 3 patients enrolled in a cohort, if one or more DLT is observed, the MTD will be considered to have been exceeded")
+    trial.primary_outcomes.create!(measure: "Response rate of the combination of Velcade and Doxil in patients with metastatic breast cancer", description: "Radiographic response will be measured using RECIST criteria")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1531,6 +2480,15 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Caregiver, Investigator), Primary Purpose:  Treatment ",
       keywords: "cancer transitional I bladder cell 0 carcinoma the stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Jonsson Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Bladder Cancer Genitourinary Oncology, PC", city: "Phoenix", state: "Arizona", zip: "85032", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Jonsson Comprehensive Cancer Center at UCLA", city: "Los Angeles", state: "California", zip: "90095-1781", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Veterans Affairs Medical Center - West Los Angeles", city: "Los Angeles", state: "California", zip: "90073", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Santa Monica UCLA Medical Center", city: "Santa Monica", state: "California", zip: "90404", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Cancer Center", city: "Rochester", state: "Minnesota", zip: "55905", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1581,6 +2539,11 @@ namespace :db do
       study_design: "Observational Model:  Case-Only ",
       keywords: "Elizabeth Cancer Tube Ovarian Peritoneal Fallopian Survey Registry Questionnaire",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1614,6 +2577,11 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Prospective ",
       keywords: "Cervical DNA Cancer Analysis Array Gene Expression",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1637,6 +2605,11 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "pancreatic cancer solid everolimus, cancer, tumors, KRAS-mutant lung non-small GSK1120212,",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "GlaxoSmithKline")
+    trial.locations.create!(facility: "GSK Investigational Site", city: "Nashville", state: "Tennessee", zip: "37203", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "GSK Investigational Site", city: "San Antonio", state: "Texas", zip: "78229", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1663,6 +2636,11 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
       keywords: "",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Masonic Cancer Center, University of Minnesota")
+    trial.locations.create!(facility: "Masonic Cancer Center, University of Minnesota", city: "Minneapolis", state: "Minnesota", zip: "55455", status: "Recruiting", phone: "612-624-0123", email: "blaes004@umn.edu")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Change in Medical Outcomes Study Scores - Intervention versus Control", description: "MOS SF-36: Medical Outcomes Study 36-Item Short-Form")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1711,6 +2689,15 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Health Services Research ",
       keywords: "patient stardized cancer communication medical continuing doctor-patient health screening education literacy",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Tulane University School of Medicine")
+    trial.locations.create!(facility: "Tulane Communty Health Center at Covenant House", city: "New Orleans", state: "Louisiana", zip: "70112", status: "Recruiting", phone: "504-988-3000", email: "ayost@tulane.edu")
+    trial.locations.create!(facility: "Tulane Faculty Practice", city: "New Orleans", state: "Louisiana", zip: "70112", status: "Completed", phone: "", email: "")
+    trial.locations.create!(facility: "DCSNO Carrollton Medical Center", city: "New Orleans", state: "Louisiana", zip: "70118", status: "Completed", phone: "", email: "")
+    trial.locations.create!(facility: "DCSNO St Cecelia Medical Center", city: "New Orleans", state: "Louisiana", zip: "70117", status: "Completed", phone: "", email: "")
+    trial.locations.create!(facility: "EXCELth - Ida Hymel Community Health Center", city: "New Orleans", state: "Louisiana", zip: "70114", status: "Completed", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "40 Years", max_age: "75 Years")
+    trial.primary_outcomes.create!(measure: "Change in cervical, breast and colorectal cancer screening rates", description: "Cervical/Breast/Colorectal cancer screening rates will be measured at baseline and annually for 2 years to assess whether screening rates improve over time")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1737,6 +2724,13 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Roswell Park Cancer Institute")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Roswell Park Cancer Institute", city: "Buffalo", state: "New York", zip: "14263", status: "Recruiting", phone: "877-275-7724", email: "ASKRPCI@roswellpark.org")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Maximum tolerated dose (MTD) is defined as the highest dose level at which less than 33% of patients experience study treatment-related dose limiting toxicities (DLT)", description: "All toxicities and adverse events will be summarized with frequencies and descriptive measures, and tabulated according to body system, severity and relation to treatment.")
+    trial.primary_outcomes.create!(measure: "Overall safety profile characterized by type, frequency, severity (according to National Cancer Institute [NCI] CTCAE version 4.0), timing, seriousness and relationship to study treatment", description: "All toxicities and adverse events will be summarized with frequencies and descriptive measures, and tabulated according to body system, severity and relation to treatment.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1760,6 +2754,12 @@ namespace :db do
       study_design: "N/A ",
       keywords: "B-cell malignant myelibrosis gestational t(15;17)(q22;q12) zone previously rhabdomyosarcoma syndromes remission de noncleaved breast lymphoma secondary Burkitt acute BCR-ABL mycosis tumors neutrophilic large eosinophilic small trophoblastic T-cell lymphoblastic leukemia, ovarian mucosa-associated cell 3 IIIA IIIC IIIB hairy Wilms metastatic cleaved Hodgkin stage survivor tumor (MLL) myeloid mixed childhood cancer mantle grade marginal lymphocytic primary splenic chronic 11q23 noncontiguous myelogenous immunoblastic novo nodal negative germ 2 myelomonocytic lymphoid fungoides/Sezary follicular neoplasm, adult with diffuse cutaneous refractory treated juvenile atypical inv(16)(p13;q22) t(16;16)(p13;q22) tissue epithelial in abnormalities t(8;21)(q22;q22) recurrent/refractory extranodal syndrome recurrent 1 prognosis other kidney III poor relapsing multiple neuroblastoma I leukemia IV II unclassifiable testicular non-Hodgkin phase myelodysplastic/myeloproliferative disseminated myeloma myelodysplastic accelerated blastic",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Vanderbilt-Ingram Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center - Cool Springs", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-322-4967", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center", city: "Nashville", state: "Tennessee", zip: "37232-6838", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1783,6 +2783,11 @@ namespace :db do
       study_design: "Observational Model:  Case Control, Time Perspective:  Prospective ",
       keywords: "prostate cancer hereditary",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Portland VA Medical Center")
+    trial.locations.create!(facility: "Veterans Affairs Medical Center - Portland", city: "Portland", state: "Oregon", zip: "97239", status: "Recruiting", phone: "503-220-8262", email: "shannoja@ohsu.edu")
+    trial.eligibilities.create!(population: "
+      ", gender: "Male", min_age: "21 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1807,6 +2812,14 @@ namespace :db do
       study_design: "N/A ",
       keywords: "II limited cancer I IIIA IV cell 0 lung small non-small IIIB extensive stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Vanderbilt-Ingram Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center - Cool Springs", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-322-3412", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center at Franklin", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-322-3412", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center", city: "Nashville", state: "Tennessee", zip: "37232-6838", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.locations.create!(facility: "Veterans Affairs Medical Center - Nashville", city: "Nashville", state: "Tennessee", zip: "37212", status: "Recruiting", phone: "615-327-4751", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1834,6 +2847,18 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "undifferentiated endometrioid cancer cavity cystadenocarcinoma clear recurrent ovarian primary cell serous adenocarcinoma epithelial mixed carcinoma peritoneal tube fallopian",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Gynecologic Oncology Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "University of Colorado Cancer Center at UC Health Sciences Center", city: "Aurora", state: "Colorado", zip: "80045", status: "Recruiting", phone: "720-848-0650", email: "")
+    trial.locations.create!(facility: "University of Chicago Cancer Research Center", city: "Chicago", state: "Illinois", zip: "60637-1470", status: "Recruiting", phone: "773-834-7424", email: "")
+    trial.locations.create!(facility: "Holden Comprehensive Cancer Center at University of Iowa", city: "Iowa City", state: "Iowa", zip: "52242-1002", status: "Recruiting", phone: "800-237-1225", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "212-639-8895", email: "")
+    trial.locations.create!(facility: "Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "Recruiting", phone: "800-641-2422", email: "")
+    trial.locations.create!(facility: "Arthur G. James Cancer Hospital and Richard J. Solove Research Institute at Ohio State University Comprehensive Cancer Center", city: "Columbus", state: "Ohio", zip: "43210-1240", status: "Recruiting", phone: "866-627-7616", email: "Jamesline@osumc.edu")
+    trial.locations.create!(facility: "Oklahoma University Cancer Institute", city: "Oklahoma City", state: "Oklahoma", zip: "73104", status: "Recruiting", phone: "405-271-8787", email: "")
+    trial.locations.create!(facility: "Women and Infants Hospital of Rhode Island", city: "Providence", state: "Rhode Island", zip: "02905", status: "Recruiting", phone: "401-274-1122", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1857,6 +2882,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Outcomes Assessor), Primary Purpose:  Diagnostic ",
       keywords: "sample organic cancer compounds detection ovarian analysis breath exhalation volatile screening canine lung scent breast",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Schillerhoehe Hospital")
+    trial.sponsors.create!(name: "Robert Bosch Gesellschaft fur Medizinische Forschung mbH")
+    trial.locations.create!(facility: "Schillerhoehe Hospital", city: "Gerlingen", state: "Baden-Wurttemberg", zip: "70839", status: "Recruiting", phone: "+49-7156-203", email: "Andrea.Hofbauer@klinik-schillerhoehe.de")
+    trial.locations.create!(facility: "Robert Bosch Hospital", city: "Stuttgart", state: "Baden-Wurttemberg", zip: "70376", status: "Recruiting", phone: "+49-711-8101", email: "Jasmin.Happle@rbk.de")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "80 Years")
+    trial.primary_outcomes.create!(measure: "Specificity for Lung Cancer", description: "exhalation analysis by sniffer dogs is able to differentiate breath samples of patients with lung cancer from those of patients with other (tested) cancers")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1882,6 +2914,11 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "gastric stomach cancer recurrent IV adenocarcinoma esophageal the esophagus stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Jonsson Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Jonsson Comprehensive Cancer Center, UCLA", city: "Los Angeles", state: "California", zip: "90095-1781", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1903,6 +2940,12 @@ namespace :db do
       study_design: "Endpoint Classification:  Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Prevention ",
       keywords: "cancer increased for developing who had ovarian relatives reproductive diagnosed have Women with or breast risk",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Swedish Medical Center")
+    trial.sponsors.create!(name: "Fred Hutchinson Cancer Research Center")
+    trial.sponsors.create!(name: "The Marsha Rivkin Center for Ovarian Cancer Research")
+    trial.locations.create!(facility: "Marsha Rivkin Center for Ovarian Cancer Research", city: "Seattle", state: "Washington", zip: "98122", status: "Recruiting", phone: "206-386-3788", email: "paula.manner@swedish.org")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "30 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1926,6 +2969,11 @@ namespace :db do
       study_design: "Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
       keywords: " cancer epithelial psychosocial recurrent ovarian germ cell treatment IIIA IIIC IIIB III I IV II fatigue effects stage tumor breast",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Comprehensive Cancer Center of Wake Forest University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Wake Forest University Comprehensive Cancer Center", city: "Winston-Salem", state: "North Carolina", zip: "27157-1096", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1949,6 +2997,11 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube recurrent primary peritoneal ovarian fallopian epithelial",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Jonsson Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Jonsson Comprehensive Cancer Center, UCLA", city: "Los Angeles", state: "California", zip: "90095-1781", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1972,6 +3025,11 @@ namespace :db do
       study_design: "Primary Purpose:  Treatment ",
       keywords: "undifferentiated primary endometrioid cancer mucinous cavity cystadenocarcinoma clear recurrent ovarian IV cell serous adenocarcinoma epithelial mixed carcinoma peritoneal tube fallopian stage",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10021", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -1994,6 +3052,12 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "adenoviral GM-CSF cancer vaccination transfer IV mediated breast gene autologous Stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Dana-Farber Cancer Institute")
+    trial.sponsors.create!(name: "Brigham and Women's Hospital")
+    trial.locations.create!(facility: "Dana-Farber Cancer Institute", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Brigham and Women's Hospital", city: "Boston", state: "Massachusetts", zip: "02115", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2059,6 +3123,10 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Melanoma Cancer Immunotherapy Adjuvant Chest Metastatic Therapy Sarcoma Metastases Lung Vaccine",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "(888) NCI-1937", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2084,6 +3152,12 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Retrospective ",
       keywords: "tumor pancreatic cancer rectal recurrent ovarian germ IV cell IIIA lung epithelial small colon non-small IIIB III extensive stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2159,6 +3233,10 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Antibodies Cancer Solid Kinase Inhibitors Tumor Colon Colorectal Pharmacokinetics K-Ras",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2189,6 +3267,33 @@ namespace :db do
       study_design: "Allocation:  Randomized, Masking:  Double-Blind, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube recurrent ovarian primary fallopian epithelial peritoneal",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Gynecologic Oncology Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "University of Colorado Cancer Center at UC Health Sciences Center", city: "Aurora", state: "Colorado", zip: "80045", status: "Recruiting", phone: "720-848-0650", email: "")
+    trial.locations.create!(facility: "Gynecologic Oncology", city: "Hinsdale", state: "Illinois", zip: "60521", status: "Recruiting", phone: "630-856-6757", email: "")
+    trial.locations.create!(facility: "Indiana University Melvin and Bren Simon Cancer Center", city: "Indianapolis", state: "Indiana", zip: "46202-5289", status: "Recruiting", phone: "317-274-2552", email: "")
+    trial.locations.create!(facility: "St. Vincent Oncology Center", city: "Indianapolis", state: "Indiana", zip: "46260", status: "Recruiting", phone: "317-415-6740", email: "")
+    trial.locations.create!(facility: "McFarland Clinic, PC", city: "Ames", state: "Iowa", zip: "50010", status: "Recruiting", phone: "515-239-2621", email: "")
+    trial.locations.create!(facility: "Mercy Cancer Center at Mercy Medical Center - Des Moines", city: "Des Moines", state: "Iowa", zip: "50314", status: "Recruiting", phone: "515-643-8206", email: "")
+    trial.locations.create!(facility: "John Stoddard Cancer Center at Iowa Methodist Medical Center", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-241-6727", email: "")
+    trial.locations.create!(facility: "CCOP - Iowa Oncology Research Association", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-244-7586", email: "")
+    trial.locations.create!(facility: "Medical Oncology and Hematology Associates at John Stoddard Cancer Center", city: "Des Moines", state: "Iowa", zip: "50309", status: "Recruiting", phone: "515-282-2921", email: "")
+    trial.locations.create!(facility: "Medical Oncology and Hematology Associates at Mercy Cancer Center", city: "Des Moines", state: "Iowa", zip: "50314", status: "Recruiting", phone: "515-643-8740", email: "")
+    trial.locations.create!(facility: "John Stoddard Cancer Center at Iowa Lutheran Hospital", city: "Des Moines", state: "Iowa", zip: "50316", status: "Recruiting", phone: "515-241-8704", email: "")
+    trial.locations.create!(facility: "Methodist Estabrook Cancer Center", city: "Omaha", state: "Nebraska", zip: "68114", status: "Recruiting", phone: "402-354-5250", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "212-639-8895", email: "")
+    trial.locations.create!(facility: "Duke Comprehensive Cancer Center", city: "Durham", state: "North Carolina", zip: "27710", status: "Recruiting", phone: "888-275-3853", email: "")
+    trial.locations.create!(facility: "Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "Recruiting", phone: "800-641-2422", email: "")
+    trial.locations.create!(facility: "Riverside Methodist Hospital Cancer Care", city: "Columbus", state: "Ohio", zip: "43214-3998", status: "Recruiting", phone: "614-566-4475", email: "")
+    trial.locations.create!(facility: "Lake/University Ireland Cancer Center", city: "Mentor", state: "Ohio", zip: "44060", status: "Recruiting", phone: "216-844-5011", email: "")
+    trial.locations.create!(facility: "Oklahoma University Cancer Institute", city: "Oklahoma City", state: "Oklahoma", zip: "73104", status: "Recruiting", phone: "405-271-8787", email: "")
+    trial.locations.create!(facility: "Cancer Care Associates - Saint Francis Campus", city: "Tulsa", state: "Oklahoma", zip: "74136-1929", status: "Recruiting", phone: "405-271-8787", email: "")
+    trial.locations.create!(facility: "Rosenfeld Cancer Center at Abington Memorial Hospital", city: "Abington", state: "Pennsylvania", zip: "19001", status: "Recruiting", phone: "215-481-2402", email: "")
+    trial.locations.create!(facility: "Women and Infants Hospital of Rhode Island", city: "Providence", state: "Rhode Island", zip: "02905", status: "Recruiting", phone: "401-274-1122", email: "")
+    trial.locations.create!(facility: "AnMed Cancer Center", city: "Anderson", state: "South Carolina", zip: "29621", status: "Recruiting", phone: "864-512-1000", email: "")
+    trial.locations.create!(facility: "Baylor University Medical Center - Dallas", city: "Dallas", state: "Texas", zip: "75246", status: "Recruiting", phone: "800-422-9567", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2250,6 +3355,12 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Pegaspargase or Cancer Tube Primary Ovarian Peritoneal Refractory Fallopian Pegylated Relapsed L-Asparaginase",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "6 Month Progression Free Survival", description: "Proportion of patients able to attain a 6 month progression free survival. Progressive disease is defined as >20% increase in the sum of the longest diameter of all target lesions, or the unequivocal increase in size of non-measurable lesions agreed upon by two investigators, or the appearance of new lesions.")
+    trial.primary_outcomes.create!(measure: "Evaluation of Safety in Patients With Ovarian, Fallopian Tube, and/or Primary Peritoneal Cancer.", description: "Here is the number of participants with adverse events. For a detailed list of adverse events see the adverse event module.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2274,6 +3385,12 @@ namespace :db do
       study_design: "Observational Model:  Case-Only, Time Perspective:  Cross-Sectional ",
       keywords: "tumor pancreatic intestine cancer germ cell teratoma testicular malignant skin small",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "Recruiting", phone: "800-641-2422", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2297,6 +3414,13 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "Breast Cancer",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.sponsors.create!(name: "Indiana University")
+    trial.locations.create!(facility: "Memorial Sloan Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2323,6 +3447,11 @@ namespace :db do
       study_design: "Allocation:  Randomized, Masking:  Double-Blind, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube recurrent ovarian peritoneal fallopian epithelial IV III stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Yale University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Yale Cancer Center", city: "New Haven", state: "Connecticut", zip: "06520-8028", status: "Recruiting", phone: "203-785-5702", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2376,6 +3505,12 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Cancer Rectal Assisted Laparoscopic Colorectal Robotic Surgery",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of California, Irvine")
+    trial.sponsors.create!(name: "University of Leeds")
+    trial.locations.create!(facility: "University of California, Irvine Medical Center", city: "Orange", state: "California", zip: "92868", status: "Recruiting", phone: "714-456-5396", email: "chavezc@uci.edu")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "End of Conversion to Open Surgery", description: "The primary end point is the rate of conversion to open surgery as an indicator of surgical technical difficulty. Conversion is defined as the use of a laparotomy wound for any part of the mesorectal dissection. The use of a limited laparotomy wound to facilitate a low stapled anastomosis and/or specimen extraction is permissible and not defined as an open conversion.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2403,6 +3538,17 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer Neuropathy Solid Unresectable Cyclophosphamide Eribulin tumor Metastatic carcinoma breast metastatic or",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of California, San Francisco")
+    trial.sponsors.create!(name: "Eisai Inc.")
+    trial.locations.create!(facility: "UCSF Helen Diller Family Comprehensive Cancer Center", city: "San Francisco", state: "California", zip: "94143", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "80 Years")
+    trial.primary_outcomes.create!(measure: "Phase Ib: 1. Maximum tolerated dose (MTD) of eribulin in combination with cyclophosphamide in patients with any solid tumor", description: "Standard dose-confirmation design: 3 to 6 patients per cohort (3+3 design), 9-18 total patients with any solid tumor malignancy
+DLTs reviewed to determine dose escalation to the next highest level
+Highest dose level: no more than one of six subjects experience DLT defines the MTD
+DLT defined as any treatment-related toxicity in first 28 days of therapy: grade 3 or 4 non-hematologic toxicity; grade 4 neutropenia or thrombocytopenia lasting >7 days or febrile neutropenia; or any clinically significant toxicity grade 2 or higher that requires more than 14 days to resolve")
+    trial.primary_outcomes.create!(measure: "Phase II 1. Clinical benefit (complete response, partial response, and stable disease) of the combination of eribulin and cyclophosphamide in patients with advanced breast cancer", description: "Patients will be re-evaluated for response at 6 weeks (after 2 cycles), then every 9 weeks until end of study therapy.  Confirmatory scans will not be performed since this is a Phase I/II trial and the primary endpoints are safety, toxicity, and clinical benefit rate.
+Response and progression will be evaluated in this study using Response Evaluation Criteria in Solid Tumors (RECIST) guideline (version 1.1). Changes in the largest diameter (uni-dimensional measurement) of the tumor lesions and the shortest diameter in the case of malignant lymph nodes are used in the RECIST 1.1 criteria")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2428,6 +3574,15 @@ namespace :db do
       study_design: "Time Perspective:  Prospective ",
       keywords: "non-polyposis cancer rectal polyposis hereditary colon familial adenomatous",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Vanderbilt University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center - Cool Springs", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-343-4612", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center at Franklin", city: "Nashville", state: "Tennessee", zip: "37064", status: "Recruiting", phone: "615-343-4612", email: "")
+    trial.locations.create!(facility: "Vanderbilt-Ingram Cancer Center", city: "Nashville", state: "Tennessee", zip: "37232-6838", status: "Recruiting", phone: "800-811-8480", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Identification of patients at high risk of developing hereditary colorectal cancer", description: "Database will continue indefinitely with IRB approval and investigator support")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2452,6 +3607,16 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Supportive Care ",
       keywords: "physician life cancer with Communication Lung Quality",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Wisconsin, Madison")
+    trial.sponsors.create!(name: "Harry Gray Cancer Center Hartford Hospial")
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "University of Illinois")
+    trial.locations.create!(facility: "Harry Gray Cancer Center at Hartford Hospital", city: "Hartford", state: "Connecticut", zip: "06102", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "University of Illinois at Chicago Cancer Center", city: "Chicago", state: "Illinois", zip: "60612", status: "Recruiting", phone: "312-413-4252", email: "CancerCenterCTO@uic.edu")
+    trial.locations.create!(facility: "M.D. Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "Recruiting", phone: "713-563-0635", email: "lizlee@mdanderson.org")
+    trial.locations.create!(facility: "University of Wisconsin Carbone Cancer Center", city: "Madison", state: "Wisconsin", zip: "53792", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2518,6 +3683,10 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Cell Cancer Mesothelioma Thoracic Tumor Lung Esophageal Malignancies Vaccine",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "(888) NCI-1937", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2550,6 +3719,13 @@ namespace :db do
       study_design: "Observational Model:  Family-Based, Time Perspective:  Prospective ",
       keywords: "Endometrial cancer testing mutations Hereditary sample Questionnaires Genetic Spouses Mutation Colorectal Molecular onset family personal Bladder Early genetic Little/no Blood Predisposition Saliva Uterus HNPCC analyses Gene Family Cancer age Sample Nonpolyposis Colon Skin polymorphisms or Kidney history",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "UT MD Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Time to Onset for Colorectal Cancer", description: "Primary endpoint is time to onset for colorectal cancer using Cox proportional hazard regression for determining the role that polymorphic variants of genes have on risk for development of HNPCC at an early age.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2578,6 +3754,11 @@ namespace :db do
       study_design: "Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube ovarian IV fallopian epithelial peritoneal III stage",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "University of Virginia")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "University of Virginia Cancer Center", city: "Charlottesville", state: "Virginia", zip: "22908", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2601,6 +3782,16 @@ namespace :db do
       study_design: "Observational Model:  Cohort, Time Perspective:  Prospective ",
       keywords: "Anxiety Cancer men Black 07-125 Prostate",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "University School of Medicine(VA-NYU)")
+    trial.sponsors.create!(name: "State University of New York - Downstate Medical Center")
+    trial.sponsors.create!(name: "Kings County Hospital Center")
+    trial.locations.create!(facility: "Downstate Medical Center", city: "Brooklyn", state: "New York", zip: "11203", status: "Recruiting", phone: "", email: "")
+    trial.locations.create!(facility: "Kings County Hopsital Center", city: "Brooklyn", state: "New York", zip: "", status: "Completed", phone: "", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "646-888-0030", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Male", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2626,6 +3817,11 @@ namespace :db do
       study_design: "Primary Purpose:  Treatment ",
       keywords: "cervical cancer borderline cavity tube recurrent epithelial-stromal ovarian surface primary tumor fallopian epithelial peritoneal",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "NCI - Center for Cancer Research", city: "Bethesda", state: "Maryland", zip: "20892", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Warren Grant Magnuson Clinical Center - NCI Clinical Studies Support", city: "Bethesda", state: "Maryland", zip: "20892-1182", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2648,6 +3844,12 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Intervention Model:  Parallel Assignment, Masking:  Open Label, Primary Purpose:  Screening ",
       keywords: "",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Memorial Sloan-Kettering Cancer Center")
+    trial.sponsors.create!(name: "Columbia University")
+    trial.sponsors.create!(name: "Weill Medical College of Cornell University")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "Recruiting", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2686,6 +3888,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Single Blind (Subject), Primary Purpose:  Supportive Care ",
       keywords: "Information Life Cancer Prostate Support Social System Enhancement tools Health Mentor Skill-building Comprehensive the Quality support CHESS",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "M.D. Anderson Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Hartford Hospital", city: "Hartford", state: "Connecticut", zip: "06102", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "UT MD . Anderson Cancer Center", city: "Houston", state: "Texas", zip: "77030", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Comprehensive Cancer Center", city: "Madison", state: "Wisconsin", zip: "53792", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Male", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2710,6 +3919,105 @@ namespace :db do
       study_design: "N/A ",
       keywords: "cancer cavity tube ovarian primary neoplasm fallopian breast peritoneal",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Gynecologic Oncology Group")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "UAB Comprehensive Cancer Center", city: "Birmingham", state: "Alabama", zip: "35294", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Scottsdale", city: "Scottsdale", state: "Arizona", zip: "85259-5499", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Jonsson Comprehensive Cancer Center at UCLA", city: "Los Angeles", state: "California", zip: "90095-1781", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Colorado Cancer Center at UC Health Sciences Center", city: "Aurora", state: "Colorado", zip: "80045", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Francis/Mount Sinai Regional Cancer Center at Saint Francis Hospital and Medical Center", city: "Hartford", state: "Connecticut", zip: "06105", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "George Bray Cancer Center at the Hospital of Central Connecticut - New Britain Campus", city: "New Britain", state: "Connecticut", zip: "06050", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Yale Cancer Center", city: "New Haven", state: "Connecticut", zip: "06520-8028", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Tunnell Cancer Center at Beebe Medical Center", city: "Lewes", state: "Delaware", zip: "19958", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Christiana Care Health Services", city: "Newark", state: "Delaware", zip: "19713", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic - Jacksonville", city: "Jacksonville", state: "Florida", zip: "32224", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Women's Cancer Associates", city: "Saint Petersburg", state: "Florida", zip: "33701", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sarasota Memorial Hospital", city: "Sarasota", state: "Florida", zip: "34239", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Tripler Army Medical Center", city: "Honolulu", state: "Hawaii", zip: "96859", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Alphonsus Cancer Care Center at Saint Alphonsus Regional Medical Center", city: "Boise", state: "Idaho", zip: "83706", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Chicago Cancer Research Center", city: "Chicago", state: "Illinois", zip: "60637-1470", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Rush University Medical Center", city: "Chicago", state: "Illinois", zip: "60612", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Evanston Hospital", city: "Evanston", state: "Illinois", zip: "60201-1781", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Carle Cancer Center", city: "Urbana", state: "Illinois", zip: "61801", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Indiana University Melvin and Bren Simon Cancer Center", city: "Indianapolis", state: "Indiana", zip: "46202-5289", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Vincent Oncology Center", city: "Indianapolis", state: "Indiana", zip: "46260", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Elizabeth Medical Center", city: "Edgewood", state: "Kentucky", zip: "41017", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Louisville Oncology at Norton Cancer Institute - Louisville", city: "Louisville", state: "Kentucky", zip: "40202", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Maine Medical Center - Bramhall Campus", city: "Portland", state: "Maine", zip: "04102", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Greater Baltimore Medical Center Cancer Center", city: "Baltimore", state: "Maryland", zip: "21204", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "National Naval Medical Center", city: "Bethesda", state: "Maryland", zip: "20889-5600", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Union Hospital of Cecil County", city: "Elkton MD", state: "Maryland", zip: "21921", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Tufts Medical Center Cancer Center", city: "Boston", state: "Massachusetts", zip: "02111", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Michigan Cancer Research Consortium", city: "Ann Arbor", state: "Michigan", zip: "48106", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Joseph Mercy Cancer Center", city: "Ann Arbor", state: "Michigan", zip: "48106-0995", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Battle Creek Health System Cancer Care Center", city: "Battle Creek", state: "Michigan", zip: "49017", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mecosta County Medical Center", city: "Big Rapids", state: "Michigan", zip: "49307", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Oakwood Cancer Center at Oakwood Hospital and Medical Center", city: "Dearborn", state: "Michigan", zip: "48123-2500", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Barbara Ann Karmanos Cancer Institute", city: "Detroit", state: "Michigan", zip: "48201-1379", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hurley Medical Center", city: "Flint", state: "Michigan", zip: "48503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Genesys Hurley Cancer Institute", city: "Flint", state: "Michigan", zip: "48503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lacks Cancer Center at Saint Mary's Health Care", city: "Grand Rapids", state: "Michigan", zip: "49503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Grand Rapids", city: "Grand Rapids", state: "Michigan", zip: "49503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Butterworth Hospital at Spectrum Health", city: "Grand Rapids", state: "Michigan", zip: "49503", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Van Elslander Cancer Center at St. John Hospital and Medical Center", city: "Grosse Pointe Woods", state: "Michigan", zip: "48236", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Foote Memorial Hospital", city: "Jackson", state: "Michigan", zip: "49201", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Sparrow Regional Cancer Center", city: "Lansing", state: "Michigan", zip: "48912-1811", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Mary Mercy Hospital", city: "Livonia", state: "Michigan", zip: "48154", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy General Health Partners", city: "Muskegon", state: "Michigan", zip: "49443", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Joseph Mercy Oakland", city: "Pontiac", state: "Michigan", zip: "48341-2985", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy Regional Cancer Center at Mercy Hospital", city: "Port Huron", state: "Michigan", zip: "48060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Seton Cancer Institute at Saint Mary's - Saginaw", city: "Saginaw", state: "Michigan", zip: "48601", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Munson Medical Center", city: "Traverse City", state: "Michigan", zip: "49684", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. John Macomb Hospital", city: "Warren", state: "Michigan", zip: "48093", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Fairview Ridges Hospital", city: "Burnsville", state: "Minnesota", zip: "55337", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy and Unity Cancer Center at Mercy Hospital", city: "Coon Rapids", state: "Minnesota", zip: "55433", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Fairview Southdale Hospital", city: "Edina", state: "Minnesota", zip: "55435", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mercy and Unity Cancer Center at Unity Hospital", city: "Fridley", state: "Minnesota", zip: "55432", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hutchinson Area Health Care", city: "Hutchinson", state: "Minnesota", zip: "55350", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "HealthEast Cancer Care at St. John's Hospital", city: "Maplewood", state: "Minnesota", zip: "55109", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Minnesota Oncology - Maplewood", city: "Maplewood", state: "Minnesota", zip: "55109", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hennepin County Medical Center - Minneapolis", city: "Minneapolis", state: "Minnesota", zip: "55415", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Masonic Cancer Center at University of Minnesota", city: "Minneapolis", state: "Minnesota", zip: "55455", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Virginia Piper Cancer Institute at Abbott - Northwestern Hospital", city: "Minneapolis", state: "Minnesota", zip: "55407", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "New Ulm Medical Center", city: "New Ulm", state: "Minnesota", zip: "56073", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Humphrey Cancer Center at North Memorial Outpatient Center", city: "Robbinsdale", state: "Minnesota", zip: "55422-2900", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mayo Clinic Cancer Center", city: "Rochester", state: "Minnesota", zip: "55905", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Park Nicollet Cancer Center", city: "Saint Louis Park", state: "Minnesota", zip: "55416", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Metro-Minnesota", city: "Saint Louis Park", state: "Minnesota", zip: "55416", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "United Hospital", city: "Saint Paul", state: "Minnesota", zip: "55102", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "St. Francis Cancer Center at St. Francis Medical Center", city: "Shakopee", state: "Minnesota", zip: "55379", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Regions Hospital Cancer Care Center", city: "St. Paul", state: "Minnesota", zip: "55101", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lakeview Hospital", city: "Stillwater", state: "Minnesota", zip: "55082", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Ridgeview Medical Center", city: "Waconia", state: "Minnesota", zip: "55387", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Willmar Cancer Center at Rice Memorial Hospital", city: "Willmar", state: "Minnesota", zip: "56201", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Minnesota Oncology - Woodbury", city: "Woodbury", state: "Minnesota", zip: "55125", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Ellis Fischel Cancer Center at University of Missouri - Columbia", city: "Columbia", state: "Missouri", zip: "65203", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Joseph Oncology, Incorporated", city: "Saint Joseph", state: "Missouri", zip: "64507", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Siteman Cancer Center at Barnes-Jewish Hospital - Saint Louis", city: "Saint Louis", state: "Missouri", zip: "63110", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of New Mexico Cancer Center", city: "Albuquerque", state: "New Mexico", zip: "87131-5636", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Roswell Park Cancer Institute", city: "Buffalo", state: "New York", zip: "14263-0001", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Herbert Irving Comprehensive Cancer Center at Columbia University Medical Center", city: "New York", state: "New York", zip: "10032", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "NYU Cancer Institute at New York University Medical Center", city: "New York", state: "New York", zip: "10016", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10065", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Blumenthal Cancer Center at Carolinas Medical Center", city: "Charlotte", state: "North Carolina", zip: "28232-2861", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "FirstHealth Moore Regional Community Hospital Comprehensive Cancer Center", city: "Pinehurst", state: "North Carolina", zip: "28374", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Charles M. Barrett Cancer Center at University Hospital", city: "Cincinnati", state: "Ohio", zip: "45267", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cleveland Clinic Cancer Center at Fairview Hospital", city: "Cleveland", state: "Ohio", zip: "44111", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cleveland Clinic Taussig Cancer Center", city: "Cleveland", state: "Ohio", zip: "44195", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hillcrest Cancer Center at Hillcrest Hospital", city: "Mayfield Heights", state: "Ohio", zip: "44124", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lake/University Ireland Cancer Center", city: "Mentor", state: "Ohio", zip: "44060", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Oklahoma University Cancer Institute", city: "Oklahoma City", state: "Oklahoma", zip: "73104", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Bryn Mawr Hospital", city: "Bryn Mawr", state: "Pennsylvania", zip: "19010", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Cancer Center of Paoli Memorial Hospital", city: "Paoli", state: "Pennsylvania", zip: "19301-1792", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "CCOP - Main Line Health", city: "Wynnewood", state: "Pennsylvania", zip: "19096", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Lankenau Cancer Center at Lankenau Hospital", city: "Wynnewood", state: "Pennsylvania", zip: "19096", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Women and Infants Hospital of Rhode Island", city: "Providence", state: "Rhode Island", zip: "02905", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Virginia Commonwealth University Massey Cancer Center", city: "Richmond", state: "Virginia", zip: "23298-0037", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Carilion Gynecologic Oncology Associates", city: "Roanoke", state: "Virginia", zip: "24016", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "University of Wisconsin Paul P. Carbone Comprehensive Cancer Center", city: "Madison", state: "Wisconsin", zip: "53792-6164", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "30 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2742,6 +4050,11 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Safety/Efficacy Study, Intervention Model:  Parallel Assignment, Masking:  Double Blind (Subject, Investigator), Primary Purpose:  Treatment ",
       keywords: "Neoplasms, Cancer cancer Tumors Mammary Human Carcinoma Breast human the or breast",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Emory University")
+    trial.locations.create!(facility: "Emory University Winship Cancer Institute", city: "Atlanta", state: "Georgia", zip: "30322", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Female", min_age: "18 Years", max_age: "N/A")
+    trial.primary_outcomes.create!(measure: "Comparing 2 surgical methods for treatment of early stage breast cancer", description: "The investigator will survey patients with the cosmetic assessment survey after the surgical procedure.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2770,6 +4083,20 @@ namespace :db do
       study_design: "Allocation:  Randomized, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "cancer cavity tube recurrent ovarian IV fallopian epithelial peritoneal III stage",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Cancer Research UK")
+    trial.locations.create!(facility: "Leeds Cancer Centre at St. James's University Hospital", city: "Leeds", state: "England", zip: "LS9 7TF", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Leicester Royal Infirmary", city: "Leicester", state: "England", zip: "LE1 5WW", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Hammersmith Hospital", city: "London", state: "England", zip: "W12 OHS", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Saint Bartholomew's Hospital", city: "London", state: "England", zip: "EC1A 7BE", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Royal Marsden - London", city: "London", state: "England", zip: "SW3 6JJ", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Mount Vernon Cancer Centre at Mount Vernon Hospital", city: "Northwood", state: "England", zip: "HA6 2RN", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Royal Marsden - Surrey", city: "Sutton", state: "England", zip: "SM2 5PT", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Weston General Hospital", city: "Weston-super-Mare", state: "England", zip: "BS23 4TQ", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Belfast City Hospital Trust Incorporating Belvoir Park Hospital", city: "Belfast", state: "Northern Ireland", zip: "BT8 8JR", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Edinburgh Cancer Centre at Western General Hospital", city: "Edinburgh", state: "Scotland", zip: "EH4 2XU", status: "", phone: "", email: "")
+    trial.locations.create!(facility: "Beatson West of Scotland Cancer Centre", city: "Glasgow", state: "Scotland", zip: "G12 0YN", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2793,6 +4120,12 @@ namespace :db do
       study_design: "Time Perspective:  Prospective ",
       keywords: "II renal cancer I recurrent IV cell III stage",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Comprehensive Cancer Center of Wake Forest University")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Wake Forest University Comprehensive Cancer Center", city: "Winston-Salem", state: "North Carolina", zip: "27157-1096", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2817,6 +4150,13 @@ namespace :db do
       study_design: "Allocation:  Randomized, Endpoint Classification:  Pharmacokinetics/Dynamics Study, Intervention Model:  Crossover Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "neoplasms Kinase Inhibitors lung Diseases Thoracic cell Breast Tract Bronchial Respiratory diseases Aromatase Bronchogenic Carcinoma, by Exemestane Neoplasms Site Lung carcinoma,non small Protein Erlotinib",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Syndax Pharmaceuticals")
+    trial.locations.create!(facility: "Florida Cancer Specialists", city: "Sarasota", state: "Florida", zip: "34232", status: "Recruiting", phone: "941-377-9993", email: "")
+    trial.locations.create!(facility: "Peggy and Charles Stephenson Cancer Center", city: "Oklahoma City", state: "Oklahoma", zip: "73104", status: "Recruiting", phone: "405-271-8778", email: "Carla-kurkjian@ouhsc.edu")
+    trial.locations.create!(facility: "Sarah Cannon Research Institute", city: "Nashville", state: "Tennessee", zip: "37203", status: "Recruiting", phone: "615-329-7224", email: "ASKSARAH@scresearch.net")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "90 Years")
+    trial.primary_outcomes.create!(measure: "Difference in pharmacokinetics of entinostat when subjects fed or fasted", description: "The pharmacokinetics of entinostat will be analyzed from patient plasma samples: maximum plasma concentration, time of maximum plasma concentration, area under the plasma concentration-time curve from baseline to last measurable concentration and extrapolated to infinity, terminal elimination rate constant.")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2876,6 +4216,10 @@ namespace :db do
       study_design: "Allocation:  Non-Randomized, Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Melanoma Cancer Immunotherapy Chest Metastatic Metastases Sarcoma Vaccine",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "National Institutes of Health Clinical Center, 9000 Rockville Pike", city: "Bethesda", state: "Maryland", zip: "20892", status: "Recruiting", phone: "(888) NCI-1937", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2900,6 +4244,13 @@ namespace :db do
       study_design: "Allocation:  Randomized ",
       keywords: " psychosocial IB cancer I breast II IA effects long-term stage prostate depression treatment",
       is_fda_regulated: "")
+    trial = Trial.last
+    trial.sponsors.create!(name: "AMC Cancer Research Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "University of Miami Sylvester Comprehensive Cancer Center - Miami", city: "Miami", state: "Florida", zip: "33136", status: "Recruiting", phone: "1-800-4-CANCER", email: "")
+    trial.locations.create!(facility: "Memorial Sloan-Kettering Cancer Center", city: "New York", state: "New York", zip: "10021", status: "Recruiting", phone: "1-800-4-CANCER", email: "")
+    trial.locations.create!(facility: "Fred Hutchinson Cancer Research Center", city: "Seattle", state: "Washington", zip: "98109-1024", status: "Recruiting", phone: "1-800-4-CANCER", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2924,6 +4275,12 @@ namespace :db do
       study_design: "Time Perspective:  Retrospective ",
       keywords: "effusion cancer pleural cell lung malignant small non-small",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Case Comprehensive Cancer Center")
+    trial.sponsors.create!(name: "National Cancer Institute (NCI)")
+    trial.locations.create!(facility: "Case Medical Center, University Hospitals Seidman Cancer Center, Case Comprehensive Cancer Center", city: "Cleveland", state: "Ohio", zip: "44106-5065", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "
+      ", gender: "Both", min_age: "N/A", max_age: "N/A")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2946,6 +4303,12 @@ namespace :db do
       study_design: "Allocation:  Randomized, Intervention Model:  Factorial Assignment, Masking:  Double Blind (Subject, Caregiver, Investigator) ",
       keywords: "resection Stress cancer Markers Surgical Controls Colorectal Oxidative",
       is_fda_regulated: "No ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "G. Hatzikosta General Hospital")
+    trial.sponsors.create!(name: "University of Ioannina")
+    trial.locations.create!(facility: "G. Hatzikosta General Hospital", city: "Ioannina", state: "Epirus", zip: "45001", status: "", phone: "", email: "")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "25 Years", max_age: "80 Years")
+    trial.primary_outcomes.create!(measure: "Comparison of Oxidative stress markers in patients with colorectal cancer and controls", description: "Oxidative stress markers variation (8-PGF2, Protein Carboyls, 3-Nitrotyrosine, 8-OHG) during and after surgery for colorectal cancer, and compare with controls")
 
 
     Trial.create!(download_date: "Information obtained from ClinicalTrials.gov on January 24, 2013 ",
@@ -2972,6 +4335,11 @@ namespace :db do
       study_design: "Endpoint Classification:  Safety Study, Intervention Model:  Single Group Assignment, Masking:  Open Label, Primary Purpose:  Treatment ",
       keywords: "Mutant Fluorouracil Rectal NRAS Trametinib MEK Cancers BRAF Inhibitor KRAS",
       is_fda_regulated: "Yes ")
+    trial = Trial.last
+    trial.sponsors.create!(name: "Evan Wuthrick")
+    trial.sponsors.create!(name: "National Comprehensive Cancer Network")
+    trial.locations.create!(facility: "Arthur G. James Cancer Hospital and Solove Research Institute at Ohio State University Medical Center", city: "Columbus", state: "Ohio", zip: "43210", status: "Recruiting", phone: "614-293-3422", email: "evan.wuthrick@osumc.edu")
+    trial.eligibilities.create!(population: "", gender: "Both", min_age: "18 Years", max_age: "N/A")
 
 
   end
