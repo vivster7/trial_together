@@ -7,4 +7,10 @@ class Trial < ActiveRecord::Base
   has_many :locations
   has_many :eligibilities
   has_many :primary_outcomes
+
+  def self.search(search)
+  	search_condition = "%" + search + "%"
+  	find(:all, conditions: ["brief_summary LIKE '%#{search_condition}%' or keywords LIKE '%#{search_condition}%'"])
+  end
+
 end

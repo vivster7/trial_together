@@ -1,0 +1,113 @@
+var geocoder;
+var map;
+var bounds;
+var markersArray = [];
+
+function initialize() {
+
+    bounds = new google.maps.LatLngBounds();
+
+    var address =  "<%=params[:location]%>"
+    geocoder = new google.maps.Geocoder();
+
+
+    geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        var latlng = results[0].geometry.location
+        var mapOptions = {
+           zoom: 14,
+           center: latlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+        var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+        });
+        //calculateDistances();
+    }});
+  }
+
+function calculateDistances() {
+var origin1 = new google.maps.LatLng(55.930385, -3.118425);
+var origin2 = 'Greenwich, England';
+var destinationA = 'Stockholm, Sweden';
+var destinationB = new google.maps.LatLng(50.087692, 14.421150);
+
+    var service = new google.maps.DistanceMatrixService();
+    service.getDistanceMatrix(
+      {
+        origins: [origin1, origin2],
+        destinations: [destinationA, destinationB],
+        travelMode: google.maps.TravelMode.DRIVING,
+        unitSystem: google.maps.UnitSystem.METRIC,
+        avoidHighways: false,
+        avoidTolls: false
+      }, callback);
+  }
+
+function callback(response, status) {
+  if (status != google.maps.DistanceMatrixStatus.OK) {
+     alert('Error was: ' + status);
+    } else {
+      var origins = response.originAddresses;
+      var destinations = response.destinationAddresses;
+      var outputDiv = document.getElementById('outputDiv');
+      outputDiv.innerHTML = '';
+      deleteOverlays();
+
+
+
+      for (var i = 0; i < origins.length; i++) {
+        var results = response.rows[i].elements;
+        addMarker(origins[i], false);
+        for (var j = 0; j < results.length; j++) {
+          addMarker(destinations[j], true);
+          outputDiv.innerHTML += origins[i] + ' to ' + destinations[j]
+              + ': ' + results[j].distance.text + ' in '
+              + results[j].duration.text + '<br>';
+        }
+      }
+    }
+  }
+
+function addMarker(location, isDestination) {
+  geocoder.geocode({'address': location}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+
+      bounds.extend(results[0].geometry.location);
+      map.fitBounds(bounds);
+      var marker = new google.maps.Marker({
+        map: map,
+        position: results[0].geometry.location,
+      });
+      markersArray.push(marker);
+
+    } else {
+      alert('Geocode was not successful for the following reason: '
+        + status);
+    }
+  });
+}
+
+  function deleteOverlays() {
+
+    if (markersArray) {
+      for (i in markersArray) {
+        markersArray[i].setMap(null);
+      }
+      markersArray.length = 0;
+    }
+  }
+
+  function loadScript() {
+
+    var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&' +
+            'callback=initialize';
+        document.body.appendChild(script);
+
+      }
+
+      window.onload = loadScript;

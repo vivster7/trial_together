@@ -1,0 +1,30 @@
+<% provide(:title, '| Trial Results') %>
+<% content_for :head do %>
+   <!-- <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBex04VuePYf966aHTAPQ3Wfi-pS27w8ko&sensor=false">
+    </script>  -->
+    <script type="text/javascript">
+    <%= render partial: "trials/googleMaps" %>
+    </script>
+<%end%>
+
+<div class="page-header"> 
+  <h1>Trial Results</h1> 
+  <div id="outputDiv"></div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span5">
+
+  	  <ul class="trials">
+    	<% @trials.each do |trial| %>
+  		<li class="trialname"><%= link_to trial.brief_title, :action => 'show', :id => trial.id  %></li>
+ 	 	  <% end %>
+  	  </ul>
+
+      <%= will_paginate @trials, inner_window: 1, outer_window: 0, previous_label: "&larr;", next_label: "&rarr;" %>
+
+    </div>
+     <div id= "map_canvas" class="span7 hero-unit" >
+    </div>
+  </div>
+</div>
