@@ -11,37 +11,67 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+
 ActiveRecord::Schema.define(:version => 20130127002249) do
 
-  create_table "trial_data", :force => true do |t|
+
+  create_table "eligibilities", :force => true do |t|
+    t.string   "gender"
+    t.string   "min_age"
+    t.string   "max_age"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "population"
+    t.integer  "trial_id"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "facility"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "contact"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "status"
+    t.integer  "trial_id"
+  end
+
+  create_table "primary_outcomes", :force => true do |t|
+    t.string   "measure"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "trial_id"
+  end
+
+  create_table "sponsors", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "trial_id"
+  end
+
+  create_table "trials", :force => true do |t|
     t.string   "download_date"
     t.string   "url"
     t.string   "org_study_id"
     t.string   "nct_id"
-    t.string   "official_title"
-    t.string   "sponsors"
-    t.string   "brief_summary"
+    t.text     "official_title"
+    t.text     "brief_title"
+    t.text     "brief_summary"
     t.string   "overall_status"
     t.string   "start_date"
     t.string   "completion_date"
     t.string   "phase"
     t.string   "study_type"
     t.string   "study_design"
-    t.string   "primary_outcome"
-    t.string   "criteria"
-    t.string   "location"
-    t.string   "keyword"
+    t.text     "keywords"
     t.boolean  "is_fda_regulated"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
-  end
-
-  create_table "trial_searches", :force => true do |t|
-    t.string   "location"
-    t.string   "official_title"
-    t.string   "keywords"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
   end
 
   create_table "users", :force => true do |t|
