@@ -13,13 +13,18 @@
   <div id="outputDiv"></div>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span5">
+    <div class="span5 verticleScrollingContainer">
 
-  	  <ul class="trials">
+  	  <ol class="trials">
+      <% i=0 %>
     	<% @trials.each do |trial| %>
-  		<li class="trialname"><%= link_to trial.brief_title, :action => 'show', :id => trial.id  %></li>
+  		<li class="trialname"><%= link_to trial.brief_title, :action => 'show', :id => trial.id  %>
+        <%=tag("div", id: "outputDiv#{i}")%>
+      </li>
+      <li class="invisible"><%=trial.locations.all[0].facility%> <%=trial.locations.all[0].city%>, <%=trial.locations.all[0].state%> <%=trial.locations.all[0].zip%></li>
+      <% i = i+1 %>
  	 	  <% end %>
-  	  </ul>
+  	  </ol>
 
       <%= will_paginate @trials, inner_window: 1, outer_window: 0, previous_label: "&larr;", next_label: "&rarr;" %>
 
