@@ -18,17 +18,35 @@
 	    <div id=<%="collapse_#{attr}" %> class="accordion-body collapse">
 	      <div class="accordion-inner">
 	        <%= if attr=='locations'
-		      @trial.locations.each do |location|
-			
+		      if @trial.locations.count==0
+			"None"
+		      else
+			@trial.locations.each do |location|
+			end
 		      end
 		    elsif attr=='eligibilities'
-		      @trial.eligibilities.each do |eligibility|
+		      if @trial.eligibilities.count==0
+			"None"
+		      else
+			@trial.eligibilities.each do |eligibility|
+			end
 		      end
 		    elsif attr=='primary_outcomes'
-		      @trial.primary_outcomes.each do |outcome|
+		      if @trial.primary_outcomes.count==0
+			"None"
+		      else
+			@trial.primary_outcomes.each do |outcome|
+			end
+		      end
+		    elsif attr=='sponsors'
+		      if @trial.sponsors.count==0
+			"None"
+		      else
+			@trial.sponsors.each do |outcome|
+			end
 		      end
 		    else
-			@trial[attr]
+		      @trial[attr]
 		    end  %>
 	      </div>
 	    </div>
