@@ -2,31 +2,30 @@
 
 <div class="container-fluid">
   <div class="row-fluid">
-   <aside class="span4 hero-unit">
-   	 <h1>Activity Feed</h1>
+   <aside class="span4 grayContainer">
+   	  <h1> Trial Profile</h1>
+      <h4> Title</h4> <p><%=@trial.brief_title%></p>
+      <h4> Summary</h4> <p><%=@trial.brief_summary%></p>
+      <h4> Completion Date</h4> <p><%=@trial.completion_date%></p>
+      <h4> Download Date</h4> <p><%=@trial.download_date%></p>
+      <h4> Is FDA Regulated</h4> <p><%=@trial.is_fda_regulated%></p>
+      <h4> Keywords</h4> <p><%=@trial.keywords%></p>
+      <h4> NCT ID</h4> <p><%=@trial.nct_id%><p>
+      <h4> Official Title</h4> <p><%=@trial.official_title%></p>
+      <h4> Org Study ID</h4> <p><%=@trial.org_study_id%><p>
+      <h4> Overall Status</h4> <p><%=@trial.overall_status%></p>
+      <h4> Phase</h4> <p><%=@trial.phase%></p>
+      <h4> Start Date</h4> <p><%=@trial.start_date%></p>
+      <h4> Study Design</h4> <p><%=@trial.study_design%></p>
+      <h4> Study Type</h4> <p><%=@trial.study_type%><p>
+      <h4> URL</h4> <p><%=@trial.url%></p>
+      <h4> Location</h4> <p><%=@trial.locations%></p>
+      <h4> Sponsors</h4> <p><%=@trial.sponsors%></p>
+      <h4> Eligibilities</h4> <p><%=@trial.eligibilities%></p>
+      <h4> Primary Outcomes</h4> <p><%=@trial.primary_outcomes%></p>
    	</aside>
     <div class="span8 grayContainer">
-      <h1> Trial Profile </h1>
-      <h4> Title: <%=@trial.brief_title%></h4>
-      <h4> Summary: <%=@trial.brief_summary%></h4>
-      <h4> Completion Date: <%=@trial.completion_date%></h4>
-      <h4> Download Date: <%=@trial.download_date%></h4>
-      <h4> Is FDA Regulated: <%=@trial.is_fda_regulated%></h4>
-      <h4> Keywords: <%=@trial.keywords%></h4>
-      <h4> NCT ID: <%=@trial.nct_id%></h4>
-      <h4> Official Title: <%=@trial.official_title%></h4>
-      <h4> Org Study ID: <%=@trial.org_study_id%></h4>
-      <h4> Overall Status:<%=@trial.overall_status%></h4>
-      <h4> Phase: <%=@trial.phase%></h4>
-      <h4> Start Date: <%=@trial.start_date%></h4>
-      <h4> Study Design: <%=@trial.study_design%></h4>
-      <h4> Study Type: <%=@trial.study_type%></h4>
-      <h4> URL: <%=@trial.url%></h4>
-      <h4> Location: <%=@trial.locations%></h4>
-      <h4> Sponsors: <%=@trial.sponsors%></h4>
-      <h4> Eligibilities: <%=@trial.eligibilities%></h4>
-      <h4> Primary Outcomes: <%=@trial.primary_outcomes%></h4>
-
+    	<h1>Activity Feed</h1>
     </div>
   </div>
 </div>
