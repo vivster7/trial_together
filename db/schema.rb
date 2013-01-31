@@ -52,37 +52,6 @@ ActiveRecord::Schema.define(:version => 20130127040557) do
     t.integer  "trial_id"
   end
 
-  create_table "trial_data", :force => true do |t|
-    t.string   "download_date"
-    t.string   "url"
-    t.string   "org_study_id"
-    t.string   "nct_id"
-    t.string   "official_title"
-    t.string   "sponsors"
-    t.string   "brief_summary"
-    t.string   "overall_status"
-    t.string   "start_date"
-    t.string   "completion_date"
-    t.string   "phase"
-    t.string   "study_type"
-    t.string   "study_design"
-    t.string   "primary_outcome"
-    t.string   "criteria"
-    t.string   "location"
-    t.string   "keyword"
-    t.boolean  "is_fda_regulated"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-  end
-
-  create_table "trial_searches", :force => true do |t|
-    t.string   "location"
-    t.string   "official_title"
-    t.string   "keywords"
-    t.datetime "created_at",     :null => false
-    t.datetime "updated_at",     :null => false
-  end
-
   create_table "trials", :force => true do |t|
     t.string   "download_date"
     t.string   "url"
