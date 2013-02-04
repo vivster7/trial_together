@@ -7,8 +7,11 @@ FactoryGirl.define do
   end
 
   factory :trial do
-  	name "Lorem ipsum"
-  	latitude  34.234234
-  	longitude 14.234144
   end
+
+  factory :post do
+    content "Lorem ipsum"
+    trial
+  end
+
 end

@@ -6,6 +6,8 @@ class TrialsController < ApplicationController
 
 	def show
 		@trial = Trial.find params[:id]
+		@post = @trial.posts.build if signed_in?
+		@posts = @trial.posts.paginate(page: params[:page], per_page: 20)
 	end
 
 	def search
