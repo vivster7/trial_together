@@ -35,7 +35,7 @@ end
 
 group :production do
 #  gem 'pg'
-  gem 'mysql'
+  gem 'mysql', '2.8.1'
 end
 gem 'jquery-rails'
 
