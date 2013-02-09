@@ -10,7 +10,7 @@ class Trial < ActiveRecord::Base
 
   def self.search(search)
   	search_condition = "%" + search + "%"
-  	find(:all, conditions: ["brief_summary LIKE '%#{search_condition}%' or keywords LIKE '%#{search_condition}%'"])
+  	find(:all, conditions: ["brief_title LIKE '%#{search_condition}%' or keywords LIKE '%#{search_condition}%'"])
   end
 
 end

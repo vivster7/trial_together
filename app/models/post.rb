@@ -1,6 +1,6 @@
 class Post < ActiveRecord::Base
   attr_accessible :content
-  belongs_to :trial
+  belongs_to :trial, :user
 
   validates :content, presence:true
   #validates :user_id, presence: true

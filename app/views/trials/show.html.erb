@@ -56,21 +56,22 @@
     </aside>
 
     <div class="span7 grayContainer">
+	<h1>Activity Feed</h1>
 
-    	 <% if @trial.posts.any? %>
-      	<h3>posts (<%= @trial.posts.count %>)</h3>
-      	<ol class="posts">
-       		<%= render @posts %>
-      	</ol>
+	<% if @trial.posts.any? %>
+	  <h3>posts (<%= @trial.posts.count %>)</h3>
+	  <ol class="posts">
+	    <%= render @posts %>
+	  </ol>
 
-      	<% if signed_in? %>
-		      <div class="post_form">
-		        <%= render 'shared/post_form' %>
-		      </div>
-		<% end %>
+	  <% if signed_in? %>
+	    <div class="post_form">
+	    <%= render 'shared/post_form' %>
+	    </div>
+	  <% end %>
 		
-      	<%= will_paginate @posts %>
-   		<% end %>
+      	  <%= will_paginate @posts %>
+	<% end %>
     </div>
   </div>
 </div>
