@@ -13,16 +13,19 @@
 # gem 'pg'
 #
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: heroku-trial_development
   pool: 5
 #  username: heroku-trial
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
   # domain sockets, so uncomment these lines.
-  host: localhost
-  port: 5000
+  username: root
+  password: KIWIs836
+  socket: /var/run/mysqld/mysqld.sock
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public

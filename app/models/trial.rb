@@ -9,8 +9,8 @@ class Trial < ActiveRecord::Base
   has_many :primary_outcomes
 
   def self.search(search)
-  	search_condition = "%" + search + "%"
-  	find(:all, conditions: ["brief_title LIKE '%#{search_condition}%' or keywords LIKE '%#{search_condition}%'"])
+  	keyword_match = ".*" + search.gsub(' ', '|') + "+.*"
+  	where("keywords REGEXP ? or brief_title LIKE '%?%'", keyword_match, search)
   end
 
 end
