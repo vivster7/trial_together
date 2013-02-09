@@ -47,9 +47,9 @@ test:
 production:
   adapter: mysql2
   encoding: utf8
-  reconnect: false
+  reconnect: true
   database: heroku-trial_production
   pool: 5
-  username: root
-  password:
+  username: bbcbadd2d1ae3a
+  password: 1d01a547
   socket: /var/run/mysqld/mysqld.sock
