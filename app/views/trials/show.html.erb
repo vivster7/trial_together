@@ -63,12 +63,11 @@
 	  <ol class="posts">
 	    <%= render @posts %>
 	  </ol>
-
-	  <% if signed_in? %>
-	    <div class="post_form">
-	    <%= render 'shared/post_form' %>
-	    </div>
-	  <% end %>
+      	<% if signed_in? %>
+		      <div class="post_form">
+		        <%= render 'post_form' %>
+		      </div>
+		<% end %>
 		
       	  <%= will_paginate @posts %>
 	<% end %>
