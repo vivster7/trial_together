@@ -163,6 +163,7 @@ DEPENDENCIES
   factory_girl_rails (= 4.1.0)
   faker
   jquery-rails
+  json (= 1.7.7)
   mysql2
   rails (= 3.2.11)
   rspec-rails (= 2.11.0)
