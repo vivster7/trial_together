@@ -10,10 +10,9 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
+
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
 ~*
 
-#Ignore database.yml, so we can have separate locations for our development databases.
-/config/database.yml
