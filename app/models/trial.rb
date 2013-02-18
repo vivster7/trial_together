@@ -8,11 +8,21 @@ class Trial < ActiveRecord::Base
   has_many :eligibilities
   has_many :primary_outcomes
 
-  def self.search(search)
-  	#keyword_match = ".*" + search.gsub(' ', '|') + "+.*"
+  def self.search(search, request)
+    if search.empty?
+      query = self.all
+      return query
+    end
+    Geocoder.configure(timeout: 1000)
     keyword_match = ".*#{search.gsub(' ', '|')}+.*" 
-
-  	where("keywords REGEXP ? or brief_title LIKE ?", keyword_match, "%#{search}%")
+    query = self.where("keywords REGEXP ? or brief_title LIKE ?", keyword_match, "%#{search}%")
+    query.sort_by! { |trial|
+      distances = []
+      for location in trial.locations
+	distances.append(Geocoder::Calculations.distance_between(location.city + ", " + location.state + " " + location.zip, request.location));
+      end
+      distances.min
+} #god. this should really become a map at some point
   end
 
 end

@@ -11,8 +11,7 @@ class TrialsController < ApplicationController
 	end
 
 	def search
-		#@trials = Trial.all
-		@trials = Trial.search(params[:search]).paginate(page: params[:page], per_page: 10)
+		@trials = Trial.search(params[:search], request).paginate(page: params[:page], per_page: 10)
 		respond_to do |format|
 			format.html { render 'results' }
 			format.js
