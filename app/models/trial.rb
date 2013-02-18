@@ -16,12 +16,12 @@ class Trial < ActiveRecord::Base
     Geocoder.configure(timeout: 1000)
     keyword_match = ".*#{search.gsub(' ', '|')}+.*" 
     query = self.where("keywords REGEXP ? or brief_title LIKE ?", keyword_match, "%#{search}%")
-    query.sort_by! { |trial|
-      distances = []
-      for location in trial.locations
-	distances.append(Geocoder::Calculations.distance_between(location.city + ", " + location.state + " " + location.zip, request.location));
-      end
-      distances.min
+#    query.sort_by! { |trial|
+#      distances = []
+#      for location in trial.locations
+#	distances.append(Geocoder::Calculations.distance_between(location.city + ", " + location.state + " " + location.zip, request.location));
+#      end
+#      distances.min
 } #god. this should really become a map at some point
   end
 
