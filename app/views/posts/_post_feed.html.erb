@@ -1,0 +1,26 @@
+<!-- postfeed for Trial -->
+<% if @trial && @trial.posts.any? %>
+  <h3>Posts (<%= @trial.posts.count %>)</h3>
+	<ol class="posts">
+	  <%= render @posts %>
+	</ol>
+      	<% if signed_in? && @trial %>
+		    <div class="post_form">
+		      <%= render 'posts/post_form' %>
+		    </div>
+		<% end %>
+		
+    <%= will_paginate @posts %>
+
+
+<!-- postfeed for User -->
+<% elsif @user && @user.posts.any? %>
+  <h3>Posts (<%= @user.posts.count %>)</h3>
+	<ol class="posts">
+	  <%= render @posts %>
+	</ol>
+		
+    <%= will_paginate @posts %>
+<% else %>
+	<h3> Posts (0)
+<% end %>
