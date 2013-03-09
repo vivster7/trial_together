@@ -22,8 +22,7 @@ class Trial < ActiveRecord::Base
 #	distances.append(Geocoder::Calculations.distance_between(location.city + ", " + location.state + " " + location.zip, request.location));
 #      end
 #      distances.min
-#}
-#god. this should really become a map at some point
+#} #god. this should really become a map at some point
   end
 
 end
