@@ -3,7 +3,13 @@
   <span class="timestamp">
     Posted <%= time_ago_in_words(post.created_at) %> ago
   </span>
-  <span>
-  	by <%= link_to post.user.name, post.user %>
-  </span>
+  <% if @trial%>
+	  <span>
+	  	by <%= link_to post.user.name, post.user %>
+	  </span>
+  <% else %>
+	  <span>
+	  	on <%= link_to truncate(post.trial.brief_title, length: 48), post.user %>
+	  </span>
+  <% end %>
 </li>

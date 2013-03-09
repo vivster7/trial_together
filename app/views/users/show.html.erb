@@ -4,15 +4,14 @@
   <div class="row-fluid">
   	<%= render 'users/sidebar' %>
     <div class="span8 hero-unit">
-      <h1> Activity </h1>
- <!--     <%# if @user.posts.any? %>
-	  <h3>posts (<%#= @user.posts.count %>)</h3>
-	  <ol class="posts">
-	    <%#= render @posts %>
-	  </ol>
--->		
-      	  <%#= will_paginate @posts %>
-	  <%# end %>
+      <% if @user.posts.any? %>
+    <h3>posts (<%= @user.posts.count %>)</h3>
+      <ol class="posts">
+        <%= render @posts %>
+      </ol>
+          <%= will_paginate @posts %>
+  <% end %>
+
     </div>
   </div>
 </div>
